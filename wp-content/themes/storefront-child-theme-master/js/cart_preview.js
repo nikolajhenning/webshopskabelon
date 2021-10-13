@@ -1,5 +1,5 @@
 jQuery(function($){
-  var timeout;
+/*   var timeout;
   //Show and hide cart preview on hover
   $(".header-cart, #cart-preview").hover(function(){
       clearTimeout(timeout);
@@ -12,5 +12,6 @@ jQuery(function($){
 
     $( document.body ).on( 'added_to_cart', function(){
       $('#cart-preview').slideDown(300).delay(2000).slideUp(300);
-  });
+  }); */
 });
+

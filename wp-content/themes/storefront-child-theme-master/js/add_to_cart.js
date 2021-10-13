@@ -1,46 +1,42 @@
 jQuery(function($) {
 
-  //AJAX add to cart function
-$('.single_add_to_cart_button').on('click', function(e){
-  e.preventDefault();
-  $thisbutton = $(this),
-              $form = $thisbutton.closest('form.cart'),
-              id = $thisbutton.val(),
-              product_qty = $form.find('input[name=quantity]').val() || 1,
-              product_id = $form.find('input[name=product_id]').val() || id,
-              variation_id = $form.find('input[name=variation_id]').val() || 0;
-  var data = {
-          action: 'ql_woocommerce_ajax_add_to_cart',
-          product_id: product_id,
-          product_sku: '',
-          quantity: product_qty,
-          variation_id: variation_id,
-      };
+        $('form.cart').on('submit', function(e) {
+            e.preventDefault();
 
-    $(document.body).trigger('adding_to_cart', [$thisbutton, data]);
+            var form   = $(this),
+                mainId = form.find('.single_add_to_cart_button').val(),
+                fData  = form.serializeArray();
 
+            form.block({ message: null, overlayCSS: { background: '#fff', opacity: 0.6 } });
 
-        $.ajax({
-            type: 'post',
-            url: wc_add_to_cart_params.ajax_url,
-            data: data,
-            beforeSend: function (response) {
-                $thisbutton.removeClass('added').addClass('loading');
-            },
-            complete: function (response) {
-                $thisbutton.addClass('added').removeClass('loading');
-            },
-            success: function (response) {
+            if ( mainId === '' ) {
+                mainId = form.find('input[name="product_id"]').val();
+            }
 
-                if (response.error && response.product_url) {
-                    window.location = response.product_url;
-                    return;
-                } else {
-                    $(document.body).trigger('added_to_cart', [response.fragments, response.cart_hash, $thisbutton]);
+            if ( typeof wc_add_to_cart_params === 'undefined' )
+                return false;
+
+            $.ajax({
+                type: 'POST',
+                url: wc_add_to_cart_params.wc_ajax_url.toString().replace( '%%endpoint%%', 'custom_add_to_cart' ),
+                data : {
+                    'product_id': mainId,
+                    'form_data' : fData,
+                },
+                success: function (response) {
+                    $(document.body).trigger("wc_fragment_refresh");
+                    $('.woocommerce-error,.woocommerce-message').remove();
+                    $('input[name="quantity"]').val(1);
+                    $('.header-cart-wrapper').after(response);
+                    $('#cart-preview').slideDown(300).delay(2000).slideUp(300);
+                    form.unblock();
+                    console.log(response);                    
+                },
+                error: function (error) {
+                    form.unblock();
+                    // console.log(error);
                 }
-            },
+            });
         });
 
-        return false;
-   });
 });

@@ -111,7 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							?>
 						</a>
 					</div>
-					<?php include 'inc/woocommerce/cart-preview.php';?>
+					<?php // include 'inc/woocommerce/cart-preview.php';?>
 	    <!-- Mobil menu -->
 			    <div class="header-mobile">
 						<a href="#menu"><span><i class="fas fa-bars"></i></span></a>
