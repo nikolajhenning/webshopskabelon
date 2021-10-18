@@ -56,7 +56,7 @@
        <span>Pris i alt:</span>
            <?php echo $cart_total; ?>
       </div>
-      <a href="<?php $cart_url ?>" class="preview-cart-btn">Indkøbskurv</a>
+      <a href="<?php echo $cart_url ?>" class="preview-cart-btn">Indkøbskurv</a>
   </div>
 
 </div>
