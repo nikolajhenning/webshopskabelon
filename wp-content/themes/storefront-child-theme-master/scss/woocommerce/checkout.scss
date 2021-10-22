@@ -53,7 +53,7 @@
             width: 60%;
             margin-left: 1.5em;
             input.button {
-              background-color: $blue;
+              background-color: $main;
             }
             .shipmondo-clearfix {
               width: fit-content;
@@ -251,6 +251,16 @@
       text-transform: capitalize;
     }
   }
+
+  /* Confirm button */
+  #payment .place-order .button {
+    background-color: $green;
+
+    &:hover {
+      background-color: $green-hover;
+    }
+  }
+
 }
 /* Checkout - DAWA suggestions */
 .dawa-autocomplete-suggestion {

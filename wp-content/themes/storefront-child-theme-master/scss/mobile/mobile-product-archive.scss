@@ -111,19 +111,19 @@ button.show_filter {
   display: block;
   width: 100%;
   background-color: #FFF;
-  border: 1px solid $blue;
-  color: $blue;
+  border: 1px solid $main;
+  color: $main;
   text-transform: uppercase;
   letter-spacing: 1px;
 
   &:hover {
     background-color: #FFF;
-    border: 1px solid $blue;
-    color: $blue;
+    border: 1px solid $main;
+    color: $main;
   }
   &:active {
-    background-color: $blue;
+    background-color: $main;
     color: #FFF;
-    border: 1px solid $blue;
+    border: 1px solid $main;
   }
 }
