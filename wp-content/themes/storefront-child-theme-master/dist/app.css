@@ -1807,6 +1807,10 @@ form.checkout, form.woocommerce-cart-form {
 .cart-preview-empty {
   padding: 1em; }
 
+@media only screen and (max-width: 1024px) {
+  #cart-preview, #cart-preview-updated {
+    display: none !important; } }
+
 /*
 .site, #page {
   background-color: $primary-color;
