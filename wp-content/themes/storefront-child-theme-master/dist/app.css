@@ -1781,13 +1781,20 @@ form.checkout, form.woocommerce-cart-form {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em; }
+  padding: 1em;
+  flex-wrap: wrap; }
   .preview-btm .amount bdi {
     display: flex;
     align-items: center; }
+  .preview-btm div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
 
 .preview-cart-btn {
-  margin: 0 1em 1em 1em;
+  width: 100%;
+  margin-top: 1em;
   padding: 0.5em;
   display: block;
   text-align: center;
@@ -1796,6 +1803,13 @@ form.checkout, form.woocommerce-cart-form {
   border-radius: 3px; }
   .preview-cart-btn:hover {
     background-color: #a46200; }
+
+.cart-preview-empty {
+  padding: 1em; }
+
+@media only screen and (max-width: 1024px) {
+  #cart-preview, #cart-preview-updated {
+    display: none !important; } }
 
 /*
 .site, #page {
