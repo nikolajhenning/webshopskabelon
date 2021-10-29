@@ -85,13 +85,21 @@
     @include flexbox;
     justify-content: space-between;
     padding: 1em;
+    flex-wrap: wrap;
 
     .amount bdi {
       @include flexbox;
     }
+
+    div {
+      width: 100%;
+      @include flexbox;
+      justify-content: space-between;
+    }
   }
   .preview-cart-btn {
-    margin: 0 1em 1em 1em;
+    width: 100%;
+    margin-top: 1em;
     padding: 0.5em;
     display: block;
     text-align: center;
@@ -101,4 +109,8 @@
     &:hover {
       background-color: $primary-hover;
     }
+}
+
+.cart-preview-empty {
+  padding: 1em;
 }
