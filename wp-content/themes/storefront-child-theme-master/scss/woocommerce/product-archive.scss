@@ -216,7 +216,7 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
     color: $gray;
   }
   .chosen:before {
-    color: $main;
+    color: $primary;
     opacity: 1;
   }
 }
@@ -237,7 +237,7 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
   &.cat-item.current-cat::before {
     content: "\f054";
     font-family: Font Awesome\ 5 Free;
-    color: $main;
+    color: $primary;
     opacity: 1;
   }
   &.cat-item::before {
@@ -275,14 +275,14 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
     border-radius: 20px;
 
     &::-moz-progress-bar {
-      background: $main;
+      background: $primary;
       border-radius: 20px;
     }
     &::-webkit-progress-bar {
       background: transparent;
     }
     &::-webkit-progress-value {
-      background: $main;
+      background: $primary;
       border-radius: 20px;
     }
   }
