@@ -251,7 +251,7 @@ hr {
   /* Header Tablet */
   #menu {
     background-color: #ffffff; }
-    #menu .mm-spn.mm-spn--navbar.mm-spn--main:after {
+    #menu .mm-spn.mm-spn--navbar.mm-spn--primary:after {
       opacity: 1;
       color: #bd7b00; }
   .woocommerce-page #content {
@@ -1143,7 +1143,8 @@ ul.products {
       align-items: center;
       position: relative;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      border-radius: 6px; }
+      border-radius: 6px;
+      white-space: nowrap; }
       ul.products li.product .woocommerce-loop-product__link .price {
         display: flex;
         align-items: center;
@@ -1166,7 +1167,10 @@ ul.products {
       width: auto;
       margin: 2em 0 1em 0; }
     ul.products li.product .woocommerce-loop-product__title {
-      margin: .6em 0; }
+      margin: .6em 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 300px; }
     ul.products li.product .onsale {
       margin: 0;
       padding: 0;
