@@ -243,6 +243,9 @@
     }
   }
   .coupons{
+    @include flexbox;
+    justify-content: space-between;
+    
     #coupon_code {
       width: 48%;
       opacity: 1;
