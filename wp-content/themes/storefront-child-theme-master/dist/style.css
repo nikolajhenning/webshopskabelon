@@ -131,6 +131,8 @@ hr {
     display: flex;
     align-items: center;
     background-color: #dbdbdb; }
+    #masthead .navigation-header-content ul {
+      transition: none; }
     #masthead .navigation-header-content a {
       padding: 1em; }
 
