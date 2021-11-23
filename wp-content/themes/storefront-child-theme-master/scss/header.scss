@@ -72,6 +72,10 @@
       @include flexbox;
       background-color: $gray;
 
+      ul {
+        transition: none;
+      }
+
       a {
         padding: 1em;
       }
