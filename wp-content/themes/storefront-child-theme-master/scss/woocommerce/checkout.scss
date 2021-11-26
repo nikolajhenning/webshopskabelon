@@ -5,6 +5,10 @@
     display: none;
   }
 
+  .woocommerce-NoticeGroup-checkout {
+    width: 100%;
+  }
+
   .col2-set {
     width: 60%;
     margin-right: 0;
@@ -245,7 +249,7 @@
   .coupons{
     @include flexbox;
     justify-content: space-between;
-    
+
     #coupon_code {
       width: 48%;
       opacity: 1;
