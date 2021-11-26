@@ -1522,6 +1522,8 @@ form.checkout, form.woocommerce-cart-form {
   /* Confirm button */ }
   .woocommerce-checkout .entry-header, .woocommerce-checkout .storefront-primary-navigation, .woocommerce-checkout .header-search, .woocommerce-checkout .storefront-breadcrumb, .woocommerce-checkout .header-cart-wrapper {
     display: none; }
+  .woocommerce-checkout .woocommerce-NoticeGroup-checkout {
+    width: 100%; }
   .woocommerce-checkout .col2-set {
     width: 60%;
     margin-right: 0;
