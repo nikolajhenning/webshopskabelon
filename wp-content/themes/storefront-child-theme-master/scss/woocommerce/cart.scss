@@ -305,6 +305,9 @@ form.checkout, form.woocommerce-cart-form {
   &::before {
     color: $green;
   }
+  a.restore-item {
+    color: $green;
+  }
 }
 .woocommerce-error {
   color: $red;
