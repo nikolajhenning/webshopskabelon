@@ -1010,8 +1010,7 @@ body.mm-ocd-opened {
 #main .product {
   overflow: visible; }
   #main .product .woocommerce-product-gallery {
-    width: 50%;
-    height: 600px; }
+    width: 50%; }
     #main .product .woocommerce-product-gallery figure {
       height: 100%; }
       #main .product .woocommerce-product-gallery figure .woocommerce-product-gallery__image {
