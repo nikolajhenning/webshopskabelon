@@ -23,8 +23,8 @@
           }
 
 
-//Cart
-          .product-quantity-selection {
+    //Cart
+        .product-quantity-selection {
             margin: 0;
 
             input {
@@ -36,6 +36,10 @@
         .product-quantity {
           display: none;
         }
+      }
+
+      .product-remove {
+        margin-left: auto;
       }
 
       .cart_totals {
