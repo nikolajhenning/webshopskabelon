@@ -11,11 +11,17 @@
   }
 
   /* Content wrapper */
-  /* Container width | col-full */
+  /* Container width | Non-elementor pages */
   .col-full {
     width: inherit;
-    max-width: 1400px !important;
+    max-width: 1400px;
     margin: auto;
+  }
+
+  /* Container width | Elementor pages */
+  .elementor-page .site-content .col-full {
+    max-width: 100%;
+    padding: 0;
   }
 
 input {
