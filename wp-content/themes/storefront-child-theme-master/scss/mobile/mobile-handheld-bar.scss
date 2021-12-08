@@ -1,0 +1,19 @@
+
+.storefront-handheld-footer-bar {
+
+    ul li>a {
+        height: 3.2em;
+
+        &::before {
+            font-size: 1.3em;
+        }
+
+    }
+
+   ul li.cart .count {
+        width: 1.8em;
+        height: 1.8em;
+        font-size: .65em;
+    }
+
+}
