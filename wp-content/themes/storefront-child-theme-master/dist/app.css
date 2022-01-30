@@ -109,7 +109,8 @@ hr {
         max-height: 50px;
         width: auto; }
     #masthead .header-wrapper .header-search {
-      flex: 1; }
+      flex: 1;
+      margin-left: 2em; }
       #masthead .header-wrapper .header-search .woocommerce-product-search {
         margin: 0; }
     #masthead .header-wrapper .header-cart-wrapper {
