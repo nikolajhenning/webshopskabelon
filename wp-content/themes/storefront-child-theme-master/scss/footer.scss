@@ -61,6 +61,11 @@
           @include reset_before_after;
         }
       }
+
+       /* Facebook */
+       i.fab.fa-facebook-square.footer-facebook {
+        color: $primary;
+      }
     }
   }
 .footer-widgets-wrapper {

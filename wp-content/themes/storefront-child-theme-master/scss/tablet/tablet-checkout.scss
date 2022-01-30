@@ -23,7 +23,11 @@
 
       .coupon, .coupons {
         #coupon_code {
-          width: auto;
+          width: 100%;
+        }
+
+        button {
+          margin-top: 1em;
         }
       }
 

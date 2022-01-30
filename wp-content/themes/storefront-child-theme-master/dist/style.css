@@ -34,7 +34,7 @@ h5 {
   background: #ffffff; }
 
 /* Content wrapper */
-/* Container width | Non-elementor pages */
+/* Container width | col-full */
 .col-full {
   width: inherit;
   max-width: 1400px;
@@ -52,8 +52,10 @@ hr {
   margin: 0; }
 
 .topbar {
-  background-color: #dbdbdb;
-  padding: 10px 0 10px 0; }
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 0 15px 0;
+  height: 50px; }
   .topbar .topbar-wrapper {
     display: flex;
     align-items: center; }
@@ -67,7 +69,7 @@ hr {
       display: flex;
       align-items: center;
       font-weight: 500;
-      font-size: 0.75rem;
+      font-size: 1rem;
       padding-right: 40px; }
       .topbar .selling-points .topbar-selling-point i {
         padding-right: 10px; }
@@ -81,7 +83,10 @@ hr {
     .topbar .top-menu .secondary-navigation {
       margin: 0; }
       .topbar .top-menu .secondary-navigation a {
-        padding: 0 0 0 1em; }
+        padding: 0 0 0 1em;
+        color: #ffffff; }
+        .topbar .top-menu .secondary-navigation a:hover {
+          color: #dbdbdb; }
 
 /* Header */
 #masthead {
@@ -95,7 +100,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 0;
+    padding: 1.25em 0;
     position: relative; }
     #masthead .header-wrapper .image-logo {
       flex: 1;
@@ -133,10 +138,10 @@ hr {
         #masthead .header-wrapper .header-cart-wrapper .header-cart i {
           font-size: 1.5rem; }
   #masthead .navigation-header-content {
-    justify-content: center;
     display: flex;
     align-items: center;
-    background-color: #dbdbdb; }
+    justify-content: flex-end;
+    flex: 5; }
     #masthead .navigation-header-content ul {
       transition: none; }
     #masthead .navigation-header-content a {
@@ -151,7 +156,8 @@ hr {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    /* Facebook */ }
     .site-footer .col-full .footer-widgets::before, .site-footer .col-full .footer-widgets::after {
       content: none; }
     .site-footer .col-full .footer-widgets .block {
@@ -183,6 +189,8 @@ hr {
             font-weight: 500; }
         .site-footer .col-full .footer-widgets .block .widget::before, .site-footer .col-full .footer-widgets .block .widget::after {
           content: none; }
+    .site-footer .col-full .footer-widgets i.fab.fa-facebook-square.footer-facebook {
+      color: #bd7b00; }
   .site-footer .footer-widgets-wrapper {
     display: flex;
     align-items: center;
@@ -296,11 +304,12 @@ hr {
     #masthead .header-wrapper .navigation-header-content {
       display: none; }
     #masthead .header-wrapper .header-search {
-      margin-left: auto; }
+      margin-left: 20px; }
     #masthead .header-wrapper .header-cart-wrapper, #masthead .header-wrapper .header-mobile {
       margin-left: 1.5em; }
   .topbar, .storefront-breadcrumb {
-    padding: 0.5em 1em !important; }
+    padding: 0.5em 1em !important;
+    margin-top: 0; }
   .header-widget-region {
     display: none; }
   /* Header Tablet End */
@@ -399,7 +408,9 @@ hr {
           font-size: 1.5rem;
           text-align: center; }
       .woocommerce-cart .woocommerce-cart-form .col-cart-one .coupon #coupon_code, .woocommerce-cart .woocommerce-cart-form .col-cart-one .coupons #coupon_code, .woocommerce-cart .woocommerce-cart-form .col-cart-two .coupon #coupon_code, .woocommerce-cart .woocommerce-cart-form .col-cart-two .coupons #coupon_code, .woocommerce-cart .woocommerce-cart-form .col2-set .coupon #coupon_code, .woocommerce-cart .woocommerce-cart-form .col2-set .coupons #coupon_code, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .coupon #coupon_code, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .coupons #coupon_code, .woocommerce-cart .woocommerce-checkout .col-cart-one .coupon #coupon_code, .woocommerce-cart .woocommerce-checkout .col-cart-one .coupons #coupon_code, .woocommerce-cart .woocommerce-checkout .col-cart-two .coupon #coupon_code, .woocommerce-cart .woocommerce-checkout .col-cart-two .coupons #coupon_code, .woocommerce-cart .woocommerce-checkout .col2-set .coupon #coupon_code, .woocommerce-cart .woocommerce-checkout .col2-set .coupons #coupon_code, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .coupon #coupon_code, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .coupons #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .coupon #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .coupons #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .coupon #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .coupons #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col2-set .coupon #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col2-set .coupons #coupon_code, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .coupon #coupon_code, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .coupons #coupon_code, .woocommerce-checkout .woocommerce-checkout .col-cart-one .coupon #coupon_code, .woocommerce-checkout .woocommerce-checkout .col-cart-one .coupons #coupon_code, .woocommerce-checkout .woocommerce-checkout .col-cart-two .coupon #coupon_code, .woocommerce-checkout .woocommerce-checkout .col-cart-two .coupons #coupon_code, .woocommerce-checkout .woocommerce-checkout .col2-set .coupon #coupon_code, .woocommerce-checkout .woocommerce-checkout .col2-set .coupons #coupon_code, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .coupon #coupon_code, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .coupons #coupon_code {
-        width: auto; }
+        width: 100%; }
+      .woocommerce-cart .woocommerce-cart-form .col-cart-one .coupon button, .woocommerce-cart .woocommerce-cart-form .col-cart-one .coupons button, .woocommerce-cart .woocommerce-cart-form .col-cart-two .coupon button, .woocommerce-cart .woocommerce-cart-form .col-cart-two .coupons button, .woocommerce-cart .woocommerce-cart-form .col2-set .coupon button, .woocommerce-cart .woocommerce-cart-form .col2-set .coupons button, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .coupon button, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .coupons button, .woocommerce-cart .woocommerce-checkout .col-cart-one .coupon button, .woocommerce-cart .woocommerce-checkout .col-cart-one .coupons button, .woocommerce-cart .woocommerce-checkout .col-cart-two .coupon button, .woocommerce-cart .woocommerce-checkout .col-cart-two .coupons button, .woocommerce-cart .woocommerce-checkout .col2-set .coupon button, .woocommerce-cart .woocommerce-checkout .col2-set .coupons button, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .coupon button, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .coupons button, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .coupon button, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .coupons button, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .coupon button, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .coupons button, .woocommerce-checkout .woocommerce-cart-form .col2-set .coupon button, .woocommerce-checkout .woocommerce-cart-form .col2-set .coupons button, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .coupon button, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .coupons button, .woocommerce-checkout .woocommerce-checkout .col-cart-one .coupon button, .woocommerce-checkout .woocommerce-checkout .col-cart-one .coupons button, .woocommerce-checkout .woocommerce-checkout .col-cart-two .coupon button, .woocommerce-checkout .woocommerce-checkout .col-cart-two .coupons button, .woocommerce-checkout .woocommerce-checkout .col2-set .coupon button, .woocommerce-checkout .woocommerce-checkout .col2-set .coupons button, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .coupon button, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .coupons button {
+        margin-top: 1em; }
       .woocommerce-cart .woocommerce-cart-form .col-cart-one #shipping_method li label, .woocommerce-cart .woocommerce-cart-form .col-cart-two #shipping_method li label, .woocommerce-cart .woocommerce-cart-form .col2-set #shipping_method li label, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper #shipping_method li label, .woocommerce-cart .woocommerce-checkout .col-cart-one #shipping_method li label, .woocommerce-cart .woocommerce-checkout .col-cart-two #shipping_method li label, .woocommerce-cart .woocommerce-checkout .col2-set #shipping_method li label, .woocommerce-cart .woocommerce-checkout .order-review-wrapper #shipping_method li label, .woocommerce-checkout .woocommerce-cart-form .col-cart-one #shipping_method li label, .woocommerce-checkout .woocommerce-cart-form .col-cart-two #shipping_method li label, .woocommerce-checkout .woocommerce-cart-form .col2-set #shipping_method li label, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper #shipping_method li label, .woocommerce-checkout .woocommerce-checkout .col-cart-one #shipping_method li label, .woocommerce-checkout .woocommerce-checkout .col-cart-two #shipping_method li label, .woocommerce-checkout .woocommerce-checkout .col2-set #shipping_method li label, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper #shipping_method li label {
         width: 100%; }
         .woocommerce-cart .woocommerce-cart-form .col-cart-one #shipping_method li label img, .woocommerce-cart .woocommerce-cart-form .col-cart-two #shipping_method li label img, .woocommerce-cart .woocommerce-cart-form .col2-set #shipping_method li label img, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper #shipping_method li label img, .woocommerce-cart .woocommerce-checkout .col-cart-one #shipping_method li label img, .woocommerce-cart .woocommerce-checkout .col-cart-two #shipping_method li label img, .woocommerce-cart .woocommerce-checkout .col2-set #shipping_method li label img, .woocommerce-cart .woocommerce-checkout .order-review-wrapper #shipping_method li label img, .woocommerce-checkout .woocommerce-cart-form .col-cart-one #shipping_method li label img, .woocommerce-checkout .woocommerce-cart-form .col-cart-two #shipping_method li label img, .woocommerce-checkout .woocommerce-cart-form .col2-set #shipping_method li label img, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper #shipping_method li label img, .woocommerce-checkout .woocommerce-checkout .col-cart-one #shipping_method li label img, .woocommerce-checkout .woocommerce-checkout .col-cart-two #shipping_method li label img, .woocommerce-checkout .woocommerce-checkout .col2-set #shipping_method li label img, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper #shipping_method li label img {
@@ -434,33 +445,31 @@ hr {
 @media only screen and (max-width: 767px) and (max-width: 767px) {
   .topbar {
     display: none; }
-  #masthead .header-wrapper .image-logo {
-    width: 30%; }
-    #masthead .header-wrapper .image-logo img {
-      max-height: 80px; }
-  #masthead .header-wrapper .header-search,
-  #masthead .header-wrapper .navigation-header-content,
-  #masthead .header-wrapper .header-cart-wrapper {
-    display: none; }
-  #masthead .header-wrapper .header-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 20px; }
-    #masthead .header-wrapper .header-mobile i {
-      transition: all 0.3s ease;
-      vertical-align: bottom;
-      transform: scale(2); }
-      #masthead .header-wrapper .header-mobile i:active {
-        transform: scale(1.6); }
-    #masthead .header-wrapper .header-mobile a {
-      line-height: 0; } }
+  #masthead .header-wrapper {
+    margin: 0 0.8em; }
+    #masthead .header-wrapper .image-logo {
+      width: 30%; }
+      #masthead .header-wrapper .image-logo img {
+        max-height: 80px; }
+    #masthead .header-wrapper .header-search,
+    #masthead .header-wrapper .navigation-header-content,
+    #masthead .header-wrapper .header-cart-wrapper {
+      display: none; }
+    #masthead .header-wrapper .header-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 20px; }
+      #masthead .header-wrapper .header-mobile i {
+        transition: all 0.3s ease;
+        vertical-align: bottom;
+        transform: scale(2); }
+        #masthead .header-wrapper .header-mobile i:active {
+          transform: scale(1.6); }
+      #masthead .header-wrapper .header-mobile a {
+        line-height: 0; } }
 
 @media only screen and (max-width: 767px) {
-  #page .col-full {
-    margin: 0 0.8em; }
-  #page #content {
-    margin: 0; }
   #secondary {
     display: none;
     width: 100%;
@@ -623,7 +632,7 @@ hr {
     .woocommerce-cart .woocommerce-cart-form .col-cart-one .coupon, .woocommerce-cart .woocommerce-cart-form .col-cart-one .coupons, .woocommerce-cart .woocommerce-cart-form .col-cart-two .coupon, .woocommerce-cart .woocommerce-cart-form .col-cart-two .coupons, .woocommerce-cart .woocommerce-cart-form .col2-set .coupon, .woocommerce-cart .woocommerce-cart-form .col2-set .coupons, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .coupon, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .coupons, .woocommerce-cart .woocommerce-checkout .col-cart-one .coupon, .woocommerce-cart .woocommerce-checkout .col-cart-one .coupons, .woocommerce-cart .woocommerce-checkout .col-cart-two .coupon, .woocommerce-cart .woocommerce-checkout .col-cart-two .coupons, .woocommerce-cart .woocommerce-checkout .col2-set .coupon, .woocommerce-cart .woocommerce-checkout .col2-set .coupons, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .coupon, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .coupons, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .coupon, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .coupons, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .coupon, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .coupons, .woocommerce-checkout .woocommerce-cart-form .col2-set .coupon, .woocommerce-checkout .woocommerce-cart-form .col2-set .coupons, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .coupon, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .coupons, .woocommerce-checkout .woocommerce-checkout .col-cart-one .coupon, .woocommerce-checkout .woocommerce-checkout .col-cart-one .coupons, .woocommerce-checkout .woocommerce-checkout .col-cart-two .coupon, .woocommerce-checkout .woocommerce-checkout .col-cart-two .coupons, .woocommerce-checkout .woocommerce-checkout .col2-set .coupon, .woocommerce-checkout .woocommerce-checkout .col2-set .coupons, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .coupon, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .coupons {
       text-align: center; }
       .woocommerce-cart .woocommerce-cart-form .col-cart-one .coupon #coupon_code, .woocommerce-cart .woocommerce-cart-form .col-cart-one .coupons #coupon_code, .woocommerce-cart .woocommerce-cart-form .col-cart-two .coupon #coupon_code, .woocommerce-cart .woocommerce-cart-form .col-cart-two .coupons #coupon_code, .woocommerce-cart .woocommerce-cart-form .col2-set .coupon #coupon_code, .woocommerce-cart .woocommerce-cart-form .col2-set .coupons #coupon_code, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .coupon #coupon_code, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .coupons #coupon_code, .woocommerce-cart .woocommerce-checkout .col-cart-one .coupon #coupon_code, .woocommerce-cart .woocommerce-checkout .col-cart-one .coupons #coupon_code, .woocommerce-cart .woocommerce-checkout .col-cart-two .coupon #coupon_code, .woocommerce-cart .woocommerce-checkout .col-cart-two .coupons #coupon_code, .woocommerce-cart .woocommerce-checkout .col2-set .coupon #coupon_code, .woocommerce-cart .woocommerce-checkout .col2-set .coupons #coupon_code, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .coupon #coupon_code, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .coupons #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .coupon #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .coupons #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .coupon #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .coupons #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col2-set .coupon #coupon_code, .woocommerce-checkout .woocommerce-cart-form .col2-set .coupons #coupon_code, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .coupon #coupon_code, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .coupons #coupon_code, .woocommerce-checkout .woocommerce-checkout .col-cart-one .coupon #coupon_code, .woocommerce-checkout .woocommerce-checkout .col-cart-one .coupons #coupon_code, .woocommerce-checkout .woocommerce-checkout .col-cart-two .coupon #coupon_code, .woocommerce-checkout .woocommerce-checkout .col-cart-two .coupons #coupon_code, .woocommerce-checkout .woocommerce-checkout .col2-set .coupon #coupon_code, .woocommerce-checkout .woocommerce-checkout .col2-set .coupons #coupon_code, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .coupon #coupon_code, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .coupons #coupon_code {
-        width: auto; }
+        width: 100%; }
       .woocommerce-cart .woocommerce-cart-form .col-cart-one .coupon button, .woocommerce-cart .woocommerce-cart-form .col-cart-one .coupons button, .woocommerce-cart .woocommerce-cart-form .col-cart-two .coupon button, .woocommerce-cart .woocommerce-cart-form .col-cart-two .coupons button, .woocommerce-cart .woocommerce-cart-form .col2-set .coupon button, .woocommerce-cart .woocommerce-cart-form .col2-set .coupons button, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .coupon button, .woocommerce-cart .woocommerce-cart-form .order-review-wrapper .coupons button, .woocommerce-cart .woocommerce-checkout .col-cart-one .coupon button, .woocommerce-cart .woocommerce-checkout .col-cart-one .coupons button, .woocommerce-cart .woocommerce-checkout .col-cart-two .coupon button, .woocommerce-cart .woocommerce-checkout .col-cart-two .coupons button, .woocommerce-cart .woocommerce-checkout .col2-set .coupon button, .woocommerce-cart .woocommerce-checkout .col2-set .coupons button, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .coupon button, .woocommerce-cart .woocommerce-checkout .order-review-wrapper .coupons button, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .coupon button, .woocommerce-checkout .woocommerce-cart-form .col-cart-one .coupons button, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .coupon button, .woocommerce-checkout .woocommerce-cart-form .col-cart-two .coupons button, .woocommerce-checkout .woocommerce-cart-form .col2-set .coupon button, .woocommerce-checkout .woocommerce-cart-form .col2-set .coupons button, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .coupon button, .woocommerce-checkout .woocommerce-cart-form .order-review-wrapper .coupons button, .woocommerce-checkout .woocommerce-checkout .col-cart-one .coupon button, .woocommerce-checkout .woocommerce-checkout .col-cart-one .coupons button, .woocommerce-checkout .woocommerce-checkout .col-cart-two .coupon button, .woocommerce-checkout .woocommerce-checkout .col-cart-two .coupons button, .woocommerce-checkout .woocommerce-checkout .col2-set .coupon button, .woocommerce-checkout .woocommerce-checkout .col2-set .coupons button, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .coupon button, .woocommerce-checkout .woocommerce-checkout .order-review-wrapper .coupons button {
         margin-top: 1em; }
   .woocommerce-cart .cross-sells h2, .woocommerce-checkout .cross-sells h2 {
@@ -1198,7 +1207,8 @@ ul.products {
           order: 1;
           margin-left: 0; }
         ul.products li.product .woocommerce-loop-product__link .price .woocommerce-price-suffix {
-          width: 100%; }
+          width: 100%;
+          order: 3; }
     ul.products li.product img {
       max-height: 220px;
       width: auto;
@@ -1357,7 +1367,7 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
     width: 60%;
     padding: 6em;
     background-color: #f9f9f9;
-    min-height: 800px; }
+    min-height: fit-content; }
     .woocommerce-cart .col-cart-one .cart-header .cart-product-count {
       font-weight: 500;
       text-transform: uppercase; }
@@ -1866,9 +1876,15 @@ form.checkout, form.woocommerce-cart-form {
     .elementor-products-grid ul.products.elementor-grid li.product a.woocommerce-loop-product__link {
       display: flex;
       align-items: center; }
+    .elementor-products-grid ul.products.elementor-grid li.product .woocommerce-loop-product__title {
+      max-width: 230px; }
     .elementor-products-grid ul.products.elementor-grid li.product img {
       margin: auto;
       margin-bottom: 1em; }
+
+body.elementor-page div.elementor-element.elementor-wc-products.elementor-products-grid .elementor-widget-container ul.products.elementor-grid li.product span.onsale {
+  display: flex;
+  align-items: center; }
 
 /* Responsive - Mobile */
 @media only screen and (max-width: 767px) {

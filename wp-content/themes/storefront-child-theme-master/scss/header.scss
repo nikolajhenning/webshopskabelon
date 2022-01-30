@@ -13,7 +13,7 @@
     .header-wrapper {
       @include flexbox;
       justify-content: space-between;
-      padding: 1em 0;
+      padding: 1.25em 0;
       position: relative;
 
       .image-logo {
@@ -69,9 +69,9 @@
     }
 
     .navigation-header-content{
-      justify-content: center;
       @include flexbox;
-      background-color: $gray;
+      justify-content: flex-end;
+      flex: 5;
 
       ul {
         transition: none;

@@ -17,7 +17,7 @@
     width: 60%;
     padding: 6em;
     background-color: $light-gray;
-    min-height: 800px;
+    min-height: fit-content;
 
     .cart-header {
       .cart-product-count {

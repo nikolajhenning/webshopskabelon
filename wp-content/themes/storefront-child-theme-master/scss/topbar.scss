@@ -1,6 +1,8 @@
 .topbar {
-    background-color: $gray;
-    padding: 10px 0 10px 0;
+    background-color: $black;
+    color: $white;
+    padding: 15px 0 15px 0;
+    height: 50px;
 
     .topbar-wrapper {
       @include flexbox;
@@ -15,7 +17,7 @@
         .topbar-selling-point {
             @include flexbox;
             font-weight: $font-weight-normal-bold;
-            font-size: $font-size-small;
+            font-size: $font-size-base;
             padding-right: 40px;
 
             i {
@@ -43,6 +45,11 @@
           margin: 0;
           a {
             padding: 0 0 0 1em;
+            color: $white;
+
+            &:hover {
+                color: $gray;
+            }
           }
         }
     }
