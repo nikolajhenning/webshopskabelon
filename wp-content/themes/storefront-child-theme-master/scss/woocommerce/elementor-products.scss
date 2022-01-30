@@ -9,6 +9,10 @@
         @include flexbox;
       }
 
+      .woocommerce-loop-product__title {
+        max-width: 230px;
+      }
+
       img {
         margin: auto;
         margin-bottom: 1em;
@@ -16,6 +20,13 @@
     }
   }
 }
+
+body.elementor-page div.elementor-element.elementor-wc-products.elementor-products-grid .elementor-widget-container ul.products.elementor-grid li.product {
+  span.onsale {
+    @include flexbox;
+  }
+}
+
 
 /* Responsive - Mobile */
 @media only screen and (max-width: 767px) {

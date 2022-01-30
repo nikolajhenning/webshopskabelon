@@ -8,13 +8,10 @@
   #masthead {
   //Header
     .header-wrapper {
+      margin: 0 0.8em;
 
       .image-logo {
         width: 30%;
-
-        img {
-          max-height: 80px;
-        }
       }
 
       .header-search,

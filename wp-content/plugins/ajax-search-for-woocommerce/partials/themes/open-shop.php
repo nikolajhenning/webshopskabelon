@@ -12,6 +12,10 @@ add_action( 'wp_footer', function () {
 		if (wcasThemeSearch !== null) {
 			wcasThemeSearch.replaceWith(document.querySelector('#wcas-theme-search > div'));
 		}
+		wcasThemeSearch = document.querySelector('.below-header .thmk-woocommerce-search-wrap');
+		if (wcasThemeSearch !== null) {
+			wcasThemeSearch.replaceWith(document.querySelector('#wcas-theme-search > div'));
+		}
 		document.querySelector('#wcas-theme-search').remove();
 	</script>
 	<style>
@@ -49,6 +53,9 @@ add_action( 'wp_footer', function () {
 		.dgwt-wcas-overlay-mobile .dgwt-wcas-search-wrapp {
 			padding-left: 0;
 		}
+		.below-header-bar .dgwt-wcas-search-wrapp {
+			padding-left: 18px;
+		}
 	</style>
 	<?php
 	if ( get_theme_mod( 'open_shop_sticky_header', false ) === true ) {
@@ -56,6 +63,10 @@ add_action( 'wp_footer', function () {
 		?>
 		<script>
 			var wcasThemeSearchInStickyHeader = document.querySelector('.search-wrapper #search-box');
+			if (wcasThemeSearchInStickyHeader !== null) {
+				wcasThemeSearchInStickyHeader.replaceWith(document.querySelector('#wcas-theme-search-sticky > div'));
+			}
+			wcasThemeSearchInStickyHeader = document.querySelector('.search-wrapper .thmk-woocommerce-search-wrap');
 			if (wcasThemeSearchInStickyHeader !== null) {
 				wcasThemeSearchInStickyHeader.replaceWith(document.querySelector('#wcas-theme-search-sticky > div'));
 			}

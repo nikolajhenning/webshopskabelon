@@ -64,7 +64,7 @@
     }
 
     .header-search {
-      margin-left: auto;
+      margin-left: 20px;
     }
 
     .header-cart-wrapper, .header-mobile {
@@ -75,7 +75,9 @@
 
 .topbar, .storefront-breadcrumb {
   padding: 0.5em 1em !important;
+  margin-top: 0;
 }
+
 .header-widget-region {
   display: none;
 }
