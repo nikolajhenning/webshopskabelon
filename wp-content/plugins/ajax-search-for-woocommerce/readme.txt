@@ -4,7 +4,7 @@ Tags: woocommerce search, ajax search, search by sku, product search, woocommerc
 Requires at least: 5.0
 Tested up to: 5.8
 Requires PHP: 7.0
-Stable tag: 1.13.0
+Stable tag: 1.15.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ The most popular WooCommerce product search plugin. Gives your users a well-desi
 
 The most popular **WooCommerce product search plugin**. It gives your users a well-designed advanced AJAX search bar with live search suggestions.
 
-By default, WooCommerce provides a very simple search solution, without live product search or even SKU search. FiboSearch (Ajax Search for WooCommerce) provides advanced search with live suggestions.
+By default, WooCommerce provides a very simple search solution, without live product search or even SKU search. FiboSearch (formerly Ajax Search for WooCommerce) provides advanced search with live suggestions.
 
 Who doesn’t love instant, as-you-type suggestions? In 2021, customers expect smart product search. Baymard Institute’s latest UX research reveals that search autocomplete, auto-suggest, or an instant search feature **is now offered on 96% of major e-commerce sites**. It's a must-have feature for every online business that can’t afford to lose customers. Why? FiboSearch helps users save time and makes shopping easier. As a result, Fibo really boosts sales.
 
@@ -105,7 +105,7 @@ We have prepared a one-click replacement of the search bar for the following the
 *  Astra
 *  Avada
 *  Sailent
-*  and 30 more... See a complete list of integrated themes on [our documentation](https://fibosearch.com/documentation/themes-integrations/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=theme-integrations).
+*  and 31 more... See a complete list of integrated themes on [our documentation](https://fibosearch.com/documentation/themes-integrations/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=theme-integrations).
 
 
 If you want to replace your search bar in another theme, please [contact our support team](https://fibosearch.com/contact/?utm_source=readme&utm_medium=referral&utm_campaign=asfw&utm_content=contact&utm_gen=utmdc).
@@ -142,15 +142,58 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 
 == Changelog ==
 
+= 1.15.0, December 16, 2021 =
+* ADD: Integration with a Uncode theme
+* ADD: Integration with Uncode theme - support for dark menu skin
+* ADD: Possibility to submit the search event to Google Analytics in your own way
+* ADD: Basic support for AMP
+* ADD: Allow getting search results programmatically
+
+* FIX: Integration with the Goya theme has stopped working
+* FIX: Divi theme integration - overlay on mobile was fixed. Support for new Divi ID #et_top_search_mob
+* FIX: Divi theme integration - search form did not disappear after exiting mobile overlay
+* FIX: Search suggestions were invisible because of a bug in the old version of jQuery UI. The method outerHeight() returned an object instead of a number
+* FIX: Simplifying integration with Polylang
+
+* CHANGE: Remove info about rebranding
+
+
+
+
+
+= 1.14.0, October 19, 2021 =
+* ADD: Integration with “GeneratePress” theme
+* ADD: Possibility to set a delay for initialization of mobile overlay
+* ADD: New filter to manipulate the results score
+* ADD: Details Panel - support for responsive images including retina images (2x), sizes, and srcset
+* ADD: Possibility to insert custom HTML in 5 places in the search suggestion
+* ADD: New filter and action hooks
+
+* FIX: Prevent hiding search results on click an Enter key when submit is disabled via a filter
+* FIX: No results on the search page when WPML is active with “Language name added as a parameter” option
+* FIX: Support for version v1.3.1 of Open Shop theme
+* FIX: Integrating with Divi theme - delay in starting JS scripts
+* FIX: Integrating with Divi theme - force search overlay for mobile devices
+* FIX: Unnecessary HTML tags in the search input after selecting a suggestion
+* FIX: Hide mobile overlay after submitting a form or clicking a result. Fixes screen after clicking iPhone back arrow
+* FIX: Troubleshooting module. Fixed false negative in “OutOfStockRelationships test”. An order of arrays was taken into account for the diff function. It was replaced by full diff
+* FIX: Unclosed tag &lt;a/&gt;
+* FIX: Typo on Troubleshooting tab
+* FIX: Clear “alt” attribute in the product thumbnail
+
+* REFACTOR: Escape search terms the way WordPress core does
+* REFACTOR: Replacing image with thumbnails in DgoraWcas\Post class to keep a consistent style compared with DgoraWcas\Product
+
+
 = 1.13.0, July 27, 2021 =
-* ADD: Integration with "eStore" theme
+* ADD: Integration with “eStore” theme
 * ADD: Allow to open search result in new tab with Ctrl+left mouse key
 
 * FIX: Disappearing suggestions and details panel on click when there were more search bars.
-* FIX: Improved integration with "Avada" theme
-* FIX: Improved mobile search in new version of "Rehub" theme
+* FIX: Improved integration with “Avada” theme
+* FIX: Improved mobile search in new version of “Rehub” theme
 * FIX: Unable to use context menu and middle mouse button on search results
-* FIX: "Eletro" theme - Support cases when the search overlay is disabled
+* FIX: “Eletro” theme - Support cases when the search overlay is disabled
 
 * REFACTOR: Clean up composer files
 

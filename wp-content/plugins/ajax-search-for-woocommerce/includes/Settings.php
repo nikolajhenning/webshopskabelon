@@ -111,9 +111,20 @@ class Settings
         
         if ( dgoraAsfwFs()->is_premium() ) {
             $suffix = '';
+            
             if ( Builder::getInfo( 'status' ) === 'error' || Builder::isIndexerWorkingTooLong() ) {
-                $suffix = '<span class="dgwt-wcas-tab-mark">!</span>';
+                $suffix .= '<span class="js-dgwt-wcas-indexer-tab-error dgwt-wcas-tab-mark active">!</span>';
+            } else {
+                $suffix .= '<span class="js-dgwt-wcas-indexer-tab-error dgwt-wcas-tab-mark">!</span>';
             }
+            
+            
+            if ( in_array( Builder::getInfo( 'status' ), array( 'preparing', 'building', 'cancellation' ) ) ) {
+                $suffix .= '<span class="js-dgwt-wcas-indexer-tab-progress dgwt-wcas-tab-progress active"></span>';
+            } else {
+                $suffix .= '<span class="js-dgwt-wcas-indexer-tab-progress dgwt-wcas-tab-progress"></span>';
+            }
+            
             $sections[30] = array(
                 'id'    => 'dgwt_wcas_performance',
                 'title' => __( 'Indexer', 'ajax-search-for-woocommerce' ) . $suffix,
@@ -378,27 +389,30 @@ class Settings
             'class' => 'dgwt-wcas-sgs-header',
         ),
             1100 => array(
-            'name'    => 'show_matching_categories',
-            'label'   => __( 'Show categories', 'ajax-search-for-woocommerce' ),
-            'type'    => 'checkbox',
-            'class'   => 'js-dgwt-wcas-settings-margin js-dgwt-wcas-options-toggle-sibling',
-            'default' => 'on',
+            'name'       => 'show_product_tax_product_cat',
+            'label'      => __( 'Show categories', 'ajax-search-for-woocommerce' ),
+            'type'       => 'checkbox',
+            'class'      => 'js-dgwt-wcas-settings-margin js-dgwt-wcas-options-toggle-sibling',
+            'default'    => 'on',
+            'input_data' => 'data-option-trigger="show_matching_categories"',
         ),
             1150 => array(
-            'name'      => 'show_categories_images',
-            'label'     => __( 'show images', 'ajax-search-for-woocommerce' ),
-            'type'      => 'checkbox',
-            'class'     => 'js-dgwt-wcas-adv-settings dgwt-wcas-premium-only',
-            'default'   => 'off',
-            'desc'      => __( 'show images', 'ajax-search-for-woocommerce' ),
-            'move_dest' => 'show_matching_categories',
+            'name'       => 'show_product_tax_product_cat_images',
+            'label'      => __( 'show images', 'ajax-search-for-woocommerce' ),
+            'type'       => 'checkbox',
+            'class'      => 'js-dgwt-wcas-adv-settings dgwt-wcas-premium-only',
+            'default'    => 'off',
+            'desc'       => __( 'show images', 'ajax-search-for-woocommerce' ),
+            'move_dest'  => 'show_product_tax_product_cat',
+            'input_data' => 'data-option-trigger="show_categories_images"',
         ),
             1300 => array(
-            'name'    => 'show_matching_tags',
-            'label'   => __( 'Show tags', 'ajax-search-for-woocommerce' ),
-            'type'    => 'checkbox',
-            'class'   => 'js-dgwt-wcas-settings-margin js-dgwt-wcas-adv-settings',
-            'default' => 'off',
+            'name'       => 'show_product_tax_product_tag',
+            'label'      => __( 'Show tags', 'ajax-search-for-woocommerce' ),
+            'type'       => 'checkbox',
+            'class'      => 'js-dgwt-wcas-settings-margin js-dgwt-wcas-adv-settings',
+            'default'    => 'off',
+            'input_data' => 'data-option-trigger="show_matching_tags"',
         ),
             1600 => array(
             'name'    => 'show_matching_posts',
@@ -503,14 +517,14 @@ class Settings
             'default' => 'off',
         ),
             250 => array(
-            'name'    => 'search_in_product_categories',
+            'name'    => 'search_in_product_tax_product_cat',
             'label'   => __( 'Search in categories', 'ajax-search-for-woocommerce' ),
             'class'   => 'js-dgwt-wcas-adv-settings dgwt-wcas-premium-only',
             'type'    => 'checkbox',
             'default' => 'off',
         ),
             275 => array(
-            'name'    => 'search_in_product_tags',
+            'name'    => 'search_in_product_tax_product_tag',
             'label'   => __( 'Search in tags', 'ajax-search-for-woocommerce' ),
             'class'   => 'js-dgwt-wcas-adv-settings dgwt-wcas-premium-only',
             'type'    => 'checkbox',
@@ -658,30 +672,6 @@ class Settings
                 'type'  => 'desc',
                 'desc'  => Helpers::indexerDemoHtml(),
                 'class' => 'dgwt-wcas-premium-only wcas-opt-tntsearch',
-            );
-        }
-        
-        // Show info about rebranding
-        // Show info for all users with install date < Fri Mar 12 2021 22:59:00 GMT+0000
-        // @TODO Remove it in March 2022
-        $installDate = get_option( FeedbackNotice::ACTIVATION_DATE_OPT );
-        
-        if ( !empty($installDate) && is_numeric( $installDate ) && $installDate < 1615589940 ) {
-            $settingsFields['dgwt_wcas_basic'][5] = array(
-                'name'  => 'rebranding_head',
-                'label' => __( 'News', 'ajax-search-for-woocommerce' ),
-                'type'  => 'head',
-                'class' => 'dgwt-wcas-sgs-header',
-            );
-            $desc = __( 'AJAX Search for WooCommerce rebrands to FiboSearch', 'ajax-search-for-woocommerce' ) . '. ';
-            $desc .= '<a href="https://fibosearch.com/ajax-search-for-woocommerce-rebrands-to-fibosearch/" target="_blank">';
-            $desc .= __( 'Read more', 'ajax-search-for-woocommerce' ) . '.';
-            $desc .= '</a>';
-            $settingsFields['dgwt_wcas_basic'][6] = array(
-                'name'  => 'rebranding_desc',
-                'label' => __( 'New plugin name', 'ajax-search-for-woocommerce' ),
-                'type'  => 'desc',
-                'desc'  => $desc,
             );
         }
         
