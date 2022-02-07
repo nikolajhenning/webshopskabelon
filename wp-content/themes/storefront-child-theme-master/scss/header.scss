@@ -84,4 +84,17 @@
       }
     }
 
+    /* Navigation */
+    .main-navigation {
+      ul.menu ul {
+        li:hover>a {
+          background: $white;
+        }
+
+        &.sub-menu {
+          background-color: $white;
+        }
+      }
+    }
+
 }

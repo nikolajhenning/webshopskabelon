@@ -93,7 +93,8 @@ hr {
   position: sticky;
   z-index: 999;
   background-color: #ffffff;
-  transition: 0.3s all; }
+  transition: 0.3s all;
+  /* Navigation */ }
   #masthead .col-full {
     position: relative; }
   #masthead .header-wrapper {
@@ -147,6 +148,10 @@ hr {
       transition: none; }
     #masthead .navigation-header-content a {
       padding: 1em; }
+  #masthead .main-navigation ul.menu ul li:hover > a {
+    background: #ffffff; }
+  #masthead .main-navigation ul.menu ul.sub-menu {
+    background-color: #ffffff; }
 
 /* Footer */
 .site-footer {
@@ -503,21 +508,21 @@ hr {
       display: none; }
   .col-full #main.site-main ul.products.columns-3 {
     grid-template-columns: 1fr 1fr; }
-    .col-full #main.site-main ul.products.columns-3:last-of-type {
-      margin-bottom: 2em; }
-    .col-full #main.site-main ul.products.columns-3 li.product {
-      height: auto; }
-      .col-full #main.site-main ul.products.columns-3 li.product .woocommerce-loop-product__link {
-        padding: 0.5em; }
-        .col-full #main.site-main ul.products.columns-3 li.product .woocommerce-loop-product__link img {
-          max-height: 100px;
-          margin: 1em 0; }
-        .col-full #main.site-main ul.products.columns-3 li.product .woocommerce-loop-product__link .price bdi {
-          font-size: 1rem; }
-      .col-full #main.site-main ul.products.columns-3 li.product .badge-wrapper {
-        font-size: 0.65rem; }
-      .col-full #main.site-main ul.products.columns-3 li.product .woocommerce-loop-product__title {
-        max-width: 120px; }
+  .col-full #main.site-main ul.products:last-of-type {
+    margin-bottom: 2em; }
+  .col-full #main.site-main ul.products li.product {
+    height: auto; }
+    .col-full #main.site-main ul.products li.product .woocommerce-loop-product__link {
+      padding: 0.5em; }
+      .col-full #main.site-main ul.products li.product .woocommerce-loop-product__link img {
+        max-height: 100px;
+        margin: 1em 0; }
+      .col-full #main.site-main ul.products li.product .woocommerce-loop-product__link .price bdi {
+        font-size: 1rem; }
+    .col-full #main.site-main ul.products li.product .badge-wrapper {
+      font-size: 0.65rem; }
+    .col-full #main.site-main ul.products li.product .woocommerce-loop-product__title {
+      max-width: 120px; }
   ul.products li.product span.onsale {
     top: 25%;
     width: 4.5em;
