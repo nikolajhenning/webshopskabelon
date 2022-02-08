@@ -100,16 +100,10 @@ ul.products {
 
     //product badge
     .onsale {
-      margin:0;
-      padding: 0;
-      position: absolute;
-    }
-
-    .onsale {
       top: 15%;
       right: 10%;
-      width: 6.5em;
-      height: 6.5em;
+      width: 4.5em;
+      height: 4.5em;
       z-index: 100;
       @include flexbox;
       justify-content: center;
@@ -117,6 +111,9 @@ ul.products {
       color: $white;
       background-color: $light-black;
       border-width: 0;
+      margin:0;
+      padding: 0;
+      position: absolute;
     }
 
     .badge-wrapper {
