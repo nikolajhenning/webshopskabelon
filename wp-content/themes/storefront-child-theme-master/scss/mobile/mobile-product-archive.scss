@@ -58,6 +58,7 @@
     ul.products {
       &.columns-3 {
         grid-template-columns: 1fr 1fr;
+      }
 
         &:last-of-type {
           margin-bottom: 2em;
@@ -77,14 +78,15 @@
               }
             }
           }
+
           .badge-wrapper {
             font-size: $font-size-xtra-small;
           }
+
           .woocommerce-loop-product__title {
             max-width: 120px;
           }
         }
-      }
     }
   }
 }
