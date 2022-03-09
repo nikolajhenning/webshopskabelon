@@ -32,39 +32,40 @@ $products = $order->get_items();
 
 <script type="text/javascript">
 dataLayer.push({
-   "event":"EEtransaction",
-   "ecommerce": {
-     "purchase": {
-       "actionField": {
-         "id": "<?php echo $order->get_order_number(); ?>",
-         "affiliation":"WooCommerce",
-         "revenue": <?php echo number_format($order->get_subtotal(), 2, ".", ""); ?>,
-         "tax": <?php echo number_format($order->get_total_tax(), 2, ".", ""); ?>,
-         "shipping": <?php echo number_format($order->calculate_shipping(), 2, ".", ""); ?>,
-         <?php if($order->get_used_coupons()): ?>
+	"event": "purchase",
+	'ecommerce': {
+		'purchase': {
+		'actionField': {
+			'id': <?php echo $order->get_order_number(); ?>,
+			'affiliation': 'WooCommerce',
+			'revenue': <?php echo number_format($order->get_total(), 2, ".", ""); ?>,                     // Total transaction value (incl. tax and shipping)
+			'tax': <?php echo number_format($order->get_total_tax(), 2, ".", ""); ?>,
+			'shipping': <?php echo number_format($order->calculate_shipping(), 2, ".", ""); ?>,
+			<?php if($order->get_used_coupons()): ?>
             "coupon": "<?php echo implode("-", $order->get_used_coupons()); ?>"
-          <?php endif; ?>
-      },
-      "products": [
-                  <?php
-                    foreach($order->get_items() as $key => $item):
-                      $product = $order->get_product_from_item( $item );
-                      $variant_name = ($item['variation_id']) ? wc_get_product($item['variation_id']) : '';
-                  ?>
-                      {
-                        "name": "<?php echo $item['name']; ?>",
-                        "id": "<?php echo $sku = $product->get_sku(); ?>",
-                        "price": "<?php echo number_format($order->get_line_subtotal($item), 2, ".", ""); ?>",
-                        "category": "<?php echo strip_tags($product->get_categories(', ', '', '')); ?>",
-                        "variant": "<?php echo ($variant_name) ? implode("-", $variant_name->get_variation_attributes()) : ''; ?>",
-                        "quantity": <?php echo $item['qty']; ?>
-                      },
-                  <?php endforeach; ?>
-                ]
-    }
-  }
+          	<?php endif; ?>
+		},
+		'products': [
+			<?php
+			foreach($order->get_items() as $key => $item):
+				$product = $order->get_product_from_item( $item );
+				$variant_name = ($item['variation_id']) ? wc_get_product($item['variation_id']) : '';
+            ?>
+				{
+					"name": "<?php echo $item['name']; ?>",
+					"id": "<?php echo $sku = $product->get_sku(); ?>",
+					"price": "<?php echo number_format($order->get_line_subtotal($item), 2, ".", ""); ?>",
+					"category": "<?php echo strip_tags($product->get_categories(', ', '', '')); ?>",
+					"variant": "<?php echo ($variant_name) ? implode("-", $variant_name->get_variation_attributes()) : ''; ?>",
+					"quantity": <?php echo $item['qty']; ?>
+				},
+			<?php endforeach; ?>
+		]
+	}
+ }
 });
 </script>
+
 
 
 

@@ -19,39 +19,38 @@ defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_cart' ); ?>
 
+
 <script type="text/javascript">
 dataLayer.push({
-   "event":"EEaddToCart",
+   "event": "addToCart",
    "ecommerce": {
      "currencyCode": "<?php echo get_woocommerce_currency_symbol(); ?>",
-     "add": {
-      "actionField": {
-        list: "Shopping cart"
-      },
-      "products": [
-                  <?php
-                    global $woocommerce;
+	 'add': {
+		'products': [                    //  adding a product to a shopping cart.
+				  <?php   global $woocommerce;
                     $items = $woocommerce->cart->get_cart();
                     foreach($items as $item => $values):
-                      $_product =  wc_get_product( $values['data']->get_id());
+                    $_product =  wc_get_product( $values['data']->get_id());
                   ?>
-                      {
+					{
                         "name": "<?php echo $product_title = $_product->get_title(); ?>",
                         "id": "<?php echo $product_id = $_product->get_id(); ?>",
-                        "price": "<?php echo $price = get_post_meta($values['product_id'] , '_price', true); ?>",
+						"price": "<?php $price = get_post_meta($values['product_id'] , '_price', true); $unit = intval( $price ); $decimal = sprintf( '%02d', ( $price-$unit ) * 100 ); echo sprintf( '%d.%s', $unit, $decimal ); ?>",
                         "quantity": <?php echo $cart_quantity = $values['quantity'];?>,
                         "category":"<?php $terms = get_the_terms( $product_id, 'product_cat' );
-        foreach ($terms as $term) {
-          $product_cat = $term->name;
-          }
-          echo $product_cat ; ?>"
-                      },
-                  <?php endforeach; ?>
+						foreach ($terms as $term) {
+						$product_cat = $term->name;
+						}
+						echo $product_cat ; ?>"
+									},
+								<?php endforeach; ?>
                 ]
-            }
-          }
+			},
+	  "value": <?php global $woocommerce; echo WC()->cart->total; ?>
+  }
 });
 </script>
+
 
 
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
