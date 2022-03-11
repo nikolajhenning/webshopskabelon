@@ -21,14 +21,82 @@
       margin-left: -25px;
       padding-left: 25px;
       position: relative;
-      text-decoration: none !important;
+      text-decoration: none;
     }
   
   }
   
-  .widget_product_categories ul li{
+  .widget-area .widget_product_categories ul li{
+    padding: 0;
     a {
         @include hover-link-style;
+    }
+    &.cat-item {
+        .icon-toggle {
+            padding: 10px;
+            cursor: pointer;
+            color: $black;
+            text-decoration: none;
+            @include hover-link-style;
+          }       
+   
+        a {
+            text-transform: uppercase;
+            font-weight: $font-weight-normal;
+        }     
+        .children{
+            display: none;
+            border-bottom: 1px solid rgba(192,192,192,0.2);
+            .cat-item {
+                margin: 0 0 5px 0 ;
+                a {
+                    font-weight: $font-weight-light;
+                    text-transform: none;              
+                }
+                a::after {
+                     content: none;
+                }
+            }
+        }    
+
+    } 
+    &.current-cat {        
+        a {
+            font-weight: $font-weight-bold;
+        }
+    } 
+    &.current-cat-parent {
+        .children {
+            .current-cat {
+                a {
+                    font-weight: $font-weight-bold;
+                }                
+            }
+        }
+
+    }
+    &.active {
+        .children{
+            display: block;
+            animation-name: open;
+            animation-duration: 0.3s;            
+            @keyframes open {
+                from {     
+                    display: block;       
+                    opacity: 0;
+                    margin: 0 0 0 0;
+                }
+                to {            
+                    display: block;
+                    opacity: 1;
+                    margin: 1em 0 0 0;
+                }
+              }
+
+        }
+    }     
+    &.cat-item::before {
+      content: none;
     }
   }
   //archive sidebar end
