@@ -1,7 +1,4 @@
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap);
-* {
-  transition: all 0.2s ease; }
-
 html, body, button, input, textarea {
   font-family: "Work Sans", "Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
@@ -1223,14 +1220,10 @@ ul.products {
       overflow: hidden;
       max-width: 300px; }
     ul.products li.product .onsale {
-      margin: 0;
-      padding: 0;
-      position: absolute; }
-    ul.products li.product .onsale {
       top: 15%;
       right: 10%;
-      width: 6.5em;
-      height: 6.5em;
+      width: 4.5em;
+      height: 4.5em;
       z-index: 100;
       display: flex;
       align-items: center;
@@ -1238,7 +1231,10 @@ ul.products {
       border-radius: 50%;
       color: #ffffff;
       background-color: #404040;
-      border-width: 0; }
+      border-width: 0;
+      margin: 0;
+      padding: 0;
+      position: absolute; }
     ul.products li.product .badge-wrapper {
       display: flex;
       align-items: center;
