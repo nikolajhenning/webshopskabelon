@@ -11,6 +11,11 @@
   .term-description {
     width: 40%;
   }
+  p, h2, h3, h4, h5, h6 {
+    a {
+      @include text-link-style;
+    }
+  }  
 }
 
 .storefront-breadcrumb {
@@ -18,7 +23,12 @@
 }
 
 //product
-
+.site-main {
+  p, h2, h3, h4, h5, h6 {
+    a {
+      @include text-link-style;
+    }
+  }
 ul.products {
   @include reset_before_after;
   display: grid;
@@ -139,6 +149,7 @@ ul.products {
 
     //product badge end
   }
+}
 }
 //product end
 
