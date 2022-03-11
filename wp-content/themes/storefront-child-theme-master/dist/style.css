@@ -156,10 +156,48 @@ hr {
       transition: none; }
     #masthead .navigation-header-content a {
       padding: 1em; }
-  #masthead .main-navigation ul.menu ul li:hover > a {
-    background: #ffffff; }
-  #masthead .main-navigation ul.menu ul.sub-menu {
-    background-color: #ffffff; }
+  #masthead .navigation-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 5; }
+    #masthead .navigation-header-content a {
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      color: #000000;
+      text-decoration: none;
+      padding: 1em; }
+      #masthead .navigation-header-content a:hover {
+        color: #bd7b00;
+        text-decoration: underline; }
+    #masthead .navigation-header-content .sub-menu {
+      transition: none;
+      border: 1px solid rgba(192, 192, 192, 0.2);
+      border-top: 0px; }
+      #masthead .navigation-header-content .sub-menu .widget {
+        border-right: 1px solid rgba(192, 192, 192, 0.2);
+        margin-bottom: 24px; }
+        #masthead .navigation-header-content .sub-menu .widget .widget-title {
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 14px;
+          margin: 0; }
+        #masthead .navigation-header-content .sub-menu .widget .menu-item a {
+          padding: 0px; }
+        #masthead .navigation-header-content .sub-menu .widget .menu-item-has-children a {
+          font-weight: 700;
+          text-transform: uppercase; }
+        #masthead .navigation-header-content .sub-menu .widget .menu-item-has-children .sub-menu {
+          padding: 12px 0px;
+          border: 0px; }
+          #masthead .navigation-header-content .sub-menu .widget .menu-item-has-children .sub-menu .menu-item {
+            padding: 1px 0px; }
+            #masthead .navigation-header-content .sub-menu .widget .menu-item-has-children .sub-menu .menu-item a {
+              font-weight: 300;
+              text-transform: none; }
+      #masthead .navigation-header-content .sub-menu .smm-last .widget {
+        border: 0px; }
 
 /* Footer */
 .site-footer {
