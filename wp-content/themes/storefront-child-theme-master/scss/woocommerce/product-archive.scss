@@ -204,55 +204,6 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
 }
 //archive top widgets end
 
-//archive sidebar
-#secondary {
-  .show_sidebar_filter, .show_sidebar_cat, .woocommerce-widget-layered-nav {
-    display: none;
-  }
-}
-
-.widget_layered_nav {
-  li:before {
-    color: $gray;
-  }
-  .chosen:before {
-    color: $primary;
-    opacity: 1;
-  }
-}
-
-
-.woocommerce-widget-layered-nav-list {
-  a {
-    margin-left: -25px;
-    padding-left: 25px;
-    position: relative;
-    text-decoration: none !important;
-  }
-
-}
-
-.widget_product_categories ul li{
-
-  &.cat-item.current-cat::before {
-    content: "\f054";
-    font-family: Font Awesome\ 5 Free;
-    color: $primary;
-    opacity: 1;
-  }
-  &.cat-item::before {
-    content: none;
-  }
-
-  a {
-    text-decoration: none !important;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-}
-//archive sidebar end
-
-
 //load more button
 .loadmore_button {
   text-transform: uppercase;
