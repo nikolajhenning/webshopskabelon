@@ -195,6 +195,8 @@ hr {
         width: 40%; }
       .site-footer .col-full .footer-widgets .block .widget {
         margin: 0; }
+        .site-footer .col-full .footer-widgets .block .widget::before, .site-footer .col-full .footer-widgets .block .widget::after {
+          content: none; }
         .site-footer .col-full .footer-widgets .block .widget .widget-title {
           text-transform: uppercase;
           font-size: 1rem;
@@ -202,13 +204,16 @@ hr {
           border: 0; }
         .site-footer .col-full .footer-widgets .block .widget .textwidget p {
           font-weight: 300; }
-        .site-footer .col-full .footer-widgets .block .widget .menu li {
-          padding: 0; }
-          .site-footer .col-full .footer-widgets .block .widget .menu li a {
-            font-size: 1rem;
-            font-weight: 500; }
-        .site-footer .col-full .footer-widgets .block .widget::before, .site-footer .col-full .footer-widgets .block .widget::after {
+      .site-footer .col-full .footer-widgets .block .widget_nav_menu .menu li {
+        padding: 0; }
+        .site-footer .col-full .footer-widgets .block .widget_nav_menu .menu li::before, .site-footer .col-full .footer-widgets .block .widget_nav_menu .menu li::after {
           content: none; }
+        .site-footer .col-full .footer-widgets .block .widget_nav_menu .menu li a {
+          font-weight: 500; }
+      .site-footer .col-full .footer-widgets .block .widget_nav_menu .menu .current-menu-item a {
+        text-decoration: underline; }
+      .site-footer .col-full .footer-widgets .block .widget_nav_menu .menu .current-menu-item .sub-menu li a {
+        text-decoration: none; }
     .site-footer .col-full .footer-widgets i.fab.fa-facebook-square.footer-facebook {
       color: #bd7b00; }
   .site-footer .footer-widgets-wrapper {
@@ -223,8 +228,6 @@ hr {
       .site-footer .footer-widgets-wrapper a:hover {
         color: #bd7b00;
         text-decoration: underline; }
-    .site-footer .footer-widgets-wrapper .widget {
-      margin: 0 0 0 0em; }
     .site-footer .footer-widgets-wrapper .gallery {
       display: flex;
       align-items: center;
@@ -276,9 +279,6 @@ hr {
         padding: 0; }
         .site-footer .btm_bar ul li a {
           text-decoration: none; }
-
-.widget_nav_menu ul li::before, .widget_nav_menu ul li::after {
-  content: none; }
 
 .storefront-handheld-footer-bar a::before {
   color: #bd7b00; }
