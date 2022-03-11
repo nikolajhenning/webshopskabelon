@@ -1,6 +1,9 @@
 /* Header */
 
 #masthead {
+    a {
+      @include hover-link-style;
+    }  
     position: sticky;
     z-index: 999;
     background-color: $white;

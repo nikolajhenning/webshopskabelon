@@ -5,7 +5,9 @@
     z-index: 999;
     background-color: $white;
     transition: 0.3s all;
-
+    a {
+      @include hover-link-style;
+    }      
     .col-full {
       position: relative;
     }

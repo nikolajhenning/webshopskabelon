@@ -115,3 +115,26 @@ $global-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
 }
+
+//Hover effect + style used for links inbedded in text
+@mixin text-link-style {
+  text-decoration: underline;
+  color: $primary;
+  transition: all 0.2s ease; 
+  cursor: pointer;
+  &:hover {
+    color: $primary-hover;
+    text-decoration: none;
+  }
+}
+
+//Only Hover effect for text links used for footer links and header links
+@mixin hover-link-style {
+  text-decoration: none;
+  transition: all 0.2s ease; 
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+    text-decoration: underline;
+  }
+}

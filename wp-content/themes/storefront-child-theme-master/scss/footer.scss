@@ -13,6 +13,9 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       @include reset_before_after;
+      a {
+        @include hover-link-style;
+      }  
 
       .block {
         float:none !important;
@@ -52,7 +55,6 @@
               padding: 0;
 
               a {
-                text-decoration: none;
                 font-size: $font-size-base;
                 font-weight: $font-weight-normal-bold;
               }
@@ -72,7 +74,9 @@
   @include flexbox;
   justify-content: flex-end;
   margin-top: 2em;
-
+  a {
+    @include hover-link-style;
+  }  
   .widget {
     margin: 0 0 0 0em;
   }
