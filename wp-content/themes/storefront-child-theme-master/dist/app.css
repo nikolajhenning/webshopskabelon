@@ -118,6 +118,10 @@ hr {
       margin-left: 2em; }
       #masthead .header-wrapper .header-search .woocommerce-product-search {
         margin: 0; }
+    #masthead .header-wrapper .navigation-header-content .menu div ul .current-menu-item a {
+      font-weight: 500; }
+    #masthead .header-wrapper .navigation-header-content .menu div ul .current-menu-item .sub-menu li a {
+      font-weight: 400; }
     #masthead .header-wrapper .header-cart-wrapper {
       flex: 1;
       display: flex;

@@ -7,7 +7,7 @@
     transition: 0.3s all;
     a {
       @include hover-link-style;
-    }      
+    }    
     .col-full {
       position: relative;
     }
@@ -34,6 +34,17 @@
 
         .woocommerce-product-search {
           margin: 0;
+        }
+      }
+
+      .navigation-header-content {
+        .menu div ul .current-menu-item{
+          a {
+            font-weight: $font-weight-normal-bold;
+          }
+          .sub-menu li a{
+            font-weight: $font-weight-normal;
+          }
         }
       }
 
