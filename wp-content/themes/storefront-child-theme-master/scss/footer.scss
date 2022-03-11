@@ -13,6 +13,9 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       @include reset_before_after;
+      a {
+        @include hover-link-style;
+      }  
 
       .block {
         float:none !important;
@@ -33,7 +36,7 @@
 
       .widget {
         margin: 0;
-
+        @include reset_before_after;
         .widget-title {
           text-transform: uppercase;
           font-size: $font-size-base;
@@ -45,20 +48,26 @@
           p {
             font-weight: $font-weight-light;
           }
+        } 
         }
-
+        .widget_nav_menu {
           .menu {
             li {
               padding: 0;
-
+              @include reset_before_after;
               a {
-                text-decoration: none;
-                font-size: $font-size-base;
                 font-weight: $font-weight-normal-bold;
               }
             }
+            .current-menu-item{
+              a {
+                text-decoration: underline;
+              }
+              .sub-menu li a{
+                text-decoration: none;
+              }
+            }
           }
-          @include reset_before_after;
         }
       }
 
@@ -72,10 +81,9 @@
   @include flexbox;
   justify-content: flex-end;
   margin-top: 2em;
-
-  .widget {
-    margin: 0 0 0 0em;
-  }
+  a {
+    @include hover-link-style;
+  }  
 
   .gallery {
     @include flexbox;
@@ -144,14 +152,6 @@
           text-decoration: none;
         }
       }
-    }
-  }
-}
-
-.widget_nav_menu {
-  ul {
-    li {
-      @include reset_before_after;
     }
   }
 }

@@ -11,3 +11,4 @@ import progress_bar from './progress_bar.js';
 import cart_empty from './cart_empty.js';
 import add_to_cart from './add_to_cart';
 import cart_preview from './cart_preview.js';
+import product_archive_sidebar_toggle from './product_archive_sidebar_toggle.js';

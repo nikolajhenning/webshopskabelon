@@ -5,7 +5,9 @@
     z-index: 999;
     background-color: $white;
     transition: 0.3s all;
-
+    a {
+      @include hover-link-style;
+    }    
     .col-full {
       position: relative;
     }
@@ -32,6 +34,17 @@
 
         .woocommerce-product-search {
           margin: 0;
+        }
+      }
+
+      .navigation-header-content {
+        .menu div ul .current-menu-item{
+          a {
+            font-weight: $font-weight-normal-bold;
+          }
+          .sub-menu li a{
+            font-weight: $font-weight-normal;
+          }
         }
       }
 
@@ -85,14 +98,56 @@
     }
 
     /* Navigation */
-    .main-navigation {
-      ul.menu ul {
-        li:hover>a {
-          background: $white;
+    .navigation-header-content{
+      @include flexbox;
+      justify-content: flex-end;
+      flex: 5;
+      a {
+        @include hover-link-style;
+        color: $black;
+        text-decoration: none;
+        padding: 1em;
+      }         
+      .sub-menu {
+        transition: none;
+        border: 1px solid rgba(192,192,192,0.2);
+        border-top: 0px;
+        .widget {
+          border-right: 1px solid rgba(192,192,192,0.2);
+          margin-bottom: 24px;          
+          .widget-title {
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;            
+            font-size: 14px;
+            margin: 0;
+          }
+          .menu-item {
+            a {
+              padding: 0px;
+            }
+          }
+          .menu-item-has-children {
+             a {
+              font-weight: $font-weight-bold;
+              text-transform: uppercase;
+            }    
+            .sub-menu {
+              padding: 12px 0px;
+              border: 0px;
+               .menu-item {
+                padding: 1px 0px;
+                 a {
+                  font-weight: $font-weight-light;
+                  text-transform: none;
+                }                  
+              }
+            } 
+          }
         }
-
-        &.sub-menu {
-          background-color: $white;
+        .smm-last {
+          .widget {
+            border: 0px;
+          }
         }
       }
     }

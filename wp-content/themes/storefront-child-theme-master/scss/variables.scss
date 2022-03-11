@@ -22,11 +22,6 @@ $primary-hover: #a46200;
 $green-hover:rgba(66,162,27,0.9);
 $gray-hover: #f5f5f5;
 
-// Animation duration on eg. hover
-* {
-  transition: all 0.2s ease;
-}
-
 
 // Font
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
@@ -119,4 +114,27 @@ $global-radius: 3px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+//Hover effect + style used for links inbedded in text
+@mixin text-link-style {
+  text-decoration: underline;
+  color: $primary;
+  transition: all 0.2s ease; 
+  cursor: pointer;
+  &:hover {
+    color: $primary-hover;
+    text-decoration: none;
+  }
+}
+
+//Only Hover effect for text links used for footer links and header links
+@mixin hover-link-style {
+  text-decoration: none;
+  transition: all 0.2s ease; 
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+    text-decoration: underline;
+  }
 }
