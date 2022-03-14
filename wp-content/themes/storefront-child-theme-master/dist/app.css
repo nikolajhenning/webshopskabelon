@@ -1298,7 +1298,7 @@ body.mm-ocd-opened {
       text-overflow: ellipsis;
       overflow: hidden;
       max-width: 300px; }
-    .site-main ul.products li.product .onsale {
+    ul.products li.product .onsale {
       top: 15%;
       right: 10%;
       width: 4.5em;
@@ -1314,7 +1314,7 @@ body.mm-ocd-opened {
       margin: 0;
       padding: 0;
       position: absolute; }
-    .site-main ul.products li.product .badge-wrapper {
+    ul.products li.product .badge-wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
