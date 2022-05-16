@@ -1,0 +1,12 @@
+@mixin tablet_product_archive_list {
+    ul.products {
+        @media only screen and (min-width: 767px) {
+            &.columns-4, &.elementor-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                li:nth-child(4) {
+                  display: none;
+                }
+              }
+          }
+      }
+    }
