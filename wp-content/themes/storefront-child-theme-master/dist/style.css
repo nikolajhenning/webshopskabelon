@@ -309,11 +309,13 @@ hr {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      max-width: 350px;
+      justify-content: space-evenly;
       margin: 0; }
       .site-footer .btm_bar ul li {
         margin: 0 10px;
         padding: 0; }
+        .site-footer .btm_bar ul li::before, .site-footer .btm_bar ul li::after {
+          content: none; }
         .site-footer .btm_bar ul li a {
           text-decoration: none; }
 

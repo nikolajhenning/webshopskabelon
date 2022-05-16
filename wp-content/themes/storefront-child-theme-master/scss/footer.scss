@@ -140,10 +140,11 @@
 
     ul {
       @include reset_list-style;
-      max-width: 350px;
+      justify-content: space-evenly;
       margin: 0;
 
       li {
+        @include reset_before_after;
         margin: 0 10px;
         padding: 0;
 
