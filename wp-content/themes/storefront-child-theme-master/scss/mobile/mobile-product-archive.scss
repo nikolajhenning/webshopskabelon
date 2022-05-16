@@ -56,6 +56,11 @@ button.show_filter {
       div.widget_custom_html {
         display: none;
       }
+      #block-2 {
+        .show_cat {
+          width: 100%;
+        }
+      }
     }
     /* Product archive list */ 
     @include mobile_product_archive_list;
