@@ -1601,21 +1601,7 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
     .widget-area .widget_product_categories ul li.current-cat-parent .children .current-cat .children a {
       font-weight: 300; }
   .widget-area .widget_product_categories ul li.active .children {
-    display: block;
-    /*animation-name: open;
-            animation-duration: 0.3s;            
-            @keyframes open {
-                from {     
-                    display: block;       
-                    opacity: 0;
-                    margin: 0 0 0 0;
-                }
-                to {            
-                    display: block;
-                    opacity: 1;
-                    margin: 1em 0 0 0;
-                }
-              }*/ }
+    display: block; }
   .widget-area .widget_product_categories ul li.cat-item::before {
     content: none; }
 

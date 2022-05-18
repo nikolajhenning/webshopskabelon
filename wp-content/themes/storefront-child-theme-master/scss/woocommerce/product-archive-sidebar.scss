@@ -117,21 +117,6 @@
     &.active {
         .children{
             display: block;
-            /*animation-name: open;
-            animation-duration: 0.3s;            
-            @keyframes open {
-                from {     
-                    display: block;       
-                    opacity: 0;
-                    margin: 0 0 0 0;
-                }
-                to {            
-                    display: block;
-                    opacity: 1;
-                    margin: 1em 0 0 0;
-                }
-              }*/
-
         }
     }     
     &.cat-item::before {
