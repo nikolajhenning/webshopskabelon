@@ -136,7 +136,7 @@ class WC_QuickPay_Settings {
 				'quickpay_text_on_statement'            => [
 					'title'             => __( 'Text on statement', 'woo-quickpay' ),
 					'type'              => 'text',
-					'description'       => __( 'Text that will be placed on cardholder’s bank statement (MAX 22 ASCII characters and only supported by Clearhaus currently).', 'woo-quickpay' ),
+					'description'       => __( 'Text that will be placed on cardholder’s bank statement (MAX 22 ASCII characters. Must match the values defined in your agreement with Clearhaus. Custom values are not allowed).', 'woo-quickpay' ),
 					'default'           => '',
 					'desc_tip'          => false,
 					'custom_attributes' => [
@@ -267,6 +267,7 @@ class WC_QuickPay_Settings {
 		return [
 			'apple-pay'             => 'Apple Pay',
 			'dankort'               => 'Dankort',
+			'google-pay'            => 'Google Pay',
 			'visa'                  => 'Visa',
 			'visaelectron'          => 'Visa Electron',
 			'visa-verified'         => 'Verified by Visa',

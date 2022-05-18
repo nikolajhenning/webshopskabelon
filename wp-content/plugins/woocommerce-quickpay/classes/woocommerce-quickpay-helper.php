@@ -248,6 +248,7 @@ class WC_QuickPay_Helper {
 			'diners'                  => 'diners.svg',
 			'edankort'                => 'edankort.png',
 			'fbg1886'                 => 'forbrugsforeningen.svg',
+			'google-pay'              => 'google-pay.svg',
 			'jcb'                     => 'jcb.svg',
 			'maestro'                 => 'maestro.svg',
 			'mastercard'              => 'mastercard.svg',
@@ -352,5 +353,31 @@ class WC_QuickPay_Helper {
 		}
 
 		return $haystack;
+	}
+
+	/**
+	 * @param $browser
+	 *
+	 * @return bool
+	 */
+	public static function is_browser( $browser ) {
+		$u_agent = $_SERVER['HTTP_USER_AGENT'];
+		$name    = 'Unknown';
+
+		if ( false !== stripos( $u_agent, "MSIE" ) && false === stripos( $u_agent, "Opera" ) ) {
+			$name = "MSIE";
+		} elseif ( false !== stripos( $u_agent, "Firefox" ) ) {
+			$name = "Firefox";
+		} elseif ( false !== stripos( $u_agent, "Chrome" ) ) {
+			$name = "Chrome";
+		} elseif ( false !== stripos( $u_agent, "Safari" ) ) {
+			$name = "Safari";
+		} elseif ( false !== stripos( $u_agent, "Opera" ) ) {
+			$name = "Opera";
+		} elseif ( false !== stripos( $u_agent, "Netscape" ) ) {
+			$name = "Netscape";
+		}
+
+		return strtolower( $name ) === strtolower( $browser );
 	}
 }

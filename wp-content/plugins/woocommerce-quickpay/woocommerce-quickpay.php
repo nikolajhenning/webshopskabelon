@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce QuickPay
  * Plugin URI: http://wordpress.org/plugins/woocommerce-quickpay/
  * Description: Integrates your QuickPay payment gateway into your WooCommerce installation.
- * Version: 6.5.1
+ * Version: 6.6.0
  * Author: Perfect Solution
  * Text Domain: woo-quickpay
  * Domain Path: /languages/
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WCQP_VERSION', '6.5.1' );
+define( 'WCQP_VERSION', '6.6.0' );
 define( 'WCQP_URL', plugins_url( __FILE__ ) );
 define( 'WCQP_PATH', plugin_dir_path( __FILE__ ) );
 
@@ -193,10 +193,11 @@ function init_quickpay_gateway() {
 		 * @return array
 		 */
 		public static function get_gateway_instances() {
-			$gateways = [
+			return [
 				'anyday'                  => 'WC_QuickPay_Anyday',
 				'apple-pay'               => 'WC_QuickPay_Apple_Pay',
 				'fbg1886'                 => 'WC_QuickPay_FBG1886',
+				'google-pay'              => 'WC_QuickPay_Google_Pay',
 				'ideal'                   => 'WC_QuickPay_iDEAL',
 				'klarna'                  => 'WC_QuickPay_Klarna',
 				'mobilepay'               => 'WC_QuickPay_MobilePay',
@@ -211,8 +212,6 @@ function init_quickpay_gateway() {
 				'viabill'                 => 'WC_QuickPay_ViaBill',
 				'vipps'                   => 'WC_QuickPay_Vipps',
 			];
-
-			return $gateways;
 		}
 
 

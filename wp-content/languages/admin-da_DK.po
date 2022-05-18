@@ -7,12 +7,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"X-Generator: GlotPress/3.0.0\n"
 "Language: da_DK\n"
 "Project-Id-Version: WordPress - 5.9.x - Development - Administration\n"
 
 #. translators: Default start of the week. 0 = Sunday, 1 = Monday.
 #: wp-admin/includes/schema.php:409
+#, gp-priority: high
 msgctxt "start of week"
 msgid "1"
 msgstr "1"
@@ -22,17 +23,19 @@ msgstr "1"
 #. https://www.php.net/manual/en/timezones.php for all timezone strings
 #. supported by PHP.
 #: wp-admin/includes/schema.php:393
+#, gp-priority: high
 msgctxt "default GMT offset or timezone string"
 msgid "0"
 msgstr "Europe/Copenhagen"
 
 #: wp-admin/includes/media.php:1741 wp-admin/upgrade.php:74
 #: wp-admin/upgrade.php:154
+#, gp-priority: high
 msgid "Continue"
 msgstr "Fortsæt"
 
 #. translators: %s: Learn WordPress link.
-#: wp-admin/about.php:304
+#: wp-admin/about.php:354
 msgid "Want to dive into 5.9 but don&#8217;t know where to start? Visit <a href=\"%s\">learn.wordpress.org</a> for expanding resources on new features in WordPress 5.9."
 msgstr "Vil du dykke ned i 5.9, men ved ikke, hvor du skal starte? Besøg <a href=\"%s\">learn.wordpress.org</a>, hvor du finder kurser, der gennemgår de nye funktioner i WordPress 5.9."
 
@@ -105,144 +108,144 @@ msgstr "Få mere at vide om den %s versionen."
 msgid "WordPress is free and open source software"
 msgstr "WordPress er gratis og open source software"
 
-#: wp-admin/about.php:299
+#: wp-admin/about.php:349
 msgid "Learn more about the new features in 5.9"
 msgstr "Få mere at vide om de nye funktioner i 5.9"
 
 #. translators: %s: Gallery Refactor dev note link.
-#: wp-admin/about.php:284
+#: wp-admin/about.php:334
 msgid "The changes to the Gallery block listed above are the result of a near-complete refactoring. Have you built a plugin or theme on the Gallery block functionality? Be sure to read the <a href=\"%s\">Gallery block compatibility dev note</a>."
 msgstr "Ændringerne i galleriblokken, der er angivet ovenfor, er resultatet af en næsten fuldstændig genopbygning. Har du bygget et plugin eller tema baseret på Galleriblok funktionalitetet? Sørg for at læse <a href=\"%s\">galleriblokkens udviklingsnoter om kompatibilitetsskabeloner</a>."
 
-#: wp-admin/about.php:278
+#: wp-admin/about.php:328
 msgid "A refactored Gallery block"
 msgstr "En genopbygget Galleri blok"
 
-#: wp-admin/about.php:273
+#: wp-admin/about.php:323
 msgid "Now you can lock any block (or a few of them) in a pattern, just by adding a lock attribute to its settings in block.json &#8212; leaving the rest of the pattern free for site editors to adapt to their content."
 msgstr "Nu kan du låse enhver blok (eller et par af dem) i et mønster, bare ved at tilføje en låseattribut til dets indstillinger i block.json - det efterlader resten af mønsteret gratis for webstedsredaktører til at tilpasse sig deres indhold."
 
-#: wp-admin/about.php:270
+#: wp-admin/about.php:320
 msgid "Block&#8209;level locking"
 msgstr "Låsning på blokniveau"
 
 #. translators: %s: Multiple stylesheets dev note link.
-#: wp-admin/about.php:260
+#: wp-admin/about.php:310
 msgid "Now you can register more than one stylesheet per block. You can use this to share styles across blocks you write, or to load styles for individual blocks, so your styles are only loaded when the block is used. Find out more about <a href=\"%s\">using multiple stylesheets in a block</a>."
 msgstr "Nu kan du registrere mere end ét typografiark pr. blok. Du kan bruge dette til at dele typografier på tværs af blokke, du skriver, eller til at indlæse typografier for individuelle blokke, så dine typografier kun indlæses, når blokken bruges. Få mere at vide om <a href=\"%s\">brug af flere typografiark i en blok</a>."
 
-#: wp-admin/about.php:254
+#: wp-admin/about.php:304
 msgid "Multiple stylesheets for a block"
 msgstr "Flere typografiark til en blok"
 
 #. translators: %s: Block-based themes dev note link.
-#: wp-admin/about.php:246
+#: wp-admin/about.php:296
 msgid "A new way to build themes: Block themes use blocks to define the templates that structure your entire site. The new templates and template parts are defined in HTML and use the custom styling offered in theme.json. More information is available in the <a href=\"%s\">block themes dev note</a>."
 msgstr "En ny måde at opbygge temaer på: Bloktemaer bruger blokke til at definere de skabeloner, der strukturerer hele dit websted. De nye skabeloner og skabelondele er defineret i HTML og bruger det brugerdefinerede design, der tilbydes i theme.json. Du kan finde flere oplysninger i <a href=\"%s\">blokktemaer udviklingsnoter</a>."
 
-#: wp-admin/about.php:240
+#: wp-admin/about.php:290
 msgid "Introducing block themes"
 msgstr "Introduktion til bloktemaer"
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:230
+#: wp-admin/about.php:280
 msgid "WordPress %s for developers"
 msgstr "WordPress %s til udviklere"
 
-#: wp-admin/about.php:215
+#: wp-admin/about.php:265
 msgid "Style every image in your gallery differently from the next (with different crops, or duotones, for instance) or make them all the same. And change the layout with drag-and-drop."
 msgstr "Design hvert billede i dit galleri forskelligt fra det næste (med forskellige beskæringer, eller duotoner, for eksempel) eller gør dem alle ens. Og du kan ændre layoutet med træk og slip."
 
-#: wp-admin/about.php:212
+#: wp-admin/about.php:262
 msgid "Treat every image in a Gallery block the same way you would treat it in the Image block."
 msgstr "Du kan behandle hvert billede i en galleriblok på samme måde, som du ville behandle det i billedblokken."
 
-#: wp-admin/about.php:209
+#: wp-admin/about.php:259
 msgid "A better Gallery block"
 msgstr "En bedre galleriblok"
 
-#: wp-admin/about.php:201
+#: wp-admin/about.php:251
 msgid "In 5.9, the List View lets you drag and drop your content exactly where you want it. Managing complex documents is easier, too: simple controls let you expand and collapse sections as you build your site &#8212; and add HTML anchors to your blocks to help users get around the page."
 msgstr "I 5.9 giver listevisningen dig mulighed for at trække og slippe dit indhold præcis, hvor du vil have det. Det er også nemmere at administrere komplekse dokumenter: Enkle kontrolelementer giver dig mulighed for at udvide og skjule sektioner, når du bygger dit websted – og føje HTML-ankre til dine blokke for at hjælpe brugerne med at komme rundt på siden."
 
-#: wp-admin/about.php:198
+#: wp-admin/about.php:248
 msgid "A revamped List View"
 msgstr "En ombygget listevisning"
 
-#: wp-admin/about.php:184
+#: wp-admin/about.php:234
 msgid "With a near full-screen view that draws you in to see fine details, the Pattern Explorer makes it easy to compare patterns and choose the one your users will expect."
 msgstr "Med en næsten fuldskærmsvisning, der lader dig se de fine detaljer, gør Mønsterstifinderen det nemt at sammenligne mønstre og vælge det mønster, som dine brugere forventer."
 
-#: wp-admin/about.php:181
+#: wp-admin/about.php:231
 msgid "The WordPress Pattern Directory is the home of a wide range of block patterns built to save you time and add core site functionality. And you can edit them as you see fit. Need something different in the header or footer for your theme? Swap it out with a new one in a few clicks."
 msgstr "WordPress mønsterbiblioteket er hjemsted for en bred vifte af blokmønstre, der er bygget til at spare dig for tid og tilføje kernewebstedsfunktionalitet. Og du kan redigere dem, som du vil. Har du brug for noget andet i sidehovedet eller sidefoden til dit tema? Byt det ud med en ny med et par klik."
 
-#: wp-admin/about.php:178
+#: wp-admin/about.php:228
 msgid "The power of patterns"
 msgstr "Kraften i mønstre"
 
-#: wp-admin/about.php:170
+#: wp-admin/about.php:220
 msgid "WordPress 5.9 features new typography tools, flexible layout controls, and finer control over details like spacing, borders, and more &#8212; to help you get not just the look, but the polish that says you care about details."
 msgstr "WordPress 5.9 indeholder nye typografiværktøjer, fleksible layoutkontroller og finere kontrol over detaljer som afstand, kanter og meget mere – for at hjælpe dig med at få ikke bare udseendet, men den lækre overflade, der siger, at du bekymrer dig om detaljer."
 
-#: wp-admin/about.php:167
+#: wp-admin/about.php:217
 msgid "Better block controls"
 msgstr "Bedre blokkontrolelementer"
 
-#: wp-admin/about.php:155
+#: wp-admin/about.php:205
 msgid "Do you love to blog or produce content? New tweaks to the publishing flow help you say more, faster."
 msgstr "Elsker du at blogge eller producere indhold? Nye tweaks til udgivelsesflowet hjælper dig med at sige mere, hurtigere."
 
-#: wp-admin/about.php:152
+#: wp-admin/about.php:202
 msgid "More improvements and updates"
 msgstr "Flere forbedringer og opdateringer"
 
-#: wp-admin/about.php:143
+#: wp-admin/about.php:193
 msgid "The new Navigation block gives you the power to choose: an always-on responsive menu or one that adapts to your user&#8217;s screen size. Whatever you create, know it&#8217;s there to reuse wherever you like, whether in a brand new template or after switching themes."
 msgstr "Den nye navigationsblok giver dig mulighed for at vælge: en altid aktiveret responsiv menu eller en menu, der tilpasser sig brugerens skærmstørrelse. Uanset hvad du opretter, skal du vide, at det er der for at blive genbrugt, hvor du vil, og uanset om det er i en helt ny skabelon eller efter at have skiftet tema."
 
-#: wp-admin/about.php:140
+#: wp-admin/about.php:190
 msgid "Blocks come to site navigation, the heart of user experience."
 msgstr "Blokke er kommet til webstedets navigation, hjertet af brugeroplevelsen."
 
-#: wp-admin/about.php:137
+#: wp-admin/about.php:187
 msgid "The Navigation block"
 msgstr "Navigationsblokken"
 
-#: wp-admin/about.php:123
+#: wp-admin/about.php:173
 msgid "When you use any of those new themes, you no longer need the Customizer. Instead, you have all the power of the Styles interface inside the Site Editor. Just as in Twenty Twenty&#8209;Two, you build your site&#8217;s look and feel there, with the tools you need for the job in a fluid interface that practically comes alive in your hands."
 msgstr "Når du bruger et af disse nye temaer, har du ikke længere brug for tilpasseren. I stedet har du al kraften i typografigrænsefladen i Webstedseditoren. Ligesom i Twenty Twenty-Two bygger du dit websteds udseende med de værktøjer, du har brug for til jobbet, i en flydende grænseflade, der praktisk talt kommer til live i dine hænder."
 
-#: wp-admin/about.php:120
+#: wp-admin/about.php:170
 msgid "More block themes built for full site editing features are in the Theme Directory alongside the Twenty Twenty&#8209;Two theme, just waiting to be explored. Expect more to come!"
 msgstr "Der er flere temaer bygget til at bruge komplet webstedsredigering i Temabiblioteket sammen Twenty Twenty&#8209;Two temaet, der bare venter på at blive prøvet af. Og der er flere på vej!"
 
-#: wp-admin/about.php:117
+#: wp-admin/about.php:167
 msgid "Your personal paintbox awaits"
 msgstr "Din personlige malerkasse venter"
 
 #. translators: %s: Link to Themes screen.
-#: wp-admin/about.php:105
+#: wp-admin/about.php:155
 msgid "The Twenty Twenty&#8209;Two theme is already available to you. It came installed with WordPress 5.9, and you will find it with <a href=\"%s\">your other installed themes</a>."
 msgstr "Twenty Twenty&#8209;Two temaet er allerede tilgængeligt for dig. Det kom lagt ind med WordPress 5.9, og du vil finde det sammen med <a href=\"%s\">dine andre installerede temaer</a>."
 
-#: wp-admin/about.php:98
+#: wp-admin/about.php:148
 msgid "Block themes put a wide array of visual choices in your hands, from color schemes and typeface combinations to page templates and image filters &#8212; all together, in the site editing interface. By making changes in one place, you can give Twenty Twenty&#8209;Two the same look and feel as your brand or other websites &#8212; or take your site&#8217;s look in another direction."
 msgstr "Bloktemaer der lægger en bred vifte af visuelle valg i dine hænder, fra farveskemaer og skrifttypekombinationer til sideskabeloner og billedfiltre – alt sammen i grænsefladen til redigering af websteder. Ved at foretage ændringer på ét sted kan du give Twenty Twenty-Two det samme udseende som dit brand eller andre websteder - eller tage dit websteds udseende i en anden retning."
 
-#: wp-admin/about.php:95
+#: wp-admin/about.php:145
 msgid "And say hello to the first default block theme in the history of WordPress. This is more than just a new default theme. It&#8217;s a brand-new way to work with WordPress themes."
 msgstr "Og sig hej til det første standard bloktema i WordPress’ historie. Dette er mere end blot et nyt standardtema. Det er en helt ny måde at arbejde med WordPress’ temaer på."
 
-#: wp-admin/about.php:92
+#: wp-admin/about.php:142
 msgid "Say hello to Twenty Twenty&#8209;Two"
 msgstr "Sig goddag til Twenty Twenty-Two"
 
-#: wp-admin/about.php:80
+#: wp-admin/about.php:130
 msgid "It puts you in control of your whole site, right in the WordPress Admin."
 msgstr "Det giver dig kontrol over hele dit websted, lige her i WordPress Admin."
 
-#: wp-admin/about.php:77
+#: wp-admin/about.php:127
 msgid "Full Site Editing is here"
 msgstr "Komplet webstedsredigering er her"
 
@@ -786,11 +789,11 @@ msgid "Want more events? <a href=\"%s\">Help organize the next one</a>!"
 msgstr "Vil du have flere begivenheder? <a href=\"%s\">Hjælp med at planlægge den næste</a>!"
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/ajax-actions.php:5460
+#: wp-admin/includes/ajax-actions.php:5483
 msgid "A password reset link was emailed to %s."
 msgstr "Der blev sendt en mail til et link til nulstilling af adgangskode til %s."
 
-#: wp-admin/includes/ajax-actions.php:5450
+#: wp-admin/includes/ajax-actions.php:5473
 msgid "Cannot send password reset, permission denied."
 msgstr "Der kan ikke sendes nulstilling af adgangskode, da tilladelsen er nægtet."
 
@@ -937,7 +940,7 @@ msgid "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-
 msgstr "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-is-authentication-not-working"
 
 #. translators: %s: WordPress 5.9 Field Guide link.
-#: wp-admin/about.php:321
+#: wp-admin/about.php:371
 msgid "Check out the latest version of the WordPress Field Guide. It highlights developer notes for each change you may want to be aware of. <a href=\"%s\">WordPress 5.9 Field Guide.</a>"
 msgstr "Tjek den seneste version af WordPress' feltguide. Den fremhæver udviklernes noter om om de ændringer, som du kunne være interesseret i. <a href=\"%s\">WordPress 5.9 feltguide.</a>"
 
@@ -1008,7 +1011,7 @@ msgstr "Tilføj en nyt applikation adgangskode"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "Kræves for at oprette en applikation adgangskode, men ikke for at opdatere brugeren."
 
-#: wp-admin/about.php:334
+#: wp-admin/about.php:384
 msgid "Go to Updates"
 msgstr "Gå til opdateringer"
 
@@ -1169,10 +1172,10 @@ msgstr "Senest anvendt"
 
 #. translators: 1: The Site Health action that is no longer used by core. 2:
 #. The new function that replaces it.
-#: wp-admin/includes/ajax-actions.php:5188
-#: wp-admin/includes/ajax-actions.php:5221
-#: wp-admin/includes/ajax-actions.php:5254
-#: wp-admin/includes/ajax-actions.php:5304
+#: wp-admin/includes/ajax-actions.php:5211
+#: wp-admin/includes/ajax-actions.php:5244
+#: wp-admin/includes/ajax-actions.php:5277
+#: wp-admin/includes/ajax-actions.php:5327
 msgid "The Site Health check for %1$s has been replaced with %2$s."
 msgstr "Webstedets helbredstjek for %1$s er blevet erstattet med %2$s."
 
@@ -1357,7 +1360,7 @@ msgstr "\"%1$s\" værdien er mindre end \"%2$s\"."
 msgid "Environment type"
 msgstr "Miljøtype"
 
-#: wp-admin/about.php:316
+#: wp-admin/about.php:366
 msgid "Check the Field Guide for more!"
 msgstr "Se feltguiden for mere!"
 
@@ -1425,7 +1428,7 @@ msgctxt "theme"
 msgid "Activate &#8220;%s&#8221;"
 msgstr "Aktiver &#8220;%s&#8221;"
 
-#: wp-admin/includes/ajax-actions.php:5394
+#: wp-admin/includes/ajax-actions.php:5417
 msgid "Sorry, you are not allowed to modify plugins."
 msgstr "Beklager, du har ikke tilladelse til at ændre plugins."
 
@@ -1479,7 +1482,7 @@ msgid "File upload settings"
 msgstr "Indstillinger for filoverførsel"
 
 #. translators: %s: Theme name.
-#: wp-admin/theme-install.php:408
+#: wp-admin/theme-install.php:411
 msgctxt "theme"
 msgid "Cannot Install %s"
 msgstr "Kan ikke installere %s"
@@ -1492,7 +1495,7 @@ msgstr "Installer %s"
 
 #. translators: %s: Theme name.
 #: wp-admin/includes/class-wp-theme-install-list-table.php:334
-#: wp-admin/theme-install.php:401
+#: wp-admin/theme-install.php:404
 msgctxt "theme"
 msgid "Install %s"
 msgstr "Installer %s"
@@ -1512,7 +1515,7 @@ msgstr "Opdater %s nu"
 msgid "- %1$s version %2$s"
 msgstr "- %1$s version %2$s"
 
-#: wp-admin/theme-install.php:371 wp-admin/theme-install.php:433
+#: wp-admin/theme-install.php:372 wp-admin/theme-install.php:436
 msgctxt "theme"
 msgid "Activated"
 msgstr "Aktiveret"
@@ -1550,7 +1553,7 @@ msgid "Dismiss this notice."
 msgstr "Afvis denne meddelelse."
 
 #. translators: %s: Theme name.
-#: wp-admin/theme-install.php:386 wp-admin/themes.php:561
+#: wp-admin/theme-install.php:389 wp-admin/themes.php:561
 #: wp-admin/themes.php:921 wp-admin/themes.php:1140
 msgctxt "theme"
 msgid "Cannot Activate %s"
@@ -1647,8 +1650,8 @@ msgstr "Automatiske opdateringer kan aktiveres eller deaktiveres for hovedversio
 msgid "<strong>Important:</strong> Before updating, please <a href=\"%1$s\">back up your database and files</a>. For help with updates, visit the <a href=\"%2$s\">Updating WordPress</a> documentation page."
 msgstr "<strong>Vigtigt:</strong> Før du opdaterer, skal du <a href=\"%1$s\">sikkerhedskopiere databasen og filerne</a>. Du kan få hjælp til opdateringer på dokumentationssiden <a href=\"%2$s\">Opdatering af WordPress</a>."
 
-#: wp-admin/customize.php:199 wp-admin/theme-install.php:389
-#: wp-admin/theme-install.php:436 wp-admin/themes.php:563
+#: wp-admin/customize.php:199 wp-admin/theme-install.php:392
+#: wp-admin/theme-install.php:439 wp-admin/themes.php:563
 #: wp-admin/themes.php:923 wp-admin/themes.php:1143
 msgctxt "theme"
 msgid "Cannot Activate"
@@ -1684,20 +1687,20 @@ msgctxt "plugin"
 msgid "<strong>Error:</strong> Current versions of WordPress (%1$s) and PHP (%2$s) do not meet minimum requirements for %3$s. The plugin requires WordPress %4$s and PHP %5$s."
 msgstr "<strong>Fejl:</strong> De nuværende versioner af WordPress (%1$s) og PHP (%2$s) opfylder ikke minimumskravene til %3$s. Pluginet kræver WordPress %4$s og PHP %5$s."
 
-#: wp-admin/includes/ajax-actions.php:5416
+#: wp-admin/includes/ajax-actions.php:5439
 msgid "Invalid data. The item does not exist."
 msgstr "Ugyldige data. Emnet findes ikke."
 
-#: wp-admin/includes/ajax-actions.php:5387
-#: wp-admin/includes/ajax-actions.php:5412
+#: wp-admin/includes/ajax-actions.php:5410
+#: wp-admin/includes/ajax-actions.php:5435
 msgid "Invalid data. Unknown type."
 msgstr "Ugyldige data. Ukendt type."
 
-#: wp-admin/includes/ajax-actions.php:5382
+#: wp-admin/includes/ajax-actions.php:5405
 msgid "Invalid data. Unknown state."
 msgstr "Ugyldige data. Ukendt tilstand."
 
-#: wp-admin/includes/ajax-actions.php:5376
+#: wp-admin/includes/ajax-actions.php:5399
 msgid "Invalid data. No selected item."
 msgstr "Ugyldige data. Intet element er markeret."
 
@@ -2052,8 +2055,8 @@ msgstr "Påkrævet WordPress-version"
 msgid "Theme name"
 msgstr "Temanavn"
 
-#: wp-admin/includes/theme.php:1063 wp-admin/theme-install.php:410
-#: wp-admin/theme-install.php:442
+#: wp-admin/includes/theme.php:1063 wp-admin/theme-install.php:413
+#: wp-admin/theme-install.php:445
 msgctxt "theme"
 msgid "Cannot Install"
 msgstr "Kan ikke installere"
@@ -2360,7 +2363,7 @@ msgstr "<a href=\"https://wordpress.org/support/article/posts-screen/\">Dokument
 msgid "<a href=\"https://wordpress.org/support/article/settings-discussion-screen/\">Documentation on Discussion Settings</a>"
 msgstr "<a href=\"https://wordpress.org/support/article/settings-discussion-screen/\">Dokumentation af Diskussionsindstillinger</a>"
 
-#: wp-admin/theme-install.php:140
+#: wp-admin/theme-install.php:141
 msgid "<a href=\"https://wordpress.org/support/article/using-themes/#adding-new-themes\">Documentation on Adding New Themes</a>"
 msgstr "<a href=\"https://wordpress.org/support/article/using-themes/#adding-new-themes\">Dokumentation om tilføjelse af nye temaer</a>"
 
@@ -3034,17 +3037,17 @@ msgid "The authenticity of %s could not be verified as signature verification is
 msgstr "%s kan ikke verificeres som ægte da verifikation af signaturer ikke er tilgængeligt på dette system."
 
 #. translators: %s: Eraser friendly name.
-#: wp-admin/includes/ajax-actions.php:5063
+#: wp-admin/includes/ajax-actions.php:5086
 msgid "Eraser callback is not valid: %s."
 msgstr "Eraser callback er ikke gyldig: %s."
 
 #. translators: %s: Eraser friendly name.
-#: wp-admin/includes/ajax-actions.php:5053
+#: wp-admin/includes/ajax-actions.php:5076
 msgid "Eraser does not include a callback: %s."
 msgstr "Eraser inkluderer ikke et callback: %s."
 
-#: wp-admin/includes/ajax-actions.php:4775
-#: wp-admin/includes/ajax-actions.php:4966
+#: wp-admin/includes/ajax-actions.php:4798
+#: wp-admin/includes/ajax-actions.php:4989
 msgid "Sorry, you are not allowed to perform this action."
 msgstr "Du har desværre ikke rettigheder til at udføre denne handling."
 
@@ -4191,11 +4194,11 @@ msgstr[1] "Alle <span class=\"count\">(%s)</span>"
 msgid "Show comments cookies opt-in checkbox, allowing comment author cookies to be set"
 msgstr "Vis tjekboks for opt-in til kommentar-cookies, hvilket vil tillade at sætte cookies for kommentarforfatter"
 
-#: wp-admin/theme-install.php:423
+#: wp-admin/theme-install.php:426
 msgid "Next theme"
 msgstr "Næste tema"
 
-#: wp-admin/theme-install.php:422
+#: wp-admin/theme-install.php:425
 msgid "Previous theme"
 msgstr "Forrige tema"
 
@@ -4377,9 +4380,9 @@ msgid "Cannot Install"
 msgstr "Kan ikke installere"
 
 #. translators: %s: WordPress version.
-#: wp-admin/about.php:64 wp-admin/includes/update.php:302
-#: wp-admin/index.php:119 wp-admin/install.php:238 wp-admin/update-core.php:94
-#: wp-admin/upgrade.php:80
+#: wp-admin/about.php:64 wp-admin/about.php:89 wp-admin/about.php:114
+#: wp-admin/includes/update.php:302 wp-admin/index.php:119
+#: wp-admin/install.php:238 wp-admin/update-core.php:94 wp-admin/upgrade.php:80
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -5000,7 +5003,7 @@ msgid "Report generated for"
 msgstr "Rapport genereret for"
 
 #. translators: %s: Exporter array index.
-#: wp-admin/includes/ajax-actions.php:4859
+#: wp-admin/includes/ajax-actions.php:4882
 msgid "Exporter array at index %s does not include a friendly name."
 msgstr "Eksportering array på index %s mangler et friendly name."
 
@@ -5012,72 +5015,72 @@ msgstr "Beklager, du har ikke tilladelse til at slette data fra dette websted."
 msgid "Sorry, you are not allowed to export personal data on this site."
 msgstr "Beklager, men du har ikke tilladelse til at eksportere personlige på dette websted."
 
-#: wp-admin/includes/ajax-actions.php:5026
+#: wp-admin/includes/ajax-actions.php:5049
 msgid "Eraser index is out of range."
 msgstr "Slette index er uden for rækkefølge."
 
-#: wp-admin/includes/ajax-actions.php:4985
+#: wp-admin/includes/ajax-actions.php:5008
 msgid "Missing eraser index."
 msgstr "Mangler slette index."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4910
+#: wp-admin/includes/ajax-actions.php:4933
 msgid "Expected done (boolean) in response array from exporter: %s."
 msgstr "Forventet færdig (boolean) i svar-array fra eksporter: %s."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4903
+#: wp-admin/includes/ajax-actions.php:4926
 msgid "Expected data array in response array from exporter: %s."
 msgstr "Forventet data array i svar-array fra eksporter: %s."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4896
+#: wp-admin/includes/ajax-actions.php:4919
 msgid "Expected data in response array from exporter: %s."
 msgstr "Forventede data i svar-array fra eksporter: %s."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4889
+#: wp-admin/includes/ajax-actions.php:4912
 msgid "Expected response as an array from exporter: %s."
 msgstr "Forventet svar som et array fra eksporter: %s."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4875
+#: wp-admin/includes/ajax-actions.php:4898
 msgid "Exporter callback is not a valid callback: %s."
 msgstr "Eksportering callback er ikke et gyldigt callback: %s."
 
 #. translators: %s: Exporter friendly name.
-#: wp-admin/includes/ajax-actions.php:4868
+#: wp-admin/includes/ajax-actions.php:4891
 msgid "Exporter does not include a callback: %s."
 msgstr "Eksporter har ikke et callback: %s."
 
 #. translators: %s: Exporter array index.
-#: wp-admin/includes/ajax-actions.php:4852
+#: wp-admin/includes/ajax-actions.php:4875
 msgid "Expected an array describing the exporter at index %s."
 msgstr "Forventede et array der beskriver eksporteren på index %s."
 
-#: wp-admin/includes/ajax-actions.php:4838
+#: wp-admin/includes/ajax-actions.php:4861
 msgid "Exporter index is out of range."
 msgstr "Eksporter index uden for rækkevidde."
 
-#: wp-admin/includes/ajax-actions.php:4834
+#: wp-admin/includes/ajax-actions.php:4857
 msgid "Exporter index cannot be negative."
 msgstr "Eksporter index kan ikke være negativ."
 
-#: wp-admin/includes/ajax-actions.php:4828
+#: wp-admin/includes/ajax-actions.php:4851
 msgid "An exporter has improperly used the registration filter."
 msgstr "En eksporter har på forkert en måde brugt registreringsfilteret."
 
-#: wp-admin/includes/ajax-actions.php:4799
-#: wp-admin/includes/ajax-actions.php:4991
+#: wp-admin/includes/ajax-actions.php:4822
+#: wp-admin/includes/ajax-actions.php:5014
 msgid "Missing page index."
 msgstr "Mangler side index."
 
-#: wp-admin/includes/ajax-actions.php:4793
+#: wp-admin/includes/ajax-actions.php:4816
 msgid "Missing exporter index."
 msgstr "Mangler eksporter index."
 
-#: wp-admin/includes/ajax-actions.php:4784
-#: wp-admin/includes/ajax-actions.php:4975
+#: wp-admin/includes/ajax-actions.php:4807
+#: wp-admin/includes/ajax-actions.php:4998
 msgid "Invalid request type."
 msgstr "Ugyldig forespørgselstype."
 
@@ -5210,7 +5213,7 @@ msgstr "Personlige data eksport"
 msgid "Personal Data Export for %s"
 msgstr "Personlige data eksport for %s"
 
-#: wp-admin/includes/ajax-actions.php:4789
+#: wp-admin/includes/ajax-actions.php:4812
 msgid "A valid email address must be given."
 msgstr "En gyldig e-mailadresse skal angives."
 
@@ -5281,61 +5284,61 @@ msgstr "Bekræftelsesanmodning sendt igen uden problemer."
 msgid "Unable to initiate confirmation request."
 msgstr "Kunne ikke igangsætte bekræftelsesanmodning."
 
-#: wp-admin/includes/ajax-actions.php:4771
-#: wp-admin/includes/ajax-actions.php:4961
+#: wp-admin/includes/ajax-actions.php:4794
+#: wp-admin/includes/ajax-actions.php:4984
 msgid "Invalid request ID."
 msgstr "Ugyldig forespørgsel ID."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5135
+#: wp-admin/includes/ajax-actions.php:5158
 msgid "Expected done flag in response array from %1$s eraser (index %2$d)."
 msgstr "Forventet afsluttet flag i svar array fra %1$s sletter (index %2$d)."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5124
+#: wp-admin/includes/ajax-actions.php:5147
 msgid "Expected messages key to reference an array in response array from %1$s eraser (index %2$d)."
 msgstr "Forventede beskeder nøgle til reference i et array i svar array fra %1$s sletter (index %2$d)."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5113
+#: wp-admin/includes/ajax-actions.php:5136
 msgid "Expected messages key in response array from %1$s eraser (index %2$d)."
 msgstr "Forventede beskeder nøgle i svar array fra %1$s sletter (index %2$d)."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5102
+#: wp-admin/includes/ajax-actions.php:5125
 msgid "Expected items_retained key in response array from %1$s eraser (index %2$d)."
 msgstr "Forventede items_retained nøgle i svar array fra %1$s sletter (index %2$d)."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5091
+#: wp-admin/includes/ajax-actions.php:5114
 msgid "Expected items_removed key in response array from %1$s eraser (index %2$d)."
 msgstr "Forventede items_removed nøgle i svar array fra %1$s sletter (index %2$d)."
 
 #. translators: 1: Eraser friendly name, 2: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5080
+#: wp-admin/includes/ajax-actions.php:5103
 msgid "Did not receive array from %1$s eraser (index %2$d)."
 msgstr "Modtog ikke array fra %1$s sletter (index %2$d)."
 
 #. translators: %d: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5044
+#: wp-admin/includes/ajax-actions.php:5067
 msgid "Eraser array at index %d does not include a friendly name."
 msgstr "Sletter array ved index %d har ikke et friendly name."
 
 #. translators: %d: Eraser array index.
-#: wp-admin/includes/ajax-actions.php:5039
+#: wp-admin/includes/ajax-actions.php:5062
 msgid "Expected an array describing the eraser at index %d."
 msgstr "Forventede et array der beskriver sletteren ved index %d."
 
-#: wp-admin/includes/ajax-actions.php:4842
-#: wp-admin/includes/ajax-actions.php:5030
+#: wp-admin/includes/ajax-actions.php:4865
+#: wp-admin/includes/ajax-actions.php:5053
 msgid "Page index cannot be less than one."
 msgstr "Side index kan ikke være mindre end én."
 
-#: wp-admin/includes/ajax-actions.php:5022
+#: wp-admin/includes/ajax-actions.php:5045
 msgid "Eraser index cannot be less than one."
 msgstr "Sletter index kan ikke være mindre end én."
 
-#: wp-admin/includes/ajax-actions.php:4981
+#: wp-admin/includes/ajax-actions.php:5004
 msgid "Invalid email address in request."
 msgstr "Ugyldig e-mailadresse i anmodning."
 
@@ -5825,16 +5828,12 @@ msgstr "Du har desværre ikke tilladelse til at slette brugere."
 msgid "Sorry, you are not allowed to create users."
 msgstr "Beklager, du har ikke tilladelse til at oprette brugere."
 
-#: wp-admin/customize.php:238
-msgid "The Customizer allows you to preview changes to your site before publishing them. You can navigate to different pages on your site within the preview. Edit shortcuts are shown for some editable elements."
-msgstr "Tilpasseren tillader dig at gennemse ændringer på dit websted før du udgiver dem. Du kan navigere til forskellige sider på dit websted, men du gennemser. Genveje til redigering vises for nogle redigerbare elementer."
-
 #: wp-admin/customize.php:258
 msgctxt "short (~12 characters) label for hide controls button"
 msgid "Hide Controls"
 msgstr "Skjul knapper"
 
-#: wp-admin/theme-install.php:71
+#: wp-admin/theme-install.php:72
 msgid "Expand Sidebar"
 msgstr "Udfold sidebar"
 
@@ -5851,21 +5850,21 @@ msgstr "ID #%1$s: %2$s <strong>Du har desværre ikke tilladelse til at fjerne de
 msgid "You can select the language you wish to use while using the WordPress administration screen without affecting the language site visitors see."
 msgstr "Du kan vælge, hvilket sprog du ønsker at bruge i WordPress administrationssider, uden at påvirke hvilket sprog webstedet besøgende ser."
 
-#: wp-admin/theme-install.php:244
+#: wp-admin/theme-install.php:245
 msgid "Edit Filters"
 msgstr "Rediger filtre"
 
-#: wp-admin/theme-install.php:217 wp-admin/theme-install.php:239
+#: wp-admin/theme-install.php:218 wp-admin/theme-install.php:240
 msgid "Clear current filters"
 msgstr "Nulstil nuværende filtre"
 
 #. translators: Accessibility text.
-#: wp-admin/theme-install.php:73
+#: wp-admin/theme-install.php:74
 msgid "Select one or more Theme features to filter by"
 msgstr "Vælg en eller flere temafunktioner til at filtrere efter"
 
 #. translators: %s: Number of ratings.
-#: wp-admin/includes/theme.php:857 wp-admin/theme-install.php:465
+#: wp-admin/includes/theme.php:857 wp-admin/theme-install.php:468
 msgid "(%s ratings)"
 msgstr "(%s bedømmelser)"
 
@@ -5937,7 +5936,7 @@ msgstr "Gentag"
 #: wp-admin/options-reading.php:54 wp-admin/options-writing.php:54
 #: wp-admin/plugin-editor.php:145 wp-admin/plugin-install.php:122
 #: wp-admin/plugins.php:590 wp-admin/revision.php:158
-#: wp-admin/theme-editor.php:56 wp-admin/theme-install.php:141
+#: wp-admin/theme-editor.php:56 wp-admin/theme-install.php:142
 #: wp-admin/themes.php:209 wp-admin/tools.php:57 wp-admin/update-core.php:1018
 #: wp-admin/upload.php:76 wp-admin/upload.php:257 wp-admin/user-edit.php:74
 #: wp-admin/user-new.php:296 wp-admin/users.php:78 wp-admin/widgets-form.php:72
@@ -6056,7 +6055,7 @@ msgstr "Du har desværre ikke tilladelse til at tilføje brugere til dette netv�
 msgid "Sorry, you are not allowed to edit this changeset."
 msgstr "Beklager, du har ikke ret til at redigere dette ændringssæt."
 
-#: wp-admin/includes/ajax-actions.php:4189 wp-admin/update.php:207
+#: wp-admin/includes/ajax-actions.php:4212 wp-admin/update.php:207
 #: wp-admin/update.php:230
 msgid "Sorry, you are not allowed to update themes for this site."
 msgstr "Du har desværre ikke tilladelse til at opdatere temaer på dette websted."
@@ -6071,7 +6070,7 @@ msgstr "Du har desværre ikke tilladelse til at opdatere dette websted."
 msgid "New version available. <button class=\"button-link\" type=\"button\">Update now</button>"
 msgstr "Ny version tilgængelig. <button class=\"button-link\" type=\"button\">Opdater nu</button>"
 
-#: wp-admin/theme-install.php:170
+#: wp-admin/theme-install.php:171
 msgid "The Theme Installer screen requires JavaScript."
 msgstr "Skærmbilledet med temainstalleringen kræver JavaScript."
 
@@ -6279,37 +6278,37 @@ msgstr "Du har desværre ikke tilladelse til at redigere links på dette websted
 msgid "Sorry, you are not allowed to manage privacy options on this site."
 msgstr "Beklager, du har ikke tilladelse til at håndtere privatlivsindstillinger på dette websted."
 
-#: wp-admin/includes/ajax-actions.php:4614
+#: wp-admin/includes/ajax-actions.php:4637
 msgid "Plugin could not be deleted."
 msgstr "Plugin kunne ikke slettes."
 
-#: wp-admin/includes/ajax-actions.php:4468 wp-admin/update.php:29
+#: wp-admin/includes/ajax-actions.php:4491 wp-admin/update.php:29
 #: wp-admin/update.php:57 wp-admin/update.php:80
 msgid "Sorry, you are not allowed to update plugins for this site."
 msgstr "Du har desværre ikke tilladelse til at opdatere plugins på dette websted."
 
-#: wp-admin/includes/ajax-actions.php:4344
-#: wp-admin/includes/ajax-actions.php:4453
-#: wp-admin/includes/ajax-actions.php:4561
+#: wp-admin/includes/ajax-actions.php:4367
+#: wp-admin/includes/ajax-actions.php:4476
+#: wp-admin/includes/ajax-actions.php:4584
 msgid "No plugin specified."
 msgstr "Intet plugin angivet."
 
-#: wp-admin/includes/ajax-actions.php:4320
+#: wp-admin/includes/ajax-actions.php:4343
 msgid "Theme could not be deleted."
 msgstr "Temaet kunne ikke slettes."
 
-#: wp-admin/includes/ajax-actions.php:4282
+#: wp-admin/includes/ajax-actions.php:4305
 msgid "Sorry, you are not allowed to delete themes on this site."
 msgstr "Du har desværre ikke tilladelse til at slette temaer på dette websted."
 
-#: wp-admin/includes/ajax-actions.php:4065 wp-admin/theme-install.php:16
+#: wp-admin/includes/ajax-actions.php:4085 wp-admin/theme-install.php:16
 #: wp-admin/update.php:258 wp-admin/update.php:300 wp-admin/update.php:334
 msgid "Sorry, you are not allowed to install themes on this site."
 msgstr "Du har desværre ikke tilladelse til at installere temaer på dette websted."
 
-#: wp-admin/includes/ajax-actions.php:4052
-#: wp-admin/includes/ajax-actions.php:4175
-#: wp-admin/includes/ajax-actions.php:4270
+#: wp-admin/includes/ajax-actions.php:4072
+#: wp-admin/includes/ajax-actions.php:4198
+#: wp-admin/includes/ajax-actions.php:4293
 msgid "No theme specified."
 msgstr "Intet tema angivet."
 
@@ -6467,7 +6466,7 @@ msgstr "Nyt tema aktiveret."
 msgid "Settings saved and theme activated."
 msgstr "Indstillinger gemt og tema aktiveret."
 
-#: wp-admin/freedoms.php:96 wp-admin/theme-install.php:108
+#: wp-admin/freedoms.php:96 wp-admin/theme-install.php:109
 #: wp-admin/themes.php:157
 msgid "https://wordpress.org/themes/"
 msgstr "https://da.wordpress.org/themes/"
@@ -6781,7 +6780,7 @@ msgid "(Currently set to: %s)"
 msgstr "(på nuværende tidspunkt sat til: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:358
+#: wp-admin/about.php:408
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Version %s</strong> tog hånd om ét sikkerhedsproblem."
 
@@ -6793,15 +6792,15 @@ msgstr "https://da.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Profilbillede"
 
-#: wp-admin/about.php:355
+#: wp-admin/about.php:44 wp-admin/about.php:405
 msgid "Maintenance and Security Releases"
 msgstr "Vedligeholdelses- og sikkerhedsudgivelser"
 
-#: wp-admin/about.php:352
+#: wp-admin/about.php:402
 msgid "Security Releases"
 msgstr "Sikkerhedsudgivelser"
 
-#: wp-admin/about.php:349
+#: wp-admin/about.php:399
 msgid "Maintenance Releases"
 msgstr "Vedligeholdelsesudgivelser"
 
@@ -6868,11 +6867,11 @@ msgstr "%s stylesheet'et indeholder ikke en gyldig tema-header."
 msgid "The theme is missing the %s stylesheet."
 msgstr "Temaet mangler %s stylesheet'et."
 
-#: wp-admin/theme-install.php:204
+#: wp-admin/theme-install.php:205
 msgid "If you have marked themes as favorites on WordPress.org, you can browse them here."
 msgstr "Hvis du har markeret temaer som favoritter på WordPress.org, kan du gennemse dem her."
 
-#: wp-admin/theme-install.php:187
+#: wp-admin/theme-install.php:188
 msgctxt "themes"
 msgid "Favorites"
 msgstr "Favoritter"
@@ -6980,11 +6979,11 @@ msgstr "Filtrer medieliste"
 msgid "Install Parent Theme"
 msgstr "Installer forældretema"
 
-#: wp-admin/theme-install.php:248 wp-admin/network/themes.php:333
+#: wp-admin/theme-install.php:249 wp-admin/network/themes.php:333
 msgid "Themes list"
 msgstr "Temaliste"
 
-#: wp-admin/theme-install.php:177 wp-admin/network/themes.php:331
+#: wp-admin/theme-install.php:178 wp-admin/network/themes.php:331
 msgid "Filter themes list"
 msgstr "Filtrér temaliste"
 
@@ -7349,7 +7348,7 @@ msgstr "Kommentarer (%s)"
 msgid "Comments (%1$s) on &#8220;%2$s&#8221;"
 msgstr "Kommentarer (%1$s) til &#8220;%2$s&#8221;"
 
-#: wp-admin/includes/ajax-actions.php:5404
+#: wp-admin/includes/ajax-actions.php:5427
 msgid "Sorry, you are not allowed to modify themes."
 msgstr "Du har desværre ikke tilladelse til at ændre temaer."
 
@@ -7437,7 +7436,7 @@ msgid_plural "%s comments"
 msgstr[0] "%s kommentar"
 msgstr[1] "%s kommentarer"
 
-#: wp-admin/includes/ajax-actions.php:3903
+#: wp-admin/includes/ajax-actions.php:3923
 msgid "Image could not be processed."
 msgstr "Billede kunne ikke behandles."
 
@@ -7549,16 +7548,16 @@ msgstr "eksempel: www.wordpress.org"
 msgid "The search for installed themes will search for terms in their name, description, author, or tag."
 msgstr "Søgningen efter installerede temaer vil søge efter udtryk i deres navn, beskrivelse, forfatter eller tag."
 
-#: wp-admin/theme-install.php:111
+#: wp-admin/theme-install.php:112
 msgid "Alternately, you can browse the themes that are Popular or Latest. When you find a theme you like, you can preview it or install it."
 msgstr "Alternativt kan du gennemse temaer under Udvalgte, Populære eller Seneste. Når du finder et tema, som du kan lide, kan du forhåndsvise eller installere det."
 
-#: wp-admin/theme-install.php:110
+#: wp-admin/theme-install.php:111
 msgid "You can Search for themes by keyword, author, or tag, or can get more specific and search by criteria listed in the feature filter."
 msgstr "Du kan søge efter temaer efter nøgleord, forfatter eller tag, eller du kan være mere specifik og søge på kriterierne i funktionsfiltret."
 
 #. translators: %d: Number of themes.
-#: wp-admin/theme-install.php:68 wp-admin/themes.php:235
+#: wp-admin/theme-install.php:69 wp-admin/themes.php:235
 msgid "Number of Themes found: %d"
 msgstr "Antal temaer fundet: %d"
 
@@ -7651,7 +7650,7 @@ msgstr "Du kan logge ud fra andre enheder, såsom din telefon eller en offentlig
 msgid "New translations are available."
 msgstr "Nye oversættelser er tilgængelige."
 
-#: wp-admin/theme-install.php:470
+#: wp-admin/theme-install.php:473
 msgid "This theme has not been rated yet."
 msgstr "Dette tema er ikke blevet bedømt endnu."
 
@@ -7924,19 +7923,19 @@ msgid "Filter by comment type"
 msgstr "Filtrer efter kommentartype"
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/ajax-actions.php:3878
+#: wp-admin/includes/ajax-actions.php:3898
 msgid "%s has been logged out."
 msgstr "%s er blevet logget ud."
 
-#: wp-admin/includes/ajax-actions.php:3874
+#: wp-admin/includes/ajax-actions.php:3894
 msgid "You are now logged out everywhere else."
 msgstr "Du er nu logget ud ved alle andre placeringer."
 
-#: wp-admin/includes/ajax-actions.php:3865
+#: wp-admin/includes/ajax-actions.php:3885
 msgid "Could not log out user sessions. Please try again."
 msgstr "Kunne ikke logge ud fra brugersessioner. Prøv venligst igen."
 
-#: wp-admin/includes/ajax-actions.php:3752
+#: wp-admin/includes/ajax-actions.php:3772
 msgid "This preview is unavailable in the editor."
 msgstr "Denne forhåndsvisning er utilgængelig i editoren."
 
@@ -8123,7 +8122,7 @@ msgid "Beta Testing"
 msgstr "Beta-testning"
 
 #. translators: %s: URL that could not be embedded.
-#: wp-admin/includes/ajax-actions.php:3718
+#: wp-admin/includes/ajax-actions.php:3738
 msgid "%s failed to embed."
 msgstr "%s kunne ikke indlejres."
 
@@ -8131,7 +8130,7 @@ msgstr "%s kunne ikke indlejres."
 msgid "If you reach out to us, we'll also ensure you'll never have this problem again."
 msgstr "Hvis du kontakter os, vil vi også sikre, at du aldrig oplever dette problem igen."
 
-#: wp-admin/theme-install.php:242
+#: wp-admin/theme-install.php:243
 msgid "Filtering by:"
 msgstr "Sorteret på:"
 
@@ -8173,12 +8172,12 @@ msgid "All comment types"
 msgstr "Alle kommentartyper"
 
 #: wp-admin/includes/class-wp-theme-install-list-table.php:66
-#: wp-admin/theme-install.php:186
+#: wp-admin/theme-install.php:187
 msgctxt "themes"
 msgid "Latest"
 msgstr "Nyeste"
 
-#: wp-admin/theme-install.php:185
+#: wp-admin/theme-install.php:186
 msgctxt "themes"
 msgid "Popular"
 msgstr "Populære"
@@ -8208,16 +8207,16 @@ msgstr "<strong>Slet</strong> sender dig til Slet bruger-siden for bekræftelse,
 msgid "<strong>Remove</strong> allows you to remove a user from your site. It does not delete their content. You can also remove multiple users at once by using bulk actions."
 msgstr "<strong>Fjern</strong> gør det muligt at fjerne en bruger fra dit websted. Det sletter ikke deres indhold. Du kan også fjerne flere brugere på en gang ved at bruge massehandling."
 
-#: wp-admin/theme-install.php:349
+#: wp-admin/theme-install.php:350
 msgctxt "theme"
 msgid "Details &amp; Preview"
 msgstr "Detaljer &amp; forhåndsvisning"
 
-#: wp-admin/theme-install.php:58
+#: wp-admin/theme-install.php:59
 msgid "Search themes..."
 msgstr "Søg i temaer..."
 
-#: wp-admin/theme-install.php:57
+#: wp-admin/theme-install.php:58
 msgid "Search Themes"
 msgstr "Søg i temaer"
 
@@ -8455,7 +8454,7 @@ msgstr "Vis forrige tema"
 msgid "Update Available"
 msgstr "Opdatering tilgængelig"
 
-#: wp-admin/theme-install.php:56 wp-admin/themes.php:231
+#: wp-admin/theme-install.php:57 wp-admin/themes.php:231
 msgid "Add New Theme"
 msgstr "Tilføj nyt tema"
 
@@ -9478,11 +9477,11 @@ msgstr "Søgemaskinesynlighed"
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "Velkommen til WordPress %1$s. Du vil blive videresendt til Om WordPress siden. Klik <a href=\"%2$s\">her</a>, hvis du ikke videresendes."
 
-#: wp-admin/includes/plugin-install.php:378 wp-admin/theme-install.php:210
+#: wp-admin/includes/plugin-install.php:378 wp-admin/theme-install.php:211
 msgid "Get Favorites"
 msgstr "Hent favoritter"
 
-#: wp-admin/includes/plugin-install.php:376 wp-admin/theme-install.php:207
+#: wp-admin/includes/plugin-install.php:376 wp-admin/theme-install.php:208
 msgid "Your WordPress.org username:"
 msgstr "Dit WordPress.org brugernavn:"
 
@@ -9509,7 +9508,7 @@ msgctxt "Plugin Installer"
 msgid "Favorites"
 msgstr "Favoritter"
 
-#: wp-admin/theme-install.php:128
+#: wp-admin/theme-install.php:129
 msgid "To install the theme so you can preview it with your site&#8217;s content and customize its theme options, click the \"Install\" button at the top of the left-hand pane. The theme files will be downloaded to your website automatically. When this is complete, the theme is now available for activation, which you can do by clicking the \"Activate\" link, or by navigating to your Manage Themes screen and clicking the \"Live Preview\" link under any installed theme&#8217;s thumbnail image."
 msgstr "For at installere et tema, så du kan tjekke det på dit websted og prøve dets indstillinger, så klik på \"Installer\" knappen i det venstre panel foroven. Temafilerne hentes til dit websted helt automatisk. Når de er klar, så er temaet klar til aktivering, hvilket du kan gøre ved at klikke på \"Aktiver\"-linket, eller ved at navigere til din side med installerede temaer og klikke på \"Live forhåndsvisning\"-linket under de installerede temaers miniaturebillede."
 
@@ -9597,7 +9596,7 @@ msgid "Select Image"
 msgstr "Vælg billede"
 
 #: wp-admin/includes/class-wp-theme-install-list-table.php:403
-#: wp-admin/theme-install.php:542
+#: wp-admin/theme-install.php:545
 msgid "Collapse"
 msgstr "Minimer"
 
@@ -9623,11 +9622,11 @@ msgstr "Installeret"
 msgid "Previewing and Customizing"
 msgstr "Forhåndsvisning og tilpasning"
 
-#: wp-admin/theme-install.php:133
+#: wp-admin/theme-install.php:134
 msgid "Previewing and Installing"
 msgstr "Forhåndsvisning og installering"
 
-#: wp-admin/theme-install.php:127
+#: wp-admin/theme-install.php:128
 msgid "Once you have generated a list of themes, you can preview and install any of them. Click on the thumbnail of the theme you&#8217;re interested in previewing. It will open up in a full-screen Preview page to give you a better idea of how that theme will look."
 msgstr "Når du først har lavet en liste af temaer, så kan du forhåndsvise og installere et hvilket som helst af dem. Hvis du er interesseret i at få forhåndsvist et tema, så klik på temaets miniature. Det vil da åbne en forhåndsvisning i fuld skærm, hvilket giver et fingerpeg om, hvordan temaet vil fungere."
 
@@ -9781,7 +9780,7 @@ msgid "Version:"
 msgstr "Version:"
 
 #: wp-admin/includes/class-wp-theme-install-list-table.php:401
-#: wp-admin/theme-install.php:70 wp-admin/theme-install.php:540
+#: wp-admin/theme-install.php:71 wp-admin/theme-install.php:543
 msgid "Collapse Sidebar"
 msgstr "Sammenfold sidebar"
 
@@ -10201,13 +10200,14 @@ msgstr "Vis værktøjslinje på webstedet"
 
 #. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:61 wp-admin/about.php:381
+#: wp-admin/about.php:61 wp-admin/about.php:86 wp-admin/about.php:111
+#: wp-admin/about.php:431
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Hvis du vil vide mere, så læs <a href=\"%s\">udgivelsesnoterne</a>."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:375
+#: wp-admin/about.php:74 wp-admin/about.php:425
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> lukkede nogle sikkerhedshuller og rettede %2$s fejl."
@@ -10215,7 +10215,7 @@ msgstr[1] "<strong>Version %1$s</strong> lukkede nogle sikkerhedshuller og rette
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:369
+#: wp-admin/about.php:419
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> lukkede et sikkerhedshul og rettede %2$s fejl."
@@ -10223,26 +10223,26 @@ msgstr[1] "<strong>Version %1$s</strong> lukkede et sikkerhedshul og rettede %2$
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:49 wp-admin/about.php:363
+#: wp-admin/about.php:49 wp-admin/about.php:99 wp-admin/about.php:413
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> rettede %2$s fejl."
 msgstr[1] "<strong>Version %1$s</strong> rettede %2$s fejl."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:360
+#: wp-admin/about.php:410
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Version %s</strong> tog sig af nogle sikkerhedsproblemer."
 
-#: wp-admin/about.php:354
+#: wp-admin/about.php:404
 msgid "Maintenance and Security Release"
 msgstr "Vedligeholdelse- og sikkerhedsudgivelse"
 
-#: wp-admin/about.php:351
+#: wp-admin/about.php:401
 msgid "Security Release"
 msgstr "Sikkerhedsudgivelse"
 
-#: wp-admin/about.php:44 wp-admin/about.php:348
+#: wp-admin/about.php:398
 msgid "Maintenance Release"
 msgstr "Vedligeholdelsesudgivelse"
 
@@ -10527,11 +10527,11 @@ msgstr "<strong>Rediger</strong> tager dig til redigeringsskærmbilledet for ind
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "Da dette er en Multisite-installation, kan du tilføje konti, der allerede findes på netværket, ved at angive et brugernavn eller e-mailadresse, og tildele brugeren en rolle. For at få flere muligheder, såsom at angive en adgangskode, skal du være en netværksadministrator og føre markøren over linket til en eksisterende brugers navn. Derefter kan du gå til Rediger brugerprofil under Netværkadministrator > Alle brugere."
 
-#: wp-admin/about.php:337
+#: wp-admin/about.php:387
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Gå til Kontrolpanel &rarr; Forside"
 
-#: wp-admin/about.php:334
+#: wp-admin/about.php:384
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "Tilbage til Kontrolpanel &rarr; Opdateringer"
 
@@ -10678,7 +10678,7 @@ msgstr "Navigationsmenuen i venstre side indeholder links til alle sider i admin
 #: wp-admin/plugin-editor.php:125 wp-admin/plugin-install.php:96
 #: wp-admin/plugins.php:544 wp-admin/revision.php:151
 #: wp-admin/site-health.php:80 wp-admin/theme-editor.php:28
-#: wp-admin/theme-install.php:121 wp-admin/themes.php:143
+#: wp-admin/theme-install.php:122 wp-admin/themes.php:143
 #: wp-admin/update-core.php:977 wp-admin/upload.php:54 wp-admin/upload.php:230
 #: wp-admin/user-edit.php:66 wp-admin/user-new.php:273 wp-admin/users.php:34
 #: wp-admin/widgets-form.php:43 wp-admin/network/index.php:34
@@ -10790,8 +10790,8 @@ msgstr "Superadministrator"
 #. translators: %s: Theme version number.
 #. translators: %s: WordPress version.
 #. translators: %s: Theme version.
-#: wp-admin/includes/ajax-actions.php:4478
-#: wp-admin/includes/ajax-actions.php:4521
+#: wp-admin/includes/ajax-actions.php:4501
+#: wp-admin/includes/ajax-actions.php:4544
 #: wp-admin/includes/class-wp-debug-data.php:959
 #: wp-admin/includes/class-wp-debug-data.php:1006
 #: wp-admin/includes/class-wp-debug-data.php:1329
@@ -10846,7 +10846,7 @@ msgstr "Slet websted"
 #. translators: %s: Plugin name.
 #: wp-admin/includes/class-wp-theme-install-list-table.php:492
 #: wp-admin/includes/deprecated.php:1387 wp-admin/includes/theme.php:1060
-#: wp-admin/theme-install.php:403 wp-admin/theme-install.php:440
+#: wp-admin/theme-install.php:406 wp-admin/theme-install.php:443
 #: wp-admin/includes/network.php:374
 msgid "Install"
 msgstr "Installer"
@@ -10874,7 +10874,7 @@ msgstr "Indstillinger gemt."
 #: wp-admin/options-writing.php:52 wp-admin/plugin-editor.php:142
 #: wp-admin/plugin-install.php:120 wp-admin/plugins.php:587
 #: wp-admin/revision.php:156 wp-admin/site-health.php:89
-#: wp-admin/theme-editor.php:51 wp-admin/theme-install.php:139
+#: wp-admin/theme-editor.php:51 wp-admin/theme-install.php:140
 #: wp-admin/themes.php:206 wp-admin/tools.php:55 wp-admin/update-core.php:1015
 #: wp-admin/upload.php:74 wp-admin/upload.php:255 wp-admin/user-edit.php:72
 #: wp-admin/user-new.php:294 wp-admin/users.php:75 wp-admin/widgets-form.php:70
@@ -11001,7 +11001,7 @@ msgid "Name"
 msgstr "Navn"
 
 #. translators: %s: Theme Directory URL.
-#: wp-admin/theme-install.php:107
+#: wp-admin/theme-install.php:108
 msgid "You can find additional themes for your site by using the Theme Browser/Installer on this screen, which will display themes from the <a href=\"%s\">WordPress Theme Directory</a>. These themes are designed and developed by third parties, are available free of charge, and are compatible with the license WordPress uses."
 msgstr "Du kan finde flere temaer til dit websted ved at bruge Håndter tema/Installer på skærmbilledet, som vil vise temaer fra <a href=\"%s\">WordPress.org-temabiblioteket</a>. Disse temaer er designet og udviklet af tredjeparter, er gratis til rådighed, og er kompatible med den licens, WordPress-bruger."
 
@@ -11126,7 +11126,7 @@ msgstr "%1$s af %2$s"
 msgid "%s Page Template"
 msgstr "%s sideskabelon"
 
-#: wp-admin/includes/ajax-actions.php:4583 wp-admin/plugins.php:624
+#: wp-admin/includes/ajax-actions.php:4606 wp-admin/plugins.php:624
 msgid "You cannot delete a plugin while it is active on the main site."
 msgstr "Du kan ikke slette et plugin, mens det er aktivt på hovedwebstedet."
 
@@ -11272,7 +11272,7 @@ msgstr "Opdater plugin"
 msgid "Theme updated successfully."
 msgstr "Tema opdateret uden problemer."
 
-#: wp-admin/includes/ajax-actions.php:4249
+#: wp-admin/includes/ajax-actions.php:4272
 #: wp-admin/includes/class-theme-upgrader.php:63
 #: wp-admin/includes/class-theme-upgrader.php:100
 msgid "Theme update failed."
@@ -11283,7 +11283,7 @@ msgstr "Temaopdatering mislykkedes."
 msgid "Plugin updated successfully."
 msgstr "Plugin opdateret uden problemer."
 
-#: wp-admin/includes/ajax-actions.php:4540
+#: wp-admin/includes/ajax-actions.php:4563
 #: wp-admin/includes/class-plugin-upgrader.php:64
 #: wp-admin/includes/class-plugin-upgrader.php:91
 msgid "Plugin update failed."
@@ -11392,7 +11392,7 @@ msgstr "Vælg venligst et eller flere temaer, du vil opdatere."
 msgid "The update process is starting. This process may take a while on some hosts, so please be patient."
 msgstr "Opdateringen er påbegyndt. På nogle servere kan denne proces kan tage lidt tid, så hav lidt tålmodighed."
 
-#: wp-admin/theme-install.php:216 wp-admin/theme-install.php:238
+#: wp-admin/theme-install.php:217 wp-admin/theme-install.php:239
 msgid "Apply Filters"
 msgstr "Anvend filtre"
 
@@ -11588,7 +11588,7 @@ msgid "Your profile contains information about you (your &#8220;account&#8221;) 
 msgstr "Din profil indeholder information om dig (din &#8220;konto&#8221;) såvel som nogle personlige valg i vedrørende brugen af WordPress."
 
 #. translators: %s: /wp-content/themes
-#: wp-admin/theme-install.php:114
+#: wp-admin/theme-install.php:115
 msgid "You can Upload a theme manually if you have already downloaded its ZIP archive onto your computer (make sure it is from a trusted and original source). You can also do it the old-fashioned way and copy a downloaded theme&#8217;s folder via FTP into your %s directory."
 msgstr "Hvis du har downloadet et tema i en ZIP-fil til din computer, kan du uploade det manuelt (vær dog sikker på, at du har hentet det fra en pålidelig og oprindelig kilde). Du kan også gøre det på den gammeldags måde og via FTP uploade temaets filer til mappen %s."
 
@@ -12334,7 +12334,7 @@ msgstr "WordPress-opdateringer"
 msgid "Edit menu item"
 msgstr "Rediger menupunkt"
 
-#: wp-admin/about.php:337 wp-admin/includes/network.php:148
+#: wp-admin/about.php:387 wp-admin/includes/network.php:148
 msgid "Go to Dashboard"
 msgstr "Gå til kontrolpanelet"
 
@@ -12677,8 +12677,8 @@ msgstr "Din WordPress-database er allerede opdateret!"
 msgid "Installing theme from uploaded file: %s"
 msgstr "Installerer tema fra uploadet fil: %s"
 
-#: wp-admin/theme-install.php:59 wp-admin/theme-install.php:161
-#: wp-admin/theme-install.php:163 wp-admin/update.php:308
+#: wp-admin/theme-install.php:60 wp-admin/theme-install.php:162
+#: wp-admin/theme-install.php:164 wp-admin/update.php:308
 msgid "Upload Theme"
 msgstr "Upload tema"
 
@@ -12910,7 +12910,7 @@ msgstr "Pluginfiler"
 msgid "Select plugin to edit:"
 msgstr "Vælg plugin, der skal redigeres:"
 
-#: wp-admin/includes/ajax-actions.php:4751 wp-admin/plugin-editor.php:185
+#: wp-admin/includes/ajax-actions.php:4774 wp-admin/plugin-editor.php:185
 #: wp-admin/theme-editor.php:190
 msgid "File edited successfully."
 msgstr "Filredigering gennemført."
@@ -13603,7 +13603,7 @@ msgid "This theme is already installed."
 msgstr "Dette tema er allerede installeret."
 
 #. translators: %s: Theme version.
-#: wp-admin/includes/theme.php:839 wp-admin/theme-install.php:476
+#: wp-admin/includes/theme.php:839 wp-admin/theme-install.php:479
 #: wp-admin/themes.php:957
 msgid "Version: %s"
 msgstr "Version: %s"
@@ -13664,7 +13664,7 @@ msgstr "To kolonner"
 msgid "One Column"
 msgstr "En kolonne"
 
-#: wp-admin/includes/theme-install.php:139 wp-admin/theme-install.php:190
+#: wp-admin/includes/theme-install.php:139 wp-admin/theme-install.php:191
 msgid "Feature Filter"
 msgstr "Funktionsfilter"
 
@@ -15013,7 +15013,7 @@ msgstr "LiveJournal"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:294
 #: wp-admin/includes/class-wp-theme-install-list-table.php:159
-#: wp-admin/setup-config.php:277 wp-admin/theme-install.php:66
+#: wp-admin/setup-config.php:277 wp-admin/theme-install.php:67
 msgid "Try Again"
 msgstr "Pr&#248;v igen"
 
