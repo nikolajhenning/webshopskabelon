@@ -86,7 +86,7 @@ eval("!function(t){var e={};function n(o){if(e[o])return e[o].exports;var i=e[o]
   \**********************************************/
 /***/ (() => {
 
-eval("  jQuery(function($){\n    $(document).ready(function(){\n        $( \".cat-parent > a\" ).after( \"<span class='icon-toggle'><i class='fas fa-angle-down'></i></span>\" );  \n        if ($(\".current-cat-parent\")[0]){\n            $( \".current-cat-parent\").addClass( \"active\" );\n        }            \n        $(\".cat-parent\").click(function(){\n            $(this).toggleClass(\"active\");\n        });\n    });\n});\n\n\n\n//# sourceURL=webpack://my-theme/./js/product_archive_sidebar_toggle.js?");
+eval("  jQuery(function($){\n  $(document).ready(function () {\n    $( \".cat-parent > a\" ).after( \"<span><i class='icon-toggle fas fa-angle-down'></i></span>\" );   \n    $(\".icon-toggle\").click(function (e) {\n      var showListElements = $(this).parents(\".cat-parent\").find(\".children\");\n  \n      if ($(showListElements).is(\":visible\")) {\n        showListElements.hide(\"fast\", \"swing\");\n        $(this).css({'transform' : 'rotate('+ 0 +'deg)'});\n      } \n      else {\n        showListElements.show(\"fast\", \"swing\");\n        $(this).css({'transform' : 'rotate('+ -180 +'deg)'});\n      }\n    });\n  });\n});\n\n//# sourceURL=webpack://my-theme/./js/product_archive_sidebar_toggle.js?");
 
 /***/ }),
 
