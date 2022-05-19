@@ -189,7 +189,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			 */
 			//do_action( 'storefront_header' );
 			?>
-	</header><!-- #masthead -->
+	</header>
+	<!-- #masthead -->
+	<div id="menu-background-overlay"></div>
 
 
    <!-- Navigation header -->
