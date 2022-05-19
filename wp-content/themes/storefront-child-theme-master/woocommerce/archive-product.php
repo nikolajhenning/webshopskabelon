@@ -66,9 +66,17 @@ if ( woocommerce_product_loop() ) {
 	do_action( 'woocommerce_before_shop_loop' );
 
 	if ( is_active_sidebar( 'top-filter-area' ) ) : ?>
-	<button class="show_filter" type="button" name="show_filter">Vis filtrering</button>
-	<div id="archive-top-filters" class="filter-wrapper">
-	<?php dynamic_sidebar( 'top-filter-area' ); ?>
+	<div class="archive-top-section">
+		<div class="archive-top-section-left">
+			<button class="show_filter" type="button" name="show_filter">Vis filtrering</button>
+			<div id="archive-top-filters" class="filter-wrapper">
+				<?php dynamic_sidebar( 'top-filter-area' ); ?>
+			</div>
+		</div>
+		<div class="archive-top-section-right">
+			<?php dynamic_sidebar( 'show_product_category' ); ?>
+		</div>
+		
 	</div>
 	<?php endif;
 

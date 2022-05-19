@@ -97,6 +97,22 @@ function archive_top_filters() {
 }
 add_action( 'widgets_init', 'archive_top_filters' );
 
+
+//Archive top filters
+function show_product_category() {
+  register_sidebar(
+    array(
+      'id' => 'show_product_category',
+      'name' => esc_html__( 'Show product category (On mobile)', 'theme-domain' ),
+      'description' => esc_html__( 'Widgets til toppen af produktarkivet', 'theme-domain' ),
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget' => '</div>',
+      'before_title' => '<div class="widget-title-wrapper"><h3 class="widget-title">',
+      'after_title' => '</h3></div>'
+    )
+  );
+}
+add_action( 'widgets_init', 'show_product_category' );
 //move breadcrumbs
 
 function move_storefront_breadcrumbs() {

@@ -66,7 +66,7 @@ eval("(function($){\n\t$(document).ready(function () {\n\n        // Inserts vat
   \***********************/
 /***/ (() => {
 
-eval("//Show or hide archive filters\njQuery(function($){\n\t$(\".show_filter\").click(function() {\n\t  $(\"#archive-top-filters\").slideToggle(300);\n\t\t$(\"#archive-top-filters\").css(\"display\",\"grid\");\n\t});\n\n\t$(\".show_cat\").click(function() {\n\t  $(\".widget_product_categories\").slideToggle(300);\n\t});\n});\n\n\n//# sourceURL=webpack://my-theme/./js/filters.js?");
+eval("//Show or hide archive filters\njQuery(function($){\n\t$(\".show_filter\").click(function() {\n\t  $(\"#archive-top-filters\").slideToggle(300);\n\t\t$(\"#archive-top-filters\").css(\"display\",\"grid\");\n\t});\n\n\t$(\".show_cat\").click(function() {\n\t  $(\".archive-top-section-right > .widget_product_categories\").slideToggle(300);\n\t});\n});\n\n\n//# sourceURL=webpack://my-theme/./js/filters.js?");
 
 /***/ }),
 

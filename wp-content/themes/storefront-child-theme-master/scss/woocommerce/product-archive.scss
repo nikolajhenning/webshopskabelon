@@ -80,7 +80,13 @@
   display: none;
 }
 
-
+/* Archive top section */
+@media only screen and (min-width: 1025px) {
+  .archive-top-section {
+    display: none;
+  }
+}
+/* Archive top section end */
 
 /* Archive top widgets */
 .select2-container--open{
