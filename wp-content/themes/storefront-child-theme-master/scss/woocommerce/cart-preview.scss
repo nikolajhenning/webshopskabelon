@@ -1,125 +1,123 @@
-#cart-preview, #cart-preview-updated {
-  display: none;
-  width: 350px;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  z-index: 9999;
-  border: 1px solid $gray;
-  background-color: $white;
-
-  span.cart_total_items {
+#masthead {
+  #cart-preview, #cart-preview-updated {
     display: none;
-  }
-
-  span {
-    display: block;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    border-collapse: collapse;
-    max-height: 300px;
-    overflow: hidden;
-    overflow-y: scroll;
-
-    li {
-      padding: 1em;
-      background-color: $white;
-      border-bottom: 1px solid $gray;
-      transition: all 0.15s ease;
-
-      &:nth-child(even) {
-        background-color: $light-gray;
-      }
-      &:last-of-type {
-        border-bottom: 0;
-      }
-      &:hover {
-        background-color: $gray-hover;
-      }
+    width: 350px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 9999;
+    border: 1px solid $gray;
+    background-color: $white;
+  
+    span.cart_total_items {
+      display: none;
     }
-
-    a {
+  
+    span {
+      display: block;
+    }
+  
+    ul {
+      list-style: none;
+      margin: 0;
       display: flex;
-      flex-direction: row;
-      align-items: center;
-
-
-
-      .preview-img {
-        width:80px;
-        img {
-          max-height: 5em;
+      flex-direction: column;
+      border-collapse: collapse;
+      max-height: 300px;
+      overflow: hidden;
+      overflow-y: scroll;
+  
+      li {
+        padding: 1em;
+        background-color: $white;
+        border-bottom: 1px solid $gray;
+        transition: all 0.15s ease;
+  
+        &:nth-child(even) {
+          background-color: $light-gray;
+        }
+        &:last-of-type {
+          border-bottom: 0;
+        }
+        &:hover {
+          background-color: $gray-hover;
+        }
+      }
+  
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &:hover {
+          text-decoration: none;
+          color: $black;
+        }
+  
+  
+        .preview-img {
+          width:80px;
+          img {
+            max-height: 5em;
+            width: auto;
+            margin: 0 auto;
+          }
+        }
+  
+        .title-quantity {
           width: auto;
-          margin: 0 auto;
+          margin-left: 1em;
+  
+          .preview-title {
+            text-transform: capitalize;
+          }
+  
+          .preview-quantity {
+            color: $dark-gray;
+          }
         }
-      }
-
-      .title-quantity {
-        width: auto;
-        margin-left: 1em;
-
-        .preview-title {
-          text-transform: capitalize;
+  
+        .preview-price {
+          width: auto;
+          margin-left: auto;
         }
-
-        .preview-quantity {
-          color: $dark-gray;
-        }
-      }
-
-      .preview-price {
-        width: auto;
-        margin-left: auto;
       }
     }
   }
-}
-
-.preview-btm {
-  border-top: 1px solid $gray;
-  @include flexbox;
-  justify-content: space-between;
-  padding: 1em;
-  flex-wrap: wrap;
-
-  .amount bdi {
-    @include flexbox;
-  }
-
-  div {
-    width: 100%;
+  
+  .preview-btm {
+    border-top: 1px solid $gray;
     @include flexbox;
     justify-content: space-between;
+    padding: 1em;
+    flex-wrap: wrap;
+  
+    .amount bdi {
+      @include flexbox;
+    }
+  
+    div {
+      width: 100%;
+      @include flexbox;
+      justify-content: space-between;
+    }
   }
-}
-.preview-cart-btn {
-  width: 100%;
-  margin-top: 1em;
-  padding: 0.5em;
-  display: block;
-  text-align: center;
-  background-color: $primary;
-  color: $white;
-  border-radius: $global-radius;
-  &:hover {
-    background-color: $primary-hover;
+  .preview-cart-btn {
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.5em;
+    @include woocommerce-buttons;
   }
-}
-
-.cart-preview-empty {
-padding: 1em;
-color: $dark-gray;
-}
-
-@media only screen and (max-width: 1024px)  {
-
-#cart-preview, #cart-preview-updated {
-  display: none !important;
-}
-
+  
+  .cart-preview-empty {
+  padding: 1em;
+  color: $dark-gray;
+  }
+  
+  @media only screen and (max-width: 1024px)  {
+  
+  #cart-preview, #cart-preview-updated {
+    display: none !important;
+  }
+  
+  }
 }

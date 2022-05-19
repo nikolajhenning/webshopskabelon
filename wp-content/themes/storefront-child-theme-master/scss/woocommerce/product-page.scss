@@ -19,6 +19,12 @@
           height: inherit;
         }
       }
+      .woocommerce-product-gallery__trigger {
+        background-color: $primary;
+        &:hover {
+          background-color: $primary-hover;
+        }
+      }
     }
 
     .summary {

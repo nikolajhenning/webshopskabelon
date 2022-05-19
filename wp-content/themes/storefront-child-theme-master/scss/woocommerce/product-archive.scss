@@ -35,6 +35,22 @@
         @include text-link-style;
       }
     }
+    .button {
+      @include woocommerce-buttons;
+      text-decoration: none;
+      &.checkout-button, &#place_order {
+        background-color: $green;
+        font-size: $h5-font-size;
+        text-transform: uppercase;
+        font-weight: $font-weight-normal-bold;
+        padding: 0.6180469716em 1.41575em;
+        &:hover {
+          background-color: $green-hover;
+        }
+      }
+
+        
+    }
     #archive-top-filters {
       margin-bottom: 1em;
       #block-2 {
@@ -83,7 +99,7 @@
 /* Archive top section */
 @media only screen and (min-width: 1025px) {
   .archive-top-section {
-    display: none;
+display: none;
   }
 }
 /* Archive top section end */
@@ -126,10 +142,10 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
 //load more button
 .loadmore_button {
   text-transform: uppercase;
-  letter-spacing: 1px;
   margin-left: auto;
   margin-top: 2%;
   display: block;
+  @include woocommerce-buttons;
 }
 //load more button end
 
