@@ -1,13 +1,11 @@
 <?php
 
 /* Remove footer credit */
-add_action( 'init', 'custom_remove_footer_credit', 10 );
+add_action( 'init', 'wp_remove_storefront_credits', 10 );
 
-function custom_remove_footer_credit () {
-    remove_action( 'storefront_footer', 'storefront_credit', 20 );
-    add_action( 'storefront_footer', 'custom_storefront_credit', 20 );
-}
-
+function wp_remove_storefront_credits() {
+      remove_action( 'storefront_footer', 'storefront_credit', 20 ); } 
+      add_action( 'wp', 'wp_remove_storefront_credits', 20 ); 
 
 /* Remove Storefront Mobile Menu Links */
 add_action( 'init', 'jk_remove_storefront_handheld_footer_bar' );

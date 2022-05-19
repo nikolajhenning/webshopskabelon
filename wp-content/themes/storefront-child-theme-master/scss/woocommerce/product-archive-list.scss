@@ -86,14 +86,14 @@
               width: 4.5em;
               height: 4.5em;
               z-index: 100;
-              @include flexbox;
+              display: flex !important;
+              align-items: center;
               justify-content: center;
               border-radius: 50%;
-              color: $white;
-              background-color: $light-black;
+              color: #ffffff;
+              background-color: #404040;
               border-width: 0;
-              margin:0;
-              padding: 0;
+              margin: 0;
               position: absolute;
             }
         
