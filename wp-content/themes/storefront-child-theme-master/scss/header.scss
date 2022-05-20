@@ -173,3 +173,10 @@
   left:       0; 
   position:   fixed; 
 }
+@media (max-width: 66.4989378333em) and (min-width: 1024px){
+  .col-full {
+      margin-left: 2.617924em;
+      margin-right: 2.617924em;
+      padding: 0;
+  }
+}
