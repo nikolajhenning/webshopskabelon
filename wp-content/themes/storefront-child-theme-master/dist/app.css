@@ -1251,6 +1251,42 @@ body.mm-ocd-opened {
   content: none;
   display: none; }
 
+.fixed-aside-icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%); }
+  .fixed-aside-icon-bar a {
+    display: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1;
+    padding: 0; }
+    .fixed-aside-icon-bar a i {
+      padding: 16px; }
+  .fixed-aside-icon-bar .facebook, .fixed-aside-icon-bar .instagram, .fixed-aside-icon-bar .linkedin, .fixed-aside-icon-bar .twitter, .fixed-aside-icon-bar .youtube, .fixed-aside-icon-bar .tiktok, .fixed-aside-icon-bar .pinterest, .fixed-aside-icon-bar .discord, .fixed-aside-icon-bar .twitch {
+    cursor: pointer;
+    display: block; }
+  .fixed-aside-icon-bar .facebook {
+    background: #3B5998; }
+  .fixed-aside-icon-bar .instagram {
+    background: #dd2a7b; }
+  .fixed-aside-icon-bar .linkedin {
+    background: #0a66c2; }
+  .fixed-aside-icon-bar .twitter {
+    background: #1DA1F2; }
+  .fixed-aside-icon-bar .youtube {
+    background: #FF0000; }
+  .fixed-aside-icon-bar .tiktok {
+    background: #000000; }
+  .fixed-aside-icon-bar .pinterest {
+    background: #E60023; }
+  .fixed-aside-icon-bar .discord {
+    background: #7289DA; }
+  .fixed-aside-icon-bar .twitch {
+    background: #6441a5; }
+
 /* Product page */
 #main .product {
   overflow: visible; }

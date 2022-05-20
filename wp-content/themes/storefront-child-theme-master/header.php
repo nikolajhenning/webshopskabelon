@@ -166,6 +166,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			 */
 			//do_action( 'storefront_header' );
 			?>
+		<!-- Icon social media aside -->
+		<div class="fixed-aside-icon-bar">
+			<a href="<?php echo get_theme_mod( 'header_socialmedia_link_1'); ?>" class="<?php echo get_theme_mod( 'header_socialmedia_icon_1'); ?>">
+				<i class="fab fa-<?php echo get_theme_mod( 'header_socialmedia_icon_1'); ?>"></i>
+			</a> 
+			<a href="<?php echo get_theme_mod( 'header_socialmedia_link_2'); ?>" class="<?php echo get_theme_mod( 'header_socialmedia_icon_2'); ?>">
+				<i class="fab fa-<?php echo get_theme_mod( 'header_socialmedia_icon_2'); ?>"></i>
+			</a>
+			<a href="<?php echo get_theme_mod( 'header_socialmedia_link_3'); ?>" class="<?php echo get_theme_mod( 'header_socialmedia_icon_3'); ?>"><i class="fab fa-<?php echo get_theme_mod( 'header_socialmedia_icon_3'); ?>"></i></a> 
+			<a href="<?php echo get_theme_mod( 'header_socialmedia_link_4'); ?>" class="<?php echo get_theme_mod( 'header_socialmedia_icon_4'); ?>"><i class="fab fa-<?php echo get_theme_mod( 'header_socialmedia_icon_4'); ?>"></i></a>
+			<a href="<?php echo get_theme_mod( 'header_socialmedia_link_5'); ?>" class="<?php echo get_theme_mod( 'header_socialmedia_icon_5'); ?>"><i class="fab fa-<?php echo get_theme_mod( 'header_socialmedia_icon_5'); ?>"></i></a> 												 
+		</div>
+		<!-- Icon social media aside end -->			
 	</header>
 	<div id="menu-background-overlay"></div>
 	<!-- #masthead -->
