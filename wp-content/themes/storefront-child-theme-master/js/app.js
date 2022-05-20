@@ -10,3 +10,4 @@ import cart_empty from './cart_empty.js';
 import add_to_cart from './add_to_cart';
 import cart_preview from './cart_preview.js';
 import product_archive_sidebar_toggle from './product_archive_sidebar_toggle.js';
+import mega_menu_overlay from './mega-menu-overlay.js';

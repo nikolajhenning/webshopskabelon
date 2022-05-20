@@ -14,7 +14,7 @@ With WooCommerce QuickPay, you are able to integrate your QuickPay gateway to yo
 
 == Installation ==
 1. Upload the 'woocommerce-quickpay' folder to /wp-content/plugins/ on your server.
-2. Log in to Wordpress administration, click on the 'Plugins' tab.
+2. Log in to WordPress administration, click on the 'Plugins' tab.
 3. Find WooCommerce QuickPay in the plugin overview and activate it.
 4. Go to WooCommerce -> Settings -> Payment Gateways -> QuickPay.
 5. Fill in all the fields in the "QuickPay account" section and save the settings.
@@ -27,6 +27,11 @@ General:
 3. If WooCommerce Subscriptions is used, the required minimum version is >= 2.0
 
 == Changelog ==
+= 6.6.0 =
+* Feat: Add Google Pay as payment gateway
+* Fix: Adjust SVG icons for Paypal, Apple Pay and Klarna to show properly in Safari
+* Feat: Only show Apple Pay in Safari browsers
+
 = 6.5.1 =
 * Fix: MobilePay Subscription gateway is now available when using the "Change Payment" option from the account page.
 

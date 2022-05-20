@@ -66,9 +66,17 @@ if ( woocommerce_product_loop() ) {
 	do_action( 'woocommerce_before_shop_loop' );
 
 	if ( is_active_sidebar( 'top-filter-area' ) ) : ?>
-	<button class="show_filter" type="button" name="show_filter">Vis filtrering</button>
-	<div id="archive-top-filters" class="filter-wrapper">
-	<?php dynamic_sidebar( 'top-filter-area' ); ?>
+	<div class="archive-top-section">
+		<div class="archive-top-section-left">
+			<button class="show_filter" type="button" name="show_filter">Vis filtrering</button>
+			<div id="archive-top-filters" class="filter-wrapper">
+				<?php dynamic_sidebar( 'top-filter-area' ); ?>
+			</div>
+		</div>
+		<div class="archive-top-section-right">
+			<?php dynamic_sidebar( 'show_product_category' ); ?>
+		</div>
+		
 	</div>
 	<?php endif;
 
@@ -117,12 +125,13 @@ if ( woocommerce_product_loop() ) {
 * show ekstra category description
 *
 */
-if ( is_product_taxonomy() ) {
-	$term = get_queried_object();
-	if ( $term && ! empty( get_woocommerce_term_meta( $term->term_id, 'seconddesc', true ) ) ) {
-	   echo '<p class="term-description">' . wc_format_content( htmlspecialchars_decode( get_woocommerce_term_meta( $term->term_id, 'seconddesc', true ) ) ) . '</p>';
-	}
- }
+if ( is_product_taxonomy() ) { 	
+	$term = get_queried_object(); 	
+	$term_meta = get_term_meta($term->term_id, 'seconddesc', true); 	
+	if ( $term && ! empty( $term_meta ) ) { 	   
+		echo '<p class="term-description">' . wc_format_content( htmlspecialchars_decode( $term_meta  )) . '</p>'; 	
+	}  
+}
 
 /**
  * Hook: woocommerce_after_main_content.

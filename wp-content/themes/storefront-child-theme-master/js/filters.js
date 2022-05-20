@@ -6,6 +6,6 @@ jQuery(function($){
 	});
 
 	$(".show_cat").click(function() {
-	  $(".widget_product_categories").slideToggle(300);
+	  $(".archive-top-section-right > .widget_product_categories").slideToggle(300);
 	});
 });

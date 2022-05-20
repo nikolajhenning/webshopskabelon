@@ -18,11 +18,7 @@ class WC_QuickPay_Sofort extends WC_QuickPay_Instance {
 		$this->description = $this->s( 'description' );
 
 		add_filter( 'woocommerce_quickpay_cardtypelock_sofort', [ $this, 'filter_cardtypelock' ] );
-
-		add_action( 'woocommerce_quickpay_accepted_callback_status_capture', [
-			$this,
-			'additional_callback_handler'
-		], 10, 2 );
+		add_action( 'woocommerce_quickpay_accepted_callback_status_capture', [ $this, 'additional_callback_handler' ], 10, 2 );
 	}
 
 
@@ -62,7 +58,7 @@ class WC_QuickPay_Sofort extends WC_QuickPay_Instance {
 	}
 
 	/**
-	 * Sofort payments are not sending authorized callbacks. Instead a capture callback is sent. We will perform
+	 * Sofort payments are not sending authorized callbacks. Instead, a capture callback is sent. We will perform
 	 * gateway specific logic here to handle the payment properly.
 	 *
 	 * @param \WC_QuickPay_Order $order
@@ -70,8 +66,8 @@ class WC_QuickPay_Sofort extends WC_QuickPay_Instance {
 	 */
 	public function additional_callback_handler( $order, $transaction ) {
 		if ( $order->get_payment_method() === $this->id ) {
-			WC_QuickPay_Callbacks::authorized($order, $transaction);
-			WC_QuickPay_Callbacks::payment_authorized($order, $transaction);
+			WC_QuickPay_Callbacks::authorized( $order, $transaction );
+			WC_QuickPay_Callbacks::payment_authorized( $order, $transaction );
 		}
 	}
 

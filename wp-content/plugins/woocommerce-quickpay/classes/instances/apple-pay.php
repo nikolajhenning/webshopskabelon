@@ -19,6 +19,7 @@ class WC_QuickPay_Apple_Pay extends WC_QuickPay_Instance {
 
 		add_filter( 'woocommerce_quickpay_cardtypelock_' . $this->id, [ $this, 'filter_cardtypelock' ] );
 		add_filter( 'woocommerce_quickpay_checkout_gateway_icon', [ $this, 'filter_icon' ] );
+		add_filter( 'woocommerce_available_payment_gateways', [ $this, 'maybe_disable_gateway' ] );
 	}
 
 
@@ -36,7 +37,8 @@ class WC_QuickPay_Apple_Pay extends WC_QuickPay_Instance {
 				'title'   => __( 'Enable', 'woo-quickpay' ),
 				'type'    => 'checkbox',
 				'label'   => sprintf( __( 'Enable %s payment', 'woo-quickpay' ), 'Apple Pay' ),
-				'default' => 'no'
+				'default' => 'no',
+				'description' => sprintf(__( 'Works only in %s.', 'woo-quickpay' ), 'Safari' )
 			],
 			'_Shop_setup' => [
 				'type'  => 'title',
@@ -81,5 +83,16 @@ class WC_QuickPay_Apple_Pay extends WC_QuickPay_Instance {
 		}
 
 		return $icon;
+	}
+
+	/**
+	 * @param array $gateways
+	 */
+	public function maybe_disable_gateway( $gateways ) {
+		if ( isset( $gateways[ $this->id ] ) && is_checkout() && ! WC_QuickPay_Helper::is_browser( 'safari' ) ) {
+			unset( $gateways[ $this->id ] );
+		}
+
+		return $gateways;
 	}
 }

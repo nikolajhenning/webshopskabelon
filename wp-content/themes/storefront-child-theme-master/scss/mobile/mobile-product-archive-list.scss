@@ -1,0 +1,26 @@
+@mixin mobile_product_archive_list {
+    ul.products {
+      @include reset_before_after;
+        &.columns-3 {
+          grid-template-columns: 1fr 1fr;
+        }
+        &.columns-4, &.elementor-grid {
+          padding: 6px 6px 20px 6px;
+          grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+          grid-auto-flow: column;
+          grid-auto-columns: minmax(270px, 1fr);
+          overflow-x: auto;
+        }
+        li.product {
+          img {
+            height: 180px;
+          }
+          span.onsale {
+            top: 25%;
+            width: 4.5em;
+            height: 4.5em;
+            font-size: $font-size-xtra-small;
+          }
+         }
+       }
+}

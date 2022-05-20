@@ -1,12 +1,17 @@
   jQuery(function($){
-    $(document).ready(function(){
-        $( ".cat-parent > a" ).after( "<span class='icon-toggle'><i class='fas fa-angle-down'></i></span>" );  
-        if ($(".current-cat-parent")[0]){
-            $( ".current-cat-parent").addClass( "active" );
-        }            
-        $(".cat-parent").click(function(){
-            $(this).toggleClass("active");
-        });
+  $(document).ready(function () {
+    $( ".cat-parent > a" ).after( "<span><i class='icon-toggle fas fa-angle-down'></i></span>" );   
+    $(".icon-toggle").click(function (e) {
+      var showListElements = $(this).parents(".cat-parent").find(".children");
+  
+      if ($(showListElements).is(":visible")) {
+        showListElements.hide("fast", "swing");
+        $(this).css({'transform' : 'rotate('+ 0 +'deg)'});
+      } 
+      else {
+        showListElements.show("fast", "swing");
+        $(this).css({'transform' : 'rotate('+ -180 +'deg)'});
+      }
     });
+  });
 });
-

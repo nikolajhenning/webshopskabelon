@@ -826,6 +826,7 @@ class WC_QuickPay_Order extends WC_Order {
 		return in_array( get_post_meta( $order_id, '_payment_method', true ), [
 			'quickpay_anyday',
 			'quickpay_apple_pay',
+			'quickpay_google_pay',
 			'ideal',
 			'fbg1886',
 			'ideal',

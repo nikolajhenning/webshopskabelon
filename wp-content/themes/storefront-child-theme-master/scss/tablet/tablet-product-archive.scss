@@ -1,5 +1,5 @@
 /* Archive Page */
-
+//Header
 .col-full .woocommerce-products-header {
   padding: 2em;
   flex-direction: column;
@@ -18,80 +18,143 @@
   }
 }
 
+/* Primary content */
 #primary {
   width: 100%;
-}
-#main.site-main {
+  #main.site-main {
 
-  #archive-top-filters {
-    margin-bottom: 2%;
-    grid-template-columns: repeat(4, 1fr);
-
-    .widget_custom_html {
-      display: block;
-      grid-column: 1 / -1;
-    }
-
-    .widget_product_categories {
-      width: 100%;
-      display: none;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      grid-column: 1 / -1;
-
-      .product-categories {
-        display: flex;
+    /* Filter */
+    #archive-top-filters {
+      .widget_custom_html {
+        display: block;
+        grid-column: 1 / -1;
+      }
+  
+      .widget_product_categories {
+        width: 100%;
+        display: none;
         justify-content: flex-start;
         flex-wrap: wrap;
-
-        li {
-          padding-right: 2%;
-          padding-left: 0;
-          margin-bottom: 2%;
-
-          a {
-            border: 1px solid #aaa;
-            border-radius: 4px;
-            padding: 0.6em 1em;
-            transition: all 0.3s ease;
-            display: block;
-            color: #999;
-
-            &:focus {
-              background-color: $lighter-gray;
+        grid-column: 1 / -1;
+  
+        .product-categories {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+  
+          li {
+            padding-right: 2%;
+            padding-left: 0;
+            margin-bottom: 2%;
+  
+            a {
+              border: 1px solid #aaa;
+              border-radius: 4px;
+              padding: 0.6em 1em;
+              transition: all 0.3s ease;
+              display: block;
+              color: #999;
+  
+              &:focus {
+                background-color: $lighter-gray;
+              }
             }
           }
         }
       }
     }
-  }
+    /* Filter end */
 
-  ul.products.columns-3 {
+    /* Product archive list */ 
+    @include tablet_product_archive_list;
 
-    @include reset_before_after;
-
-    ul {
-      display: none;
+    /* Loadmore button */
+    .loadmore_button {
+      margin: 0 auto;
     }
+  }
+}
+/* Primary content end */
 
-    li.product {
-      height: 420px;
-
-      .badge-wrapper {
-        width: 100%;
+/* Archive top section */
+.archive-top-section {
+  .archive-top-section-right {
+    .widget {
+      margin: 0 0 0 0;
+    }
+    .show_cat {
+      margin-bottom: 0;
+      display: block;
+      width: fit-content;
+      background-color: $light-gray;
+      border: 1px solid $gray;
+      color: $dark-gray;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: $font-weight-normal;
+      height: 40px;
+      padding: 0 1em;
+      &:hover {
+        background-color: $lighter-gray;
       }
-
-      .woocommerce-loop-product__title {
-        max-width: 170px;
+      &:active {
+        background-color: $lighter-gray;
+      }
+    }
+    .widget_product_categories {
+      display: none;
+      .widget-title-wrapper {
+        display: none;
+      }
+      .product-categories {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+        span {
+          display: none
+        }
+        .cat-item {
+          @include reset_before_after;
+          background-color: #FFF;
+          color: $dark-gray;
+          letter-spacing: 1px;
+          overflow: hidden;
+          padding-left: 0;      
+          margin-bottom: 0em;
+          a {
+            display: flex;
+            align-items: center;            
+            color: $dark-gray;
+            text-transform: initial;
+            white-space: nowrap;
+            height: 40px;
+            padding: 0 1em;
+            border-radius: 3px;
+            border: 1px solid $dark-gray;
+            font-weight: $font-weight-normal;
+            &:hover {
+              background-color: $light-gray;
+            }
+            &:active {
+              background-color: $light-gray;
+            }    
+          }
+          .children {
+            margin-top: 0;
+          }
+        }
       }
     }
   }
 }
+/* Archive top section end */
 
+/* Sidebar navigation */
 #secondary {
   display: none;
 }
 
-.loadmore_button {
-  margin: 0 auto;
+/* Elementor woocommerce product feed */
+.elementor-section .elementor-products-grid {
+  @include tablet_product_archive_list;
 }

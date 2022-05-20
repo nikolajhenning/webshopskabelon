@@ -38,6 +38,9 @@
             color: $black;
             text-decoration: none;
             @include hover-link-style;
+            &:hover {
+              text-decoration: none;
+            }
           }       
    
         a {
@@ -45,16 +48,41 @@
             font-weight: $font-weight-normal;
         }     
         .children{
+            margin-top: 1em;
             display: none;
-            border-bottom: 1px solid rgba(192,192,192,0.2);
+            span {
+              display: none;
+            }
             .cat-item {
-                margin: 0 0 5px 0 ;
+                margin-bottom: 1em;
                 a {
                     font-weight: $font-weight-light;
                     text-transform: none;              
                 }
                 a::after {
                      content: none;
+                }
+                &::before {
+                  content: ' ';
+                  margin-left: 0;
+                  margin-right: 10px;
+                  background: $gray;
+                  width: 10px;
+                  height: 1px;
+                  margin-top: 12px;
+                }
+                .children {
+                  .cat-item {
+                    &::before {
+                      content: ' ';
+                      margin-left: 0;
+                      margin-right: 10px;
+                      background: $gray;
+                      width: 25px;
+                      height: 1px;
+                      margin-top: 12px;
+                    }  
+                  }
                 }
             }
         }    
@@ -66,10 +94,21 @@
         }
     } 
     &.current-cat-parent {
+        span {
+          .icon-toggle {
+            transform: rotate(-180deg);
+          }
+        }
         .children {
+          display: block;
             .current-cat {
                 a {
                     font-weight: $font-weight-bold;
+                }
+                .children {
+                  a {
+                    font-weight: $font-weight-light;
+                  }
                 }                
             }
         }
@@ -78,21 +117,6 @@
     &.active {
         .children{
             display: block;
-            animation-name: open;
-            animation-duration: 0.3s;            
-            @keyframes open {
-                from {     
-                    display: block;       
-                    opacity: 0;
-                    margin: 0 0 0 0;
-                }
-                to {            
-                    display: block;
-                    opacity: 1;
-                    margin: 1em 0 0 0;
-                }
-              }
-
         }
     }     
     &.cat-item::before {

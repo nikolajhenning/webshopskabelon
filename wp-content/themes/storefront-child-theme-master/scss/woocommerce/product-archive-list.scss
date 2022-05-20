@@ -1,0 +1,126 @@
+@mixin product_archive_list {
+    ul.products {
+          &.columns-4, &.elementor-grid {
+            display: grid;
+            grid-gap: 1em;
+          }
+          @media only screen and (min-width: 1024px) {
+            &.columns-4, &.elementor-grid {
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+          }
+          &.columns-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1em;
+            margin-top: 1em;
+          }
+          &::before {
+            content: none;
+          }
+          li.product {
+            @include box-style;
+            width: 100%;
+            margin-bottom: 0;
+            &.first {
+              clear: none !important;
+            }
+            .woocommerce-loop-product__link {
+              height: 100%;
+              padding: 2em 1em;
+              display: flex !important;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: center;
+              position: relative;
+        
+              .price {
+                @include flexbox;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+        
+                bdi {
+                  font-size: $h5-font-size
+                }
+        
+                del {
+                  order: 2;
+                  bdi {
+                    font-size: $font-size-base;
+                  }
+                }
+        
+                ins {
+                  order: 1;
+                  margin-left: 0;
+                }
+        
+                .woocommerce-price-suffix {
+                  width: 100%;
+                  order: 3;
+                }
+              }
+            }
+        
+            img {
+              height: 220px;
+              object-fit: contain;
+              width: auto;
+              margin: 2em 0 1em 0;
+            }
+        
+            .woocommerce-loop-product__title {
+              height: 50px;
+              margin: .6em 0;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+        
+            //product badge
+            .onsale {
+              top: 22%;
+              right: 10%;
+              width: 4.5em;
+              height: 4.5em;
+              z-index: 100;
+              display: flex !important;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              color: #ffffff;
+              background-color: #404040;
+              border-width: 0;
+              margin: 0;
+              position: absolute;
+            }
+        
+            .badge-wrapper {
+              @include flexbox;
+              justify-content: space-between;
+              width: 80%;
+              margin-top: auto;
+              font-size: $font-size-small;
+        
+              .badge {
+                font-weight: $font-weight-normal-bold;
+                &::before {
+                  content: "\f00c";
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smoothing: grayscale;
+                  font-family: Font Awesome\ 5 Free;
+                  float: left;
+                  margin-right: 5px;
+                }
+              }
+            }
+        
+        
+            //product badge end
+          }  
+      }
+    
+}

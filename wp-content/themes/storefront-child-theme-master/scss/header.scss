@@ -1,26 +1,126 @@
 /* Header */
 
 #masthead {
-    position: sticky;
-    z-index: 999;
-    background-color: $white;
-    transition: 0.3s all;
+  position: sticky;
+  z-index: 999;
+  background-color: $white;
+  transition: 0.3s all;
     a {
       @include hover-link-style;
+    }  
+    //Mega menu current menu styling - start
+    .navigation-header-content {
+      width: inherit;
+      margin: auto;
+      background-color: $light-gray;
+      
+      .storefront-primary-navigation {
+        text-align: center;
+        width: inherit;
+        max-width: 1400px;
+        margin: auto;
+        .menu {
+          position: relative;
+        }
+        .menu-item {
+          a {
+            color: $black;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            &:hover {
+              color: $primary;
+              box-shadow: 0px -10px 0px -5px $primary inset;
+            }
+          }
+          &.current-menu-item {
+            a {
+              box-shadow: 0px -10px 0px -5px $primary inset;
+            }
+            .menu-item {
+              a {
+                box-shadow: 0px 0px 0px 0px transparent inset;
+              }
+            }
+          }
+        }
+        .menu-item-has-children {
+          a::after {
+            content: unset;
+          }
+          .sub-menu {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 5px 0px;
+            border: 1px solid $light-gray;
+            border-top: 0;
+            background-color: $white;
+            .menu-item  {
+              a {
+                text-transform: none;
+                background-color: $white;
+                font-weight: $font-weight-light;
+                @include hover-link-style;
+                padding: 10px 1em;
+                &:hover {
+                  box-shadow: 0px 0px 0px 0px transparent inset;
+                }
+              }
+            }
+          }
+        }
+        /* Mega menu */        
+        .smm-mega-menu .smm-row div .widget div .menu {
+          .menu-item {
+            a {
+              font-weight: $font-weight-light;
+              @include hover-link-style;
+              padding: 0;
+              &:hover {
+                box-shadow: 0px 0px 0px 0px transparent inset;
+              }
+            }
+          }
+          .menu-item-has-children {
+            a {
+              font-weight: $font-weight-normal;
+              text-transform: uppercase;
+            }
+            &.current-menu-item {
+              a {
+                font-weight: $font-weight-normal-bold;
+              }
+            }
+            .sub-menu {
+              box-shadow: unset;
+              border: 0;
+              .menu-item {
+                a {
+                text-transform: unset;
+                font-weight: $font-weight-light;
+                }
+              }
+            }
+
+          }  
+        }
+        /* Mega menu end*/ 
+        .current-menu-item, .smm-mega-menu .smm-row div .widget div .menu .current-menu-item, .smm-mega-menu .smm-row div .widget div .menu .menu-item-has-children .sub-menu .current-menu-item, .menu-item-has-children .sub-menu .current-menu-item{
+          a {
+            font-weight: $font-weight-normal;
+            box-shadow: 0px 0px 0px 0px transparent inset;
+          }
+          .sub-menu li a{
+            font-weight: $font-weight-light;
+          }
+        }
+      }     
     }    
-    .col-full {
-      position: relative;
-    }
 
     .header-wrapper {
       @include flexbox;
       justify-content: space-between;
-      padding: 1.25em 0;
+      padding: 1em 0;
       position: relative;
-
       .image-logo {
-        flex: 1;
-        margin-right: auto;
+        margin-right: 5em;
 
         img {
           max-height: 50px;
@@ -29,29 +129,10 @@
       }
 
       .header-search {
-        flex: 1;
-        margin-left: 2em;
-
         .woocommerce-product-search {
           margin: 0;
         }
       }
-
-      .navigation-header-content {
-        .menu div ul .current-menu-item{
-          a {
-            font-weight: $font-weight-normal-bold;
-          }
-          .sub-menu li a{
-            font-weight: $font-weight-normal;
-          }
-        }
-      }
-
-      .header-cart-wrapper {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
 
         .header-cart {
           position: relative;
@@ -60,14 +141,14 @@
             position: absolute;
             padding: 1px;
             width: 17px;
-            background: $white;
+            background: #2f2d3200;
             color: $black;
             font-size: 11px;
             line-height: 14px;
             min-width: 13px;
             text-align: center;
             border-radius: 50%;
-            border: 1px solid $text;
+            border: 1px solid #2f2d32;
             top: -13px;
             right: -14px;
             height: 17px;
@@ -81,75 +162,21 @@
         }
       }
 
-    }
-
-    .navigation-header-content{
-      @include flexbox;
-      justify-content: flex-end;
-      flex: 5;
-
-      ul {
-        transition: none;
-      }
-
-      a {
-        padding: 1em;
-      }
-    }
-
-    /* Navigation */
-    .navigation-header-content{
-      @include flexbox;
-      justify-content: flex-end;
-      flex: 5;
-      a {
-        @include hover-link-style;
-        color: $black;
-        text-decoration: none;
-        padding: 1em;
-      }         
-      .sub-menu {
-        transition: none;
-        border: 1px solid rgba(192,192,192,0.2);
-        border-top: 0px;
-        .widget {
-          border-right: 1px solid rgba(192,192,192,0.2);
-          margin-bottom: 24px;          
-          .widget-title {
-            font-weight: $font-weight-bold;
-            text-transform: uppercase;            
-            font-size: 14px;
-            margin: 0;
-          }
-          .menu-item {
-            a {
-              padding: 0px;
-            }
-          }
-          .menu-item-has-children {
-             a {
-              font-weight: $font-weight-bold;
-              text-transform: uppercase;
-            }    
-            .sub-menu {
-              padding: 12px 0px;
-              border: 0px;
-               .menu-item {
-                padding: 1px 0px;
-                 a {
-                  font-weight: $font-weight-light;
-                  text-transform: none;
-                }                  
-              }
-            } 
-          }
-        }
-        .smm-last {
-          .widget {
-            border: 0px;
-          }
-        }
-      }
-    }
-
+}
+#menu-background-overlay {
+  display: none;
+  background: $black; 
+  width:      100%;
+  height:     100%; 
+  z-index:    10;
+  top:        0; 
+  left:       0; 
+  position:   fixed; 
+}
+@media (max-width: 66.4989378333em) and (min-width: 1024px){
+  .col-full {
+      margin-left: 2.617924em;
+      margin-right: 2.617924em;
+      padding: 0;
+  }
 }
