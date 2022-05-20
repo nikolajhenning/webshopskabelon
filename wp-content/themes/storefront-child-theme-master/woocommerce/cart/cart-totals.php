@@ -136,7 +136,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<!-- Selling points -->
 	<div class="selling-points-cart">
-		<?php include '../../inc/sellingpoints.php';?>
+		<?php include( get_stylesheet_directory() . '/inc/sellingpoints.php');?>
 	</div>
 	<!-- Selling points end -->
 

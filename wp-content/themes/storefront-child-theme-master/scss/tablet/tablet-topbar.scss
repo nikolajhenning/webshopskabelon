@@ -1,0 +1,14 @@
+.topbar {
+    height: unset;
+    padding: 0.5em 3% !important;
+    .selling-point-title, .menu-item a {
+      font-size: 12px;
+    }
+    .selling-points {
+      flex: unset;
+      .topbar-selling-point {
+      padding-right: 1em;
+      width: fit-content;
+      }
+    }
+  }
