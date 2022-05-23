@@ -31,6 +31,8 @@ function sf_child_theme_dequeue_style() {
 require_once( get_stylesheet_directory() . '/inc/global.php');
 require_once( get_stylesheet_directory() . '/inc/footer.php');
 require_once( get_stylesheet_directory() . '/inc/topbar.php');
+require_once( get_stylesheet_directory() . '/inc/servicepos-suppress-webhook.php');
+require_once( get_stylesheet_directory() . '/inc/fixed-aside-icon-bar.php');
 require_once( get_stylesheet_directory() . '/inc/woocommerce/cart.php');
 require_once( get_stylesheet_directory() . '/inc/woocommerce/checkout.php');
 require_once( get_stylesheet_directory() . '/inc/woocommerce/delivery.php');

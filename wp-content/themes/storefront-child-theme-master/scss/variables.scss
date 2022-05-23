@@ -116,7 +116,7 @@ $global-radius: 3px;
   justify-content: space-between;
 }
 
-//Hover effect + style used for links inbedded in text
+//Used for links inbedded in text
 @mixin text-link-style {
   text-decoration: underline;
   color: $primary;
@@ -128,7 +128,7 @@ $global-radius: 3px;
   }
 }
 
-//Only Hover effect for text links used for footer links and header links
+//Used for footer links and mega menu links
 @mixin hover-link-style {
   text-decoration: none;
   transition: all 0.2s ease; 

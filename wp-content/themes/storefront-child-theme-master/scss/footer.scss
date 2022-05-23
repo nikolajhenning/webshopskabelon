@@ -1,9 +1,10 @@
+//Old footer
+
 /* Footer */
 
 
 .site-footer {
   padding: 50px 0 0 0;
-
   .col-full {
     .footer-widgets {
       padding: 0;
@@ -13,9 +14,6 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       @include reset_before_after;
-      a {
-        @include hover-link-style;
-      }  
 
       .block {
         float:none !important;
@@ -23,7 +21,6 @@
         width: 25%;
         padding-right: 5em;
         display: flex;
-        align-items: flex-end;
         justify-content: flex-end;
 
 
@@ -36,7 +33,7 @@
 
       .widget {
         margin: 0;
-        @include reset_before_after;
+
         .widget-title {
           text-transform: uppercase;
           font-size: $font-size-base;
@@ -48,42 +45,42 @@
           p {
             font-weight: $font-weight-light;
           }
-        } 
         }
-        .widget_nav_menu {
+
           .menu {
             li {
               padding: 0;
-              @include reset_before_after;
+
               a {
-                font-weight: $font-weight-normal-bold;
-              }
-            }
-            .current-menu-item{
-              a {
-                text-decoration: underline;
-              }
-              .sub-menu li a{
                 text-decoration: none;
+                font-size: $font-size-base;
+                font-weight: $font-weight-light;
+                @include hover-link-style;
               }
             }
           }
+          @include reset_before_after;
         }
       }
 
-       /* Facebook */
-       i.fab.fa-facebook-square.footer-facebook {
+      /* Facebook */
+      i.fab.fa-facebook-square.footer-facebook {
         color: $primary;
       }
+
     }
   }
 .footer-widgets-wrapper {
   @include flexbox;
   justify-content: flex-end;
   margin-top: 2em;
-  a {
-    @include hover-link-style;
-  }  
+
+  .widget {
+    margin: 0 0 0 0em;
+    a {
+      @include hover-link-style;
+    }
+  }
 
   .gallery {
     @include flexbox;
@@ -140,18 +137,27 @@
 
     ul {
       @include reset_list-style;
-      justify-content: space-evenly;
       margin: 0;
+      justify-content: space-evenly;
 
       li {
-        @include reset_before_after;
         margin: 0 10px;
         padding: 0;
 
         a {
           text-decoration: none;
+          @include hover-link-style;
+          white-space: nowrap;
         }
       }
+    }
+  }
+}
+
+.widget_nav_menu {
+  ul {
+    li {
+      @include reset_before_after;
     }
   }
 }

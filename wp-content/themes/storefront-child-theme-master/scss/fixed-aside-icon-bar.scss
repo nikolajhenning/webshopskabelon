@@ -1,0 +1,49 @@
+.fixed-aside-icon-bar {
+   position: fixed;
+   top: 50%;
+   transform: translateY(-50%);
+   a {
+       display: none;
+       text-align: center;
+       transition: all 0.3s ease;
+       color: $white;
+       font-size: 20px;
+       line-height: 1;
+       padding: 0;
+       i {
+          padding: 16px;
+        }
+     }
+   .facebook, .instagram, .linkedin, .twitter, .youtube, .tiktok, .pinterest, .discord, .twitch {
+     cursor: pointer;
+     display: block;
+   }
+   .facebook {
+       background: #3B5998;
+    }
+   .instagram {
+       background: #dd2a7b;
+    } 
+    .linkedin {
+       background: #0a66c2;
+    } 
+    .twitter {
+       background: #1DA1F2;
+    } 
+    .youtube {
+       background: #FF0000;
+    } 
+    .tiktok {
+       background: #000000;
+    } 
+    .pinterest {
+       background: #E60023;
+    }
+    .discord {
+       background: #7289DA;
+    }
+    .twitch {
+       background: #6441a5;
+    }      
+ }
+ 

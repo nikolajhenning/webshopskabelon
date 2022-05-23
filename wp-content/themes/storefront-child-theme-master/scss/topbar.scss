@@ -19,13 +19,16 @@
             font-weight: $font-weight-normal-bold;
             font-size: $font-size-base;
             padding-right: 40px;
-
+            color: $white;
             i {
                 padding-right: 10px;
             }
 
             p {
                 margin: 0;
+                span {
+                    white-space: nowrap;
+                }
             }
 
             .selling-point-wrapper {

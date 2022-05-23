@@ -31,7 +31,7 @@
 
 .header-mobile i {
   transform: scale(2);
-  margin-right: 20px;
+  margin-right: 10px;
   margin-left: 20px;
   transition: all 0.3s ease;
 }
@@ -40,20 +40,12 @@
   transform: scale(1.2);
 }
 
-.selling-points {
-  flex: unset;
-  .topbar-selling-point {
-    padding-right: 1em;
-    width: fit-content;
-  }
-}
-
 #masthead {
 
   .header-wrapper {
     flex-wrap: nowrap;
     align-items: center;
-    padding: 1em;
+    padding: 1em 3%;
 
     .image-logo {
       width: 25%;
@@ -73,7 +65,7 @@
   }
 }
 
-.topbar, .storefront-breadcrumb {
+.storefront-breadcrumb {
   padding: 0.5em 1em !important;
   margin-top: 0;
 }
