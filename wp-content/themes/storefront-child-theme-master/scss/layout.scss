@@ -24,7 +24,10 @@
     padding: 0;
   }
 
-
+  /* Woocmmerce layout */
+  .woocommerce-products-header, .checkout, .woocommerce-notices-wrapper {
+    margin-top: 2%;
+  }
 input {
   border-radius: $global-radius;
 }
