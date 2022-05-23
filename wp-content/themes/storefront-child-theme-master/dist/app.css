@@ -773,11 +773,13 @@ hr {
     #main div.product .summary .shipping-info-wrapper {
       float: none;
       padding: 1em 0; }
-  #main div.product .woocommerce-product-gallery figure a {
-    height: inherit; }
-    #main div.product .woocommerce-product-gallery figure a img {
-      height: inherit;
-      width: auto; }
+  #main div.product .woocommerce-product-gallery figure {
+    height: unset; }
+    #main div.product .woocommerce-product-gallery figure a {
+      height: inherit; }
+      #main div.product .woocommerce-product-gallery figure a img {
+        height: inherit;
+        width: auto; }
   #main div.product form.cart {
     margin-bottom: 0;
     padding: 0; }

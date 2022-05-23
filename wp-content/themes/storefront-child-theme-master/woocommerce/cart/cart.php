@@ -20,34 +20,74 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'woocommerce_before_cart' ); ?>
 
 
+<!-- GA4 -->
 <script type="text/javascript">
 dataLayer.push({
-   "event": "addToCart",
+   event: "view_cart",
+   ecommerce: {
+     currency: "<?php echo get_woocommerce_currency_symbol(); ?>",
+	 value: <?php echo $amount = WC()->cart->cart_contents_total + WC()->cart->tax_total; ?>,
+     items: [
+			<?php
+			global $woocommerce;
+			$items = $woocommerce->cart->get_cart();
+			foreach($items as $item => $values):
+				$_product =  wc_get_product( $values['data']->get_id());
+			?>
+				{
+				item_id: "<?php echo $product_id = $_product->get_id(); ?>",
+				item_name: "<?php echo $product_title = $_product->get_title(); ?>",
+				affiliation: "WooCommerce",
+				currency: "<?php echo get_woocommerce_currency_symbol(); ?>",
+				item_category:"<?php $terms = get_the_terms( $product_id, 'product_cat' );
+				foreach ($terms as $term) {
+				$product_cat = $term->name;
+				}
+				echo $product_cat ; ?>",
+				price: <?php echo $price = get_post_meta($values['product_id'] , '_price', true); ?>,
+				quantity: <?php echo $cart_quantity = $values['quantity'];?>
+				},
+			<?php endforeach; ?>
+		]
+            
+    }
+
+});
+</script>
+
+
+<!-- GA -->
+<script type="text/javascript">
+dataLayer.push({
+   "event":"view_cart_ga",
    "ecommerce": {
      "currencyCode": "<?php echo get_woocommerce_currency_symbol(); ?>",
-	 'add': {
-		'products': [                    //  adding a product to a shopping cart.
-				  <?php   global $woocommerce;
+     "add": {
+      "actionField": {
+        list: "Shopping cart"
+      },
+      "products": [
+                  <?php
+                    global $woocommerce;
                     $items = $woocommerce->cart->get_cart();
                     foreach($items as $item => $values):
-                    $_product =  wc_get_product( $values['data']->get_id());
+                      $_product =  wc_get_product( $values['data']->get_id());
                   ?>
-					{
+                      {
                         "name": "<?php echo $product_title = $_product->get_title(); ?>",
                         "id": "<?php echo $product_id = $_product->get_id(); ?>",
-						"price": "<?php $price = get_post_meta($values['product_id'] , '_price', true); $unit = intval( $price ); $decimal = sprintf( '%02d', ( $price-$unit ) * 100 ); echo sprintf( '%d.%s', $unit, $decimal ); ?>",
+                        "price": "<?php echo $price = get_post_meta($values['product_id'] , '_price', true); ?>",
                         "quantity": <?php echo $cart_quantity = $values['quantity'];?>,
                         "category":"<?php $terms = get_the_terms( $product_id, 'product_cat' );
-						foreach ($terms as $term) {
-						$product_cat = $term->name;
-						}
-						echo $product_cat ; ?>"
-									},
-								<?php endforeach; ?>
+        foreach ($terms as $term) {
+          $product_cat = $term->name;
+          }
+          echo $product_cat ; ?>"
+                      },
+                  <?php endforeach; ?>
                 ]
-			},
-	  "value": <?php global $woocommerce; echo WC()->cart->total; ?>
-  }
+            }
+          }
 });
 </script>
 
