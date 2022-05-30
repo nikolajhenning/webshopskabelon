@@ -11,3 +11,4 @@ import add_to_cart from './add_to_cart';
 import cart_preview from './cart_preview.js';
 import product_archive_sidebar_toggle from './product_archive_sidebar_toggle.js';
 import mega_menu_overlay from './mega-menu-overlay.js';
+import extra_description_expand from './extra_description_expand.js'

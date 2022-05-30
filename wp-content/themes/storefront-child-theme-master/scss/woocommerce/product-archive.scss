@@ -183,3 +183,22 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
 .elementor-section .elementor-products-grid {
   @include product_archive_list;
 }
+
+
+// Long term description
+
+.long-term-description {
+  margin-top: 2em;
+  &.expand {
+    transition: max-height 0.4s ease-in; 
+  }
+  &.non-expand {
+    max-height: 100px;
+    transition: max-height 0.4s ease-out,;
+  }
+}
+.read-button  {
+  @include text-link-style;
+}
+
+// Long term description end

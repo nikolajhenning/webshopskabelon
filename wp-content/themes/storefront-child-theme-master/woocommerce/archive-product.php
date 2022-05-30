@@ -129,7 +129,7 @@ if ( is_product_taxonomy() ) {
 	$term = get_queried_object(); 	
 	$term_meta = get_term_meta($term->term_id, 'seconddesc', true); 	
 	if ( $term && ! empty( $term_meta ) ) { 	   
-		echo '<p class="term-description">' . wc_format_content( htmlspecialchars_decode( $term_meta  )) . '</p>'; 	
+		echo '<div class="long-term-description">' . wc_format_content( htmlspecialchars_decode( $term_meta  )) . '</div>'; 	
 	}  
 }
 

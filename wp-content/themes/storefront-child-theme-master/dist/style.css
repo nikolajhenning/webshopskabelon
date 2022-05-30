@@ -1757,6 +1757,23 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
         float: left;
         margin-right: 5px; }
 
+.long-term-description {
+  margin-top: 2em; }
+  .long-term-description.expand {
+    transition: max-height 0.4s ease-in; }
+  .long-term-description.non-expand {
+    max-height: 100px;
+    transition: max-height 0.4s ease-out; }
+
+.read-button {
+  text-decoration: underline;
+  color: #bd7b00;
+  transition: all 0.2s ease;
+  cursor: pointer; }
+  .read-button:hover {
+    color: #a46200;
+    text-decoration: none; }
+
 #secondary .show_sidebar_filter, #secondary .show_sidebar_cat, #secondary .woocommerce-widget-layered-nav {
   display: none; }
 
