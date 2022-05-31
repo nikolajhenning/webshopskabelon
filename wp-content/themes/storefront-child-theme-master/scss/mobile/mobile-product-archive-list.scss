@@ -10,10 +10,23 @@
           grid-auto-flow: column;
           grid-auto-columns: minmax(270px, 1fr);
           overflow-x: auto;
+          li.product {
+            .woocommerce-loop-product__link {
+              padding: 0.5em 0.5em;
+            }
+            img {
+              height: 130px;
+              margin: 0.5em 0 0.5em 0;
+            }
+          }
         }
         li.product {
+          .woocommerce-loop-product__link {
+            padding: 0.5em 0.5em;
+          }
           img {
-            height: 180px;
+            height: 130px;
+            margin: 0.5em 0 0.5em 0;
           }
           span.onsale {
             top: 25%;
