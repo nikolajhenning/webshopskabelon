@@ -1776,10 +1776,12 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
         margin-right: 5px; }
 
 .long-term-description {
-  margin-top: 2em; }
+  margin-top: 2em;
+  overflow: hidden; }
   .long-term-description.expand {
     transition: max-height 0.4s ease-in; }
   .long-term-description.non-expand {
+    overflow: hidden;
     max-height: 100px;
     transition: max-height 0.4s ease-out; }
 
