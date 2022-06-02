@@ -2403,24 +2403,6 @@ form.checkout, form.woocommerce-cart-form {
   #masthead #cart-preview, #masthead #cart-preview-updated {
     display: none !important; } }
 
-/*
-.site, #page {
-  background-color: $primary-color;
-}
-
-h2 {
-  font-size: $font-size;
-
-  &.entry-title {
-    color: white;
-  }
-}
-
-.nav-menu {
-  font-size: $font-size;
-  background-color: $blue;
-}
-*/
 /* Links */
 a, button {
   transition: all 0.2s ease; }
