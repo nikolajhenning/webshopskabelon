@@ -113,14 +113,15 @@ function show_product_category() {
   );
 }
 add_action( 'widgets_init', 'show_product_category' );
-//move breadcrumbs
 
-function move_storefront_breadcrumbs() {
-  if ( is_shop() || is_product_category() ) {
+//remove breadcrumbs
+
+function remove_storefront_breadcrumbs() {
+  if ( is_shop() || is_product_category() || is_page() ) {
       remove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );
   }
 }
-add_action( 'wp', 'move_storefront_breadcrumbs');
+add_action( 'wp', 'remove_storefront_breadcrumbs');
 
 /* Change h2 to h5 in product title */ 
 function wps_change_products_title() {

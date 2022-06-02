@@ -53,4 +53,12 @@ function mytheme_enqueue_style() {
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_style', 999 );
 
+// Remove storefront breadcrumbs from elementor pages
 
+add_action( 'init', 'bbloomer_remove_storefront_breadcrumbs' );
+ 
+function bbloomer_remove_storefront_breadcrumbs() {
+    if (is_page()) {
+        remove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );
+    }
+}
