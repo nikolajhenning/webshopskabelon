@@ -178,6 +178,7 @@ hr {
       #masthead .header-wrapper .navigation-header-content .current-menu-item .sub-menu li a, #masthead .header-wrapper .navigation-header-content .smm-mega-menu .smm-row div .widget div .menu .current-menu-item .sub-menu li a, #masthead .header-wrapper .navigation-header-content .smm-mega-menu .smm-row div .widget div .menu .menu-item-has-children .sub-menu .current-menu-item .sub-menu li a, #masthead .header-wrapper .navigation-header-content .menu-item-has-children .sub-menu .current-menu-item .sub-menu li a {
         font-weight: 300; }
     #masthead .header-wrapper .header-cart-wrapper {
+      padding: 1.4em 0;
       flex: 1;
       display: flex;
       justify-content: flex-end;
@@ -1886,7 +1887,7 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
   .woocommerce-cart button, .woocommerce-cart .checkout-button {
     text-transform: uppercase;
     font-weight: 500; }
-  .woocommerce-cart .storefront-breadcrumb, .woocommerce-cart #update_cart, .woocommerce-cart #post-7 .entry-title {
+  .woocommerce-cart #update_cart, .woocommerce-cart #post-7 .entry-title {
     display: none; }
   .woocommerce-cart #cart-overview {
     width: 100%; }
@@ -2087,7 +2088,7 @@ form.checkout, form.woocommerce-cart-form {
 /* ******* Checkout ********* */
 .woocommerce-checkout {
   /* Confirm button */ }
-  .woocommerce-checkout .entry-header, .woocommerce-checkout .storefront-primary-navigation, .woocommerce-checkout .header-search, .woocommerce-checkout .storefront-breadcrumb, .woocommerce-checkout .header-cart-wrapper {
+  .woocommerce-checkout .entry-header, .woocommerce-checkout .storefront-primary-navigation, .woocommerce-checkout .header-search, .woocommerce-checkout .header-cart-wrapper {
     display: none; }
   .woocommerce-checkout .woocommerce-NoticeGroup-checkout {
     width: 100%; }

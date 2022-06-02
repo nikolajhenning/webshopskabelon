@@ -5,7 +5,7 @@
     font-weight: $font-weight-normal-bold;
   }
   //display none on these elements
-  .storefront-breadcrumb, #update_cart, #post-7 .entry-title  {
+  #update_cart, #post-7 .entry-title  {
     display: none;
   }
   #cart-overview {
