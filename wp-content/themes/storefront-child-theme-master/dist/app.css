@@ -726,7 +726,8 @@ hr {
           .col-full #main.site-main .archive-top-section .archive-top-section-right .show_cat:active {
             background-color: #EBEBEB; }
         .col-full #main.site-main .archive-top-section .archive-top-section-right .product-categories {
-          grid-template-columns: 1fr 1fr; }
+          grid-template-columns: 1fr 1fr;
+          margin-top: 1em; }
           .col-full #main.site-main .archive-top-section .archive-top-section-right .product-categories .cat-item {
             width: 100%;
             margin-bottom: 0;
@@ -1777,14 +1778,17 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
         margin-right: 5px; }
 
 .long-term-description {
-  margin-top: 2em;
-  overflow: hidden; }
+  margin-top: 2em; }
   .long-term-description.expand {
-    transition: max-height 0.4s ease-in; }
-  .long-term-description.non-expand {
     overflow: hidden;
-    max-height: 100px;
-    transition: max-height 0.4s ease-out; }
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: initial; }
+  .long-term-description.non-expand {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden; }
 
 .read-button {
   text-decoration: underline;

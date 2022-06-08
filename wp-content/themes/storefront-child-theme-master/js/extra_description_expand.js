@@ -3,7 +3,7 @@ jQuery( function( $ ) {
 
         //Get current height of the description container
         let currentHeight = $(".long-term-description").height();
-        if (currentHeight > 150 ) {
+        if (currentHeight > 350 ) {
 
             //Add "non-expand" class
             $( ".long-term-description" ).addClass( "non-expand" );
@@ -15,12 +15,6 @@ jQuery( function( $ ) {
             $( ".read-button" ).on( "click", function(evt) {
                 evt.preventDefault();
                 $(".long-term-description").toggleClass('expand non-expand');
-                $(".expand").css({
-                    "max-height": currentHeight,
-                });
-                $(".non-expand").css({
-                    "max-height": "100px",
-                });
                 var button_text = $(".long-term-description").hasClass('expand') ? 'Læs mindre' : 'Læs mere';
                 $(".read-button").text(button_text);
             });
