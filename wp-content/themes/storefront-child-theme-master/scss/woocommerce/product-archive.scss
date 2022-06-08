@@ -189,18 +189,10 @@ body .select2-container--default .select2-results__option--highlighted[aria-sele
 
 .long-term-description {
   margin-top: 2em;
-  overflow: hidden;
-  &.expand {
-    transition: max-height 0.4s ease-in; 
-  }
-  &.non-expand {
-    overflow: hidden;
-    max-height: 100px;
-    transition: max-height 0.4s ease-out;
-  }
 }
 .read-button  {
   @include text-link-style;
 }
+
 
 // Long term description end
