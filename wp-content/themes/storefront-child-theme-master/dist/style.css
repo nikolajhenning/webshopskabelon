@@ -2120,6 +2120,8 @@ form.checkout, form.woocommerce-cart-form {
         margin: 0.5em 0 0 1.6em;
         color: #8F8F8F;
         font-size: 0.75rem; }
+        .woocommerce-checkout .col2-set .col-2 .checkout_payments .payment_box #boclassic_card_logos {
+          display: flex; }
   .woocommerce-checkout .form-row.woocommerce-validated input {
     box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.125); }
   .woocommerce-checkout .form-row input, .woocommerce-checkout .form-row textarea, .woocommerce-checkout .form-row select {
@@ -2231,6 +2233,17 @@ form.checkout, form.woocommerce-cart-form {
 /* Checkout - DAWA suggestions */
 .dawa-autocomplete-suggestion {
   list-style-type: none; }
+
+/* Webshipper drop point */
+.webshop-checkout-review-shipping-table {
+  display: flex;
+  flex-direction: column; }
+  .webshop-checkout-review-shipping-table .button {
+    margin: 1em auto 1em 0;
+    background-color: #bd7b00; }
+  .webshop-checkout-review-shipping-table #webshipper-selected-drop-point {
+    margin: 0 0 1em 0;
+    text-align: start; }
 
 .woocommerce-cart #shipping_method, .woocommerce-checkout #shipping_method {
   /* Input radio buttons */
